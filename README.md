@@ -6,7 +6,7 @@ __Statistics 133: Concepts in Computing with Data__ at UC Berkeley.
 
 - __Instructor:__ [Gaston Sanchez](http://gastonsanchez.com), gaston.stat [at] gmail.com
 - __Class Time:__ MWF 8-9am in [Dwinelle 155](http://www.berkeley.edu/map?dwinelle)
-- __Session Dates:__ 01/23/18 - 05/08/18
+- __Session Dates:__ 01/23/18 - 05/04/18
 - __Code #:__ 30844
 - __Units:__ 3 (more info [here](http://classes.berkeley.edu/content/2018-spring-stat-133-001-lec-001))
 - __Office Hours:__ TBA
@@ -89,16 +89,17 @@ This course does not have any prerequisites, although it would be nice if you
 have taken an introductory course in statistics (e.g. Stat 2, 20, 21, 131A). 
 
 The curriculum and format is designed specifically for students (ideally 
-majoring in Statistics) who have NOT taken computer science courses.
+majoring in Statistics) __who have NOT taken computer science courses__.
 
 You don't need previous programming experience, and you also don't need previous
 data analysis experience. However, students with some exposure to programming
 concepts, and data analysis tend to understand certain concepts better.
 
 Students with some prior experience in either computational statistics 
-or computing are welcome to enroll, though some parts of the course will be slow. 
-Students who have taken computer science courses (e.g. CS C8, CS C100, CS 9H) 
-should instead take a more advanced course.
+or computing are welcome to enroll, though some parts of the course will feel 
+extremely slow. 
+Students who have taken computer science courses (e.g. CS C8, CS C100, CS 9H, 
+CS 61a, CS 61b) should instead take a more advanced course.
 
 
 
