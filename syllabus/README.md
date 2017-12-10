@@ -48,7 +48,7 @@
 - :mag: __Cheat sheet__: 
     + [RStudio cheat sheet](../cheatsheets/rstudio-IDE-cheatsheet.pdf)
     + [R markdown cheat sheet](../cheatsheets/rmarkdown-cheatsheet-2.0.pdf)
-- :white_circle: __WARM-UP 1__:
+- :large_blue_circle: __WARM-UP 1__:
     + [Markdown practice](../hws/up01-markdown.md) (due Feb-01)
 
 
@@ -72,5 +72,5 @@
     + TBD
 - :mag: __Cheat sheet__: 
     + [Base R](../cheatsheets/base-r-cheatsheet.pdf)
-- :white_circle: __WARM-UP 2__:
+- :large_blue_circle: __WARM-UP 2__:
     + [Vectors and Factors](../hws/up02-vector-basics.md) (due Feb-08)
