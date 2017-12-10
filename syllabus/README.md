@@ -20,6 +20,7 @@
     - [What is Data Science?](../papers/what-is-data-science.pdf)
 + :speaker: __To Do__: 
     + Install [__R__](https://cran.cnr.berkeley.edu/) and [RStudio](https://www.rstudio.com/products/rstudio/download/#download) Desktop (open source version, free)
++ :fa-thumbs-up: font awesome
 
 
 -----
