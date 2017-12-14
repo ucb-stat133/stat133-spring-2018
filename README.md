@@ -31,6 +31,8 @@ You can go to the office hours of __any__ GSI, not just your own.
 | 112 | Th 3-5pm   | 342 Evans    |       TBA       |
 
 
+-----
+
 
 ### Philosophy
 
