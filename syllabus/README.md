@@ -74,3 +74,27 @@
     + [Base R](../cheatsheets/base-r-cheatsheet.pdf)
 - :large_blue_circle: __WARM-UP 2__:
     + [Vectors and Factors](../hws/up02-vector-basics.md) (due Feb-08)
+
+
+-----
+
+
+## 3. Housekeeping: Filesystem, Bash, Git, Github
+
+- :calendar: __Dates__: Feb 05-09
+- :pushpin: __Topics__: Fundamental low-level stuff for the rest of the course.
+- :book: __Lecture__
+    + [Filesystem Basics](../slides/06-filesystem-basics.pdf) (slides)
+    + [Shell Basics](../slides/07-shell-basics.pdf) (slides)
+    + [Git Basics](../slides/08-git-basics.pdf) (slides)
+- :microscope: __Lab__:
+    + [Minimal Bash and Git](../labs/lab03-minimal-bash-git.md)
+    + [GitHub repo for your assignments](../labs/lab03-hws-repository.md)
+- :books: __Reading__:
+    + Read sections 4 to 9 in Part I [Installation](http://happygitwithr.com/installation-pain.html) from _Happy Git and GitHub for the useR_ by Jenny Bryan et al.
+- :pill: __Vitamins__:
+    + TBD
+- :mag: __Cheat sheet__:
+    + [command line cheat sheet](../cheatsheets/command-line-cheatsheet.pdf)
+    + [git cheat sheet](../cheatsheets/git-cheatsheet.pdf)
+
