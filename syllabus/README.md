@@ -39,7 +39,7 @@
     + [First contact with R](../tutorials/01-intro-to-R.md) (tutorial)
     + [Intro to Rmd files](../tutorials/02-intro-to-Rmd-files.md) (tutorial)
 - :microscope: __Lab__:
-    + [Getting started with R](../labs/lab01-R-basics.md)
+    + [Getting started with R and RStudio](../labs/lab01-R-basics.md)
 - :books: __Reading__:
     + [Introduction to R Markdown](http://rmarkdown.rstudio.com/lesson-1.html) by RStudio
 - :pill: __Vitamins__:
@@ -93,7 +93,8 @@
 - :books: __Reading__:
     + Read sections 4 to 9 in Part I [Installation](http://happygitwithr.com/installation-pain.html) from _Happy Git and GitHub for the useR_ by Jenny Bryan et al.
 - :pill: __Vitamins__:
-    + TBD
+    + [The Unix Shell](http://swcarpentry.github.io/shell-novice/) lessons 1-3 (by Software Carpentry).
+    + [Linus Tutorial](https://ryanstutorials.net/linuxtutorial/) lessons 1-5 (by Ryan Chadwick).
 - :mag: __Cheat sheet__:
     + [command line cheat sheet](../cheatsheets/command-line-cheatsheet.pdf)
     + [git cheat sheet](../cheatsheets/git-cheatsheet.pdf)
