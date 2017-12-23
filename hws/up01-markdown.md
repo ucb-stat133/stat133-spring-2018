@@ -21,8 +21,7 @@ Here are some useful resources that you can consult to complete this assignment:
 
 ------------------------------------------------------------------------
 
-Requirements
-------------
+### Requirements
 
 Here's a summary of the topics you have to write about. You don't have to write any R code (yet).
 
@@ -45,7 +44,10 @@ Make sure to include the following elements (using markdown syntax)
 -   Breaklines
 -   Some math equations
 
-### 1) Cooking Recipe
+------------------------------------------------------------------------
+
+Cooking Recipe
+--------------
 
 Visit *Smitten Kitchen* (<https://smittenkitchen.com>) and choose one recipe (e.g. [root vegetable gratin](https://smittenkitchen.com/2016/11/root-vegetable-gratin/)). Write about the recipe using Markdown syntax:
 
@@ -56,7 +58,8 @@ Visit *Smitten Kitchen* (<https://smittenkitchen.com>) and choose one recipe (e.
 -   Is there a special season of the year for it?
 -   Are there variations of the recipe? Using other ingredients?
 
-### 2) Game of Thrones
+Game of Thrones
+---------------
 
 Visit *Game of Thrones Wiki* (<http://gameofthrones.wikia.com>) and choose one of the characters (e.g. [Tyrion Lannister](http://gameofthrones.wikia.com/wiki/Tyrion_Lannister)). Write the following about the character you chose:
 
@@ -66,7 +69,8 @@ Visit *Game of Thrones Wiki* (<http://gameofthrones.wikia.com>) and choose one o
 
 ![tyrion-table](../images/tyrion-table.png)
 
-### 3) Quadratic Equation
+Quadratic Equation
+------------------
 
 Visit the wikipedia page for the quadratic equation: <https://en.wikipedia.org/wiki/Quadratic_equation>
 
@@ -74,7 +78,7 @@ Write the general form of a quadratic equation, and provide a brief description 
 
 ![quadratic equation](https://wikimedia.org/api/rest_v1/media/math/render/svg/70a0e43dfc81e6fea3be4fc96895a8f9ec2966ac)
 
-Write the quadratic formula for the roots of the general quadratic equation:
+Write the formula for the roots of the general quadratic equation:
 
 ![quadratic](https://wikimedia.org/api/rest_v1/media/math/render/svg/42efe5c6f302eb75186b3d5b782129850bfa04d1)
 
@@ -90,7 +94,8 @@ To write all the above equations you will have to use latex syntax. Here are a c
 
 If you feel the quadratic is not enough, feel free to find other math equations and formulas to play with.
 
-### 3) Comments and Reflections
+Comments and Reflections
+------------------------
 
 Reflect on what was hard/easy, problems you solved, helpful tutorials you read, etc. Here are some questions that you can start with to provide comments on your HW.
 
