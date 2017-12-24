@@ -60,8 +60,7 @@
 - :calendar: __Dates__: Jan 29-Feb 02
 - :pushpin: __Topics__: Getting to know R vectors and concepts like atomicity, vectorization, recycling, and subsetting.
 - :book: __Lecture__:
-    + [Data Types and Vectors](https://docs.google.com/presentation/d/e/2PACX-1vTyI7ymGK8e8G-lXUkYHx7vSfN1bQN39k6MoQwOx0npaoVYyLUixFuQNmt32sr-G2sjtgtnr3mGcOYp/pub?start=false&loop=false&delayms=3000) (slides)
-    + [Intro to vectors](../tutorials/03-intro-to-vectors.md) (tutorial)
+    + [Data Types and Vectors](../slides/03-R-vector-types.pdf) (slides)
     + [Arrays and Factors](../slides/04-arrays-factors.pdf) (slides)
     + [Lists](../slides/05-lists.pdf) (slides)
 - :microscope: __Lab__:
@@ -69,7 +68,8 @@
 - :books: __Reading__:
     + [chapter 20: Vectors](http://r4ds.had.co.nz/vectors.html) from _R for Data Science_ by Grolemund and Wickham.
 - :pill: __Vitamins__:
-    + TBD
+    + [Intro to vectors](../tutorials/03-intro-to-vectors.md) (tutorial)
+    + [Arrays and Factors](../slides/04-arrays-factors.pdf) (slides)
 - :mag: __Cheat sheet__: 
     + [Base R](../cheatsheets/base-r-cheatsheet.pdf)
 - :large_blue_circle: __WARM-UP 2__:
@@ -88,8 +88,7 @@
     + [Shell Basics](../slides/07-shell-basics.pdf) (slides)
     + [Git Basics](../slides/08-git-basics.pdf) (slides)
 - :microscope: __Lab__:
-    + [Minimal Bash and Git](../labs/lab03-minimal-bash-git.md)
-    + [GitHub repo for your assignments](../labs/lab03-hws-repository.md)
+    + [Command Line Basics](../labs/lab03-command-line-basics.md)
 - :books: __Reading__:
     + Read sections 4 to 9 in Part I [Installation](http://happygitwithr.com/installation-pain.html) from _Happy Git and GitHub for the useR_ by Jenny Bryan et al.
 - :pill: __Vitamins__:
@@ -157,7 +156,6 @@ graphs with `"ggplot2"`.
 + :microscope: __Lab__:
     + [More dplyr, ggplot2, and files' stuff](../labs/lab06-more-dplyr-ggplot.md)
 + :books: __Reading__: 
-    + [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf) by Hadley Wickham
-RStudio).
+    + [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf) by Hadley Wickham.
 
 
