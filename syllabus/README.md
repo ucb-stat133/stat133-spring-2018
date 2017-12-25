@@ -49,7 +49,7 @@
     + [RStudio cheat sheet](../cheatsheets/rstudio-IDE-cheatsheet.pdf)
     + [R markdown cheat sheet](../cheatsheets/rmarkdown-cheatsheet-2.0.pdf)
 - :large_blue_circle: __WARM-UP 1__:
-    + [Markdown practice](../hws/up01-markdown.md) (due Feb-02)
+    + [Markdown practice](../hws/up01-markdown.pdf) (due Feb-02)
 
 
 -----
@@ -69,11 +69,10 @@
     + [chapter 20: Vectors](http://r4ds.had.co.nz/vectors.html) from _R for Data Science_ by Grolemund and Wickham.
 - :pill: __Vitamins__:
     + [Intro to vectors](../tutorials/03-intro-to-vectors.md) (tutorial)
-    + [Arrays and Factors](../slides/04-arrays-factors.pdf) (slides)
 - :mag: __Cheat sheet__: 
     + [Base R](../cheatsheets/base-r-cheatsheet.pdf)
 - :large_blue_circle: __WARM-UP 2__:
-    + [Vectors and Factors](../hws/up02-vector-basics.md) (due Feb-09)
+    + [Vectors and Factors](../hws/up02-vector-basics.pdf) (due Feb-09)
 
 
 -----
@@ -159,3 +158,39 @@ graphs with `"ggplot2"`.
     + [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf) by Hadley Wickham.
 
 
+-----
+
+
+## 7. Programming Basics for data analysis (part 1)
+
+- :calendar: __Dates__: Mar 05-09
+- :pushpin: __Topics__: Basics of Functions, R expressions, and conditionals.
+- :book: __Lecture__:
+    + [Introduction to functions](../tutorials/06-intro-to-functions.md) (tutorial)
+    + [Introduction to R expressions and conditionals](../tutorials/07-intro-to-expressions-conditionals.md) (tutorial)
+- :microscope: __Lab__:
+    + [Getting started with functions and conditionals](../labs/lab07-simple-functions.md)
+- :books: __Reading__: 
+    + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) from _R for Data Science_ by Grolemund and Wickham.
+- :mortar_board: __MIDTERM 1__: Fri Mar-09
+
+
+-----
+
+
+
+## 8. Programming Basics for data analysis (part 2)
+
+- :calendar: __Dates__: Mar 12-16
+- :pushpin: __Topics__: Basics of loops, and more functions.
+- :book: __Lecture__:
+    + [Introduction to loops](../tutorials/08-intro-to-loops.md) (tutorial)
+    + [More about functions](../tutorials/09-more-functions.md) (tutorial)
+- :microscope: __Lab__: 
+    + [Getting started with loops](../labs/lab08-simple-loops.md)
+    + [Practice Programming Basics](../hws/practice-programming-basics.pdf) (exercises)
+- :books: __Reading__:
+    + [chapter 21: Iteration](http://r4ds.had.co.nz/iteration.html) from _R for Data Science_ by Grolemund and Wickham.
+
+
+-----
