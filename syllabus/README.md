@@ -32,7 +32,7 @@
 
 ## 1. R Survival Skills
 
-- :calendar: __Dates__: Jan 22-26:
+- :calendar: __Dates__: Jan 22-26
 - :pushpin: __Topics__: "Mise en place" for data analysis projects, getting started with R, overall review of the RStudio workspace.
 - :book: __Lecture__:
     + Before you start: "Mise en place"
@@ -40,11 +40,11 @@
     + [Intro to Rmd files](../tutorials/02-intro-to-Rmd-files.md) (tutorial)
 - :microscope: __Lab__:
     + [Getting started with R and RStudio](../labs/lab01-R-basics.md)
-- :books: __Reading__:
-    + [Introduction to R Markdown](http://rmarkdown.rstudio.com/lesson-1.html) by RStudio
 - :pill: __Vitamins__:
     + [www.markdowntutorial.com](http://www.markdowntutorial.com)
     + [Markdown tutorial](http://commonmark.org/help/tutorial) by CommonMark
+- :books: __Reading__:
+    + [Introduction to R Markdown](http://rmarkdown.rstudio.com/lesson-1.html) by RStudio
 - :mag: __Cheat sheet__: 
     + [RStudio cheat sheet](../cheatsheets/rstudio-IDE-cheatsheet.pdf)
     + [R markdown cheat sheet](../cheatsheets/rmarkdown-cheatsheet-2.0.pdf)
@@ -62,13 +62,13 @@
 - :book: __Lecture__:
     + [Data Types and Vectors](../slides/03-R-vector-types.pdf) (slides)
     + [Arrays and Factors](../slides/04-arrays-factors.pdf) (slides)
-    + [Lists](../slides/05-lists.pdf) (slides)
+    + [Base Graphics](../slides/05-base-graphics.pdf) (slides)
 - :microscope: __Lab__:
     + [Getting started with vectors, factors, and lists](../labs/lab02-vector-basics.md)
-- :books: __Reading__:
-    + [chapter 20: Vectors](http://r4ds.had.co.nz/vectors.html) from _R for Data Science_ by Grolemund and Wickham.
 - :pill: __Vitamins__:
     + [Intro to vectors](../tutorials/03-intro-to-vectors.md) (tutorial)
+- :books: __Reading__:
+    + [chapter 20: Vectors](http://r4ds.had.co.nz/vectors.html) from _R for Data Science_ by Grolemund and Wickham.
 - :mag: __Cheat sheet__: 
     + [Base R](../cheatsheets/base-r-cheatsheet.pdf)
 - :large_blue_circle: __WARM-UP 2__:
@@ -83,16 +83,17 @@
 - :calendar: __Dates__: Feb 05-09
 - :pushpin: __Topics__: Fundamental low-level stuff for the rest of the course.
 - :book: __Lecture__:
+    + [Lists](../slides/05-lists.pdf) (slides)
     + [Filesystem Basics](../slides/06-filesystem-basics.pdf) (slides)
     + [Shell Basics](../slides/07-shell-basics.pdf) (slides)
     + [Git Basics](../slides/08-git-basics.pdf) (slides)
 - :microscope: __Lab__:
     + [Command Line Basics](../labs/lab03-command-line-basics.md)
-- :books: __Reading__:
-    + Read sections 4 to 9 in Part I [Installation](http://happygitwithr.com/installation-pain.html) from _Happy Git and GitHub for the useR_ by Jenny Bryan et al.
 - :pill: __Vitamins__:
     + [The Unix Shell](http://swcarpentry.github.io/shell-novice/) lessons 1-3 (by Software Carpentry).
     + [Linux Tutorial](https://ryanstutorials.net/linuxtutorial/) lessons 1-5 (by Ryan Chadwick).
+- :books: __Reading__:
+    + Read sections 4 to 9 in Part I [Installation](http://happygitwithr.com/installation-pain.html) from _Happy Git and GitHub for the useR_ by Jenny Bryan et al.
 - :mag: __Cheat sheet__:
     + [command line cheat sheet](../cheatsheets/command-line-cheatsheet.pdf)
     + [git cheat sheet](../cheatsheets/git-cheatsheet.pdf)
@@ -131,9 +132,10 @@ graphs with `"ggplot2"`.
     + [Introduction to the R package `"dplyr"`](../slides/12-dplyr-introduction.pdf) (slides by Hadley Wickham)
     + [Introduction to `"dplyr"`](../tutorials/05-intro-to-dplyr.md) (tutorial)
     + [Introduction to the R package `"ggplot2"`](../slides/13-grammar-graphics.pdf) (slides)
-    + ["ggplot2" lecture](../slides/14-ggplot-lecture.pdf) (slides by Karthik Ram)
 - :microscope: __Lab__:
     + [Getting started with dplyr and ggplot2](../labs/lab05-dplyr-ggplot-basics.md)
+- :pill: __Vitamins__:
+    + ["ggplot2" lecture](../slides/14-ggplot-lecture.pdf) (slides by Karthik Ram)
 - :books: __Reading__:
     + [Introduction to dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) introductory vignette by Hadley Wickham
 - :mag: __Cheat sheet__:
@@ -144,53 +146,39 @@ graphs with `"ggplot2"`.
 -----
 
 
-## 6. More Wrangling, Graphics (part 2) and PCA
+## 6. Programming Basics for data analysis (part 1)
 
 - :calendar: __Dates__: Feb 26-Mar 02
-- :pushpin: __Topics__: More `"dplyr"`, `"ggplot2"`, and file structure
-- :book: __Lecture__:
-    + Data pipelines in `"dplyr"`
-    + [Mini project](https://docs.google.com/presentation/d/e/2PACX-1vTMRMIlfZM01jAzaEyrbdar-Qxqips_KZii5hM7Ef90h1gMcDL4APl5LpCYlIQGoBEJNUL6CFrXHckp/pub?start=false&loop=false&delayms=3000) (slides)
-    + [Introduction to PCA](../slides/15-principal-components1.pdf) (slides) and live demo.
-+ :microscope: __Lab__:
-    + [More dplyr, ggplot2, and files' stuff](../labs/lab06-more-dplyr-ggplot.md)
-+ :books: __Reading__: 
-    + [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf) by Hadley Wickham.
-
-
------
-
-
-## 7. Programming Basics for data analysis (part 1)
-
-- :calendar: __Dates__: Mar 05-09
 - :pushpin: __Topics__: Basics of Functions, R expressions, and conditionals.
 - :book: __Lecture__:
     + [Introduction to functions](../tutorials/06-intro-to-functions.md) (tutorial)
     + [Introduction to R expressions and conditionals](../tutorials/07-intro-to-expressions-conditionals.md) (tutorial)
 - :microscope: __Lab__:
-    + [Getting started with functions and conditionals](../labs/lab07-simple-functions.md)
+    + [Getting started with functions and conditionals](../labs/lab06-simple-functions.md)
 - :books: __Reading__: 
-    + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) from _R for Data Science_ by Grolemund and Wickham.
-- :mortar_board: __MIDTERM 1__: Fri Mar-09
+    + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) from _R for Data Science_ (by Grolemund and Wickham).
+- :mortar_board: __MIDTERM 1__: Friday Mar-09
 
 
 -----
 
 
+## 7. Programming Basics for data analysis (part 2)
 
-## 8. Programming Basics for data analysis (part 2)
-
-- :calendar: __Dates__: Mar 12-16
+- :calendar: __Dates__: Mar 05-09
 - :pushpin: __Topics__: Basics of loops, and more functions.
 - :book: __Lecture__:
     + [Introduction to loops](../tutorials/08-intro-to-loops.md) (tutorial)
     + [More about functions](../tutorials/09-more-functions.md) (tutorial)
 - :microscope: __Lab__: 
-    + [Getting started with loops](../labs/lab08-simple-loops.md)
-    + [Practice Programming Basics](../hws/practice-programming-basics.pdf) (exercises)
+    + [Getting started with loops](../labs/lab07-simple-loops.md)
 - :books: __Reading__:
-    + [chapter 21: Iteration](http://r4ds.had.co.nz/iteration.html) from _R for Data Science_ by Grolemund and Wickham.
+    + [chapter 21: Iteration](http://r4ds.had.co.nz/iteration.html) from _R for Data Science_ (by Grolemund and Wickham).
 
 
 -----
+
+
+## 8. 
+
+- :calendar: __Dates__: Mar 12-16
