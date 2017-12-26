@@ -1,5 +1,5 @@
 ---
-title: "Lab 8: Simple Loops"
+title: "Lab 7: Simple Loops"
 subtitle: "Stat 133, Spring 2018"
 author: "Gaston Sanchez"
 output: github_document
@@ -118,14 +118,14 @@ Write a for loop to compute the following two series. Your loop should start at 
 different values for $n$. And store each k-th term at each iteration.
 Does the series converge as $n$ increase?
 
-![series1](lab08-images/sum_series1.png)
+![series1](lab07-images/sum_series1.png)
 
 $$
 \sum_{k=0}^{n} \frac{1}{2^k} = 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \dots + \frac{1}{2^n}
 $$
 
 
-![series2](lab08-images/sum_series2.png)
+![series2](lab07-images/sum_series2.png)
 
 $$
 \sum_{k=0}^{n} \frac{1}{9^k} =1 + \frac{1}{9} + \frac{1}{81} + \dots + \frac{1}{9^n}
@@ -136,7 +136,7 @@ $$
 
 Write a for loop to compute the following arithmetic series $a_n = a_1 + (n-1)d$ when $a_1 = 3$, and $d = 3$. For instance: $3 + 6 + 12 + 24 + \dots$.
 
-![arithmetic series](lab08-images/arith_series.png)
+![arithmetic series](lab07-images/arith_series.png)
 
 $$
 a_n = a_1 + (n-1)d
@@ -152,7 +152,7 @@ Does the series converge as $n$ increase?
 A sequence such as $3, 6, 12, 24, 48$ is an example of a geometric sequence. 
 In this type of sequence, the $n$-th term is obtained as: 
 
-![geometric sequence](lab08-images/geo_seq.png)
+![geometric sequence](lab07-images/geo_seq.png)
 
 $$
 a_n = a_1 \times r^{n-1}
@@ -174,7 +174,7 @@ increase?
 
 Consider the following series that is used to approximate the function $sin(x)$:
 
-![sine approximation](lab08-images/sine_series.png)
+![sine approximation](lab07-images/sine_series.png)
 
 $$
 sin(x) \approx x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \dots
@@ -303,7 +303,7 @@ reduce(898128000)
 The average of $n$ numbers $x_1, x_2, \dots, x_n$ is given by the following 
 formula:
 
-![arithmetic mean](lab08-images/arith_mean.png)
+![arithmetic mean](lab07-images/arith_mean.png)
 
 $$
 \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i = \frac{x_1 + x_2 + \dots + x_n}{n}
@@ -318,7 +318,7 @@ implement the arithmetic mean of the vector `x = 1:100`
 The sample standard deviation of a list of $n$ numbers $x_1, x_2, \dots, x_n$ 
 is given by the following formula:
 
-![standard deviation](lab08-images/std_dev.png)
+![standard deviation](lab07-images/std_dev.png)
 
 $$
 SD = \sqrt{ \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2 }
@@ -333,7 +333,7 @@ implement the sample standard deviation of the vector `x = 1:100`
 The geometric mean of $n$ numbers $x_1, x_2, \dots, x_n$ is given by the 
 following formula:
 
-![geometric mean](lab08-images/geom_mean.png)
+![geometric mean](lab07-images/geom_mean.png)
 
 $$
 \bar{x} = \left ( \prod_{i=1}^{n} x_i \right )^{1/n}
@@ -439,7 +439,7 @@ last = c('S', 'A', 'N', 'C', 'H', 'E', 'Z')
 ```
 
 
-__Your turn:__ Assuming that you alredy created the objects listed above, 
+__Your turn:__ Assuming that you already created the objects listed above, 
 now create an R list `strings` like this:
 
 ```{r}

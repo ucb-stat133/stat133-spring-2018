@@ -1,4 +1,4 @@
-Lab 8: Simple Loops
+Lab 7: Simple Loops
 ================
 Gaston Sanchez
 
@@ -92,13 +92,13 @@ Summation Series
 
 Write a for loop to compute the following two series. Your loop should start at step *k* = 0 and stop at step *n*. Test your code with different values for *n*. And store each k-th term at each iteration. Does the series converge as *n* increase?
 
-![series1](lab08-images/sum_series1.png)
+![series1](lab07-images/sum_series1.png)
 
 $$
 \\sum\_{k=0}^{n} \\frac{1}{2^k} = 1 + \\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\dots + \\frac{1}{2^n}
 $$
 
-![series2](lab08-images/sum_series2.png)
+![series2](lab07-images/sum_series2.png)
 
 $$
 \\sum\_{k=0}^{n} \\frac{1}{9^k} =1 + \\frac{1}{9} + \\frac{1}{81} + \\dots + \\frac{1}{9^n}
@@ -108,7 +108,7 @@ $$
 
 Write a for loop to compute the following arithmetic series *a*<sub>*n*</sub> = *a*<sub>1</sub> + (*n* − 1)*d* when *a*<sub>1</sub> = 3, and *d* = 3. For instance: 3 + 6 + 12 + 24 + ….
 
-![arithmetic series](lab08-images/arith_series.png)
+![arithmetic series](lab07-images/arith_series.png)
 
 *a*<sub>*n*</sub> = *a*<sub>1</sub> + (*n* − 1)*d*
 
@@ -118,7 +118,7 @@ Test your code with different values for *n*. And store each n-th term at each i
 
 A sequence such as 3, 6, 12, 24, 48 is an example of a geometric sequence. In this type of sequence, the *n*-th term is obtained as:
 
-![geometric sequence](lab08-images/geo_seq.png)
+![geometric sequence](lab07-images/geo_seq.png)
 
 *a*<sub>*n*</sub> = *a*<sub>1</sub> × *r*<sup>*n* − 1</sup>
 
@@ -133,7 +133,7 @@ Sine Approximation
 
 Consider the following series that is used to approximate the function *s**i**n*(*x*):
 
-![sine approximation](lab08-images/sine_series.png)
+![sine approximation](lab07-images/sine_series.png)
 
 $$
 sin(x) \\approx x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots
@@ -289,7 +289,7 @@ Average
 
 The average of *n* numbers *x*<sub>1</sub>, *x*<sub>2</sub>, …, *x*<sub>*n*</sub> is given by the following formula:
 
-![arithmetic mean](lab08-images/arith_mean.png)
+![arithmetic mean](lab07-images/arith_mean.png)
 
 $$
 \\bar{x} = \\frac{1}{n} \\sum\_{i=1}^{n} x\_i = \\frac{x\_1 + x\_2 + \\dots + x\_n}{n}
@@ -302,7 +302,7 @@ Standard Deviation
 
 The sample standard deviation of a list of *n* numbers *x*<sub>1</sub>, *x*<sub>2</sub>, …, *x*<sub>*n*</sub> is given by the following formula:
 
-![standard deviation](lab08-images/std_dev.png)
+![standard deviation](lab07-images/std_dev.png)
 
 $$
 SD = \\sqrt{ \\frac{1}{n-1} \\sum\_{i=1}^{n} (x\_i - \\bar{x})^2 }
@@ -315,7 +315,7 @@ Geometric Mean
 
 The geometric mean of *n* numbers *x*<sub>1</sub>, *x*<sub>2</sub>, …, *x*<sub>*n*</sub> is given by the following formula:
 
-![geometric mean](lab08-images/geom_mean.png)
+![geometric mean](lab07-images/geom_mean.png)
 
 $$
 \\bar{x} = \\left ( \\prod\_{i=1}^{n} x\_i \\right )^{1/n}
@@ -395,7 +395,7 @@ Test your function with the following character vectors:
 -   a vector `first` with letters for your first name, e.g. `c('G', 'A', 'S', 'T', 'O', 'N')`
 -   a vector `last` for your last name, e.g. `c('S', 'A', 'N', 'C', 'H', 'E', 'Z')`
 
-**Your turn:** Assuming that you alredy created the objects listed above, now create an R list `strings` like this:
+**Your turn:** Assuming that you already created the objects listed above, now create an R list `strings` like this:
 
 ``` r
 # use your own 'first' and 'last' objects

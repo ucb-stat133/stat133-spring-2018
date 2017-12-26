@@ -1,5 +1,5 @@
 ---
-title: "Lab 7: Simple Functions and Conditionals"
+title: "Lab 6: Simple Functions and Conditionals"
 subtitle: "Stat 133, Spring 2018"
 author: "Gaston Sanchez"
 output: github_document
@@ -16,7 +16,7 @@ urlcolor: blue
 > - Use conditionals if-then-else
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, fig.path = 'lab07-images/')
+knitr::opts_chunk$set(echo = TRUE, fig.path = 'lab06-images/')
 ```
 
 ------

@@ -1,4 +1,4 @@
-Lab 7: Simple Functions and Conditionals
+Lab 6: Simple Functions and Conditionals
 ================
 Gaston Sanchez
 
@@ -296,7 +296,7 @@ y_values <- dnorm(x_values, mean = 0, sd = 2)
 plot(x_values, y_values, las = 1, type = "l", lwd = 2)
 ```
 
-![](lab07-images/gaussian_plot-1.png)
+![](lab06-images/gaussian_plot-1.png)
 
 Your turn:
 
@@ -331,7 +331,7 @@ abline(h = 0, v = 0, col = '#888888aa', lwd = 1.5)
 title(main = expression(paste(f(x), ' = ', x^2, (x - 1))))
 ```
 
-![](lab07-images/polynomial_plot-1.png)
+![](lab06-images/polynomial_plot-1.png)
 
 Write functions and graph the following polynomials in the x-axis interval -4 to 4:
 
