@@ -3,9 +3,9 @@
 - __Notes__:
     + Tentative calendar (weekly topics), subject to changes depending on 
     the pace of the course.
+    + Lecture (:book:) involves supporting material discussed in class.
     + Vitamins (:pill:) involve coding examples that you should practice on your own.
     + Reading (:books:) is material that you should review on your own.
-    + Lecture (:book:) involves supporting material discussed in class.
 
 
 -----
@@ -38,11 +38,11 @@
     + Before you start: "Mise en place"
     + [First contact with R](../tutorials/01-intro-to-R.md) (tutorial)
     + [Intro to Rmd files](../tutorials/02-intro-to-Rmd-files.md) (tutorial)
-- :microscope: __Lab__:
-    + [Getting started with R and RStudio](../labs/lab01-R-basics.md)
 - :pill: __Vitamins__:
     + [www.markdowntutorial.com](http://www.markdowntutorial.com)
     + [Markdown tutorial](http://commonmark.org/help/tutorial) by CommonMark
+- :microscope: __Lab__:
+    + [Getting started with R and RStudio](../labs/lab01-R-basics.md)
 - :books: __Reading__:
     + [Introduction to R Markdown](http://rmarkdown.rstudio.com/lesson-1.html) by RStudio
 - :mag: __Cheat sheet__: 
@@ -63,12 +63,12 @@
     + [Data Types and Vectors](../slides/03-R-vector-types.pdf) (slides)
     + [Arrays and Factors](../slides/04-arrays-factors.pdf) (slides)
     + [Base Graphics](../slides/05-base-graphics.pdf) (slides)
-- :microscope: __Lab__:
-    + [Getting started with vectors, factors, and lists](../labs/lab02-vector-basics.md)
 - :pill: __Vitamins__:
     + [Intro to vectors](../tutorials/03-intro-to-vectors.md) (tutorial)
+- :microscope: __Lab__:
+    + [Getting started with vectors, factors, and lists](../labs/lab02-vector-basics.md)
 - :books: __Reading__:
-    + [chapter 20: Vectors](http://r4ds.had.co.nz/vectors.html) from _R for Data Science_ by Grolemund and Wickham.
+    + [chapter 20: Vectors](http://r4ds.had.co.nz/vectors.html) from _R for Data Science_ (by Grolemund and Wickham)
 - :mag: __Cheat sheet__: 
     + [Base R](../cheatsheets/base-r-cheatsheet.pdf)
 - :large_blue_circle: __WARM-UP 2__:
@@ -87,11 +87,11 @@
     + [Filesystem Basics](../slides/06-filesystem-basics.pdf) (slides)
     + [Shell Basics](../slides/07-shell-basics.pdf) (slides)
     + [Git Basics](../slides/08-git-basics.pdf) (slides)
+- :pill: __Vitamins__:
+    + [The Unix Shell](http://swcarpentry.github.io/shell-novice/) lessons 1-3 (by Software Carpentry)
+    + [Linux Tutorial](https://ryanstutorials.net/linuxtutorial/) lessons 1-5 (by Ryan Chadwick)
 - :microscope: __Lab__:
     + [Command Line Basics](../labs/lab03-command-line-basics.md)
-- :pill: __Vitamins__:
-    + [The Unix Shell](http://swcarpentry.github.io/shell-novice/) lessons 1-3 (by Software Carpentry).
-    + [Linux Tutorial](https://ryanstutorials.net/linuxtutorial/) lessons 1-5 (by Ryan Chadwick).
 - :books: __Reading__:
     + Read sections 4 to 9 in Part I [Installation](http://happygitwithr.com/installation-pain.html) from _Happy Git and GitHub for the useR_ by Jenny Bryan et al.
 - :mag: __Cheat sheet__:
@@ -102,28 +102,30 @@
 -----
 
 
-## 4. Basics of Tabular Data
+## 4. Basics of Tabular Data, and PCA
 
 - :calendar: __Dates__: Feb 12-16
 - :pushpin: __Topics__: Data Tables, typical storage formats, and relation with data frames.
 - :book: __Lecture__:
     + [Data Tables](../slides/09-data-tables.pdf) (slides)
     + [Importing Tables in R](../slides/10-importing-tables.pdf) (slides)
-    + [Data Frames](../slides/11-data-frame-basics.pdf) (slides)
+    + [Principal Component Analysis](../tutorials/06-principal-components.md) (tutorials)
+- :pill: __Vitamins__:
+    + [Basic manipulation of Data Frames](../slides/11-data-frame-basics.pdf) (slides)
 - :microscope: __Lab__:
-    + [Basic manipulation of data frames](../labs/lab04-data-frame-basics.md)
+    + [Getting started with data frames](../labs/lab04-data-frame-basics.md)
 - :books: __Reading__:
     + [Organizing data in spreadsheets](http://kbroman.org/dataorg/) by Karl Broman
 - :mag: __Cheat sheet__:
     + [Data import cheat sheet](../cheat-sheets/data-import-cheatsheet.pdf)
 - :large_blue_circle: __HW 1__: due Feb-23
-    + [More Vectors](../hws/hw01-more-vectors.pdf)
- 
+    + More Vectors (coming soon)
+
 
 -----
 
 
-## 5. Wrangling and Exploring Tables (part 1)
+## 5. Wrangling and Exploring Tables
 
 - :calendar: __Dates__: Feb 19-23 _(Holiday Feb-19)_
 - :pushpin: __Topics__: Data wrangling (reshaping, aggregating) with `"dplyr"`, and 
@@ -132,10 +134,10 @@ graphs with `"ggplot2"`.
     + [Introduction to the R package `"dplyr"`](../slides/12-dplyr-introduction.pdf) (slides by Hadley Wickham)
     + [Introduction to `"dplyr"`](../tutorials/05-intro-to-dplyr.md) (tutorial)
     + [Introduction to the R package `"ggplot2"`](../slides/13-grammar-graphics.pdf) (slides)
-- :microscope: __Lab__:
-    + [Getting started with dplyr and ggplot2](../labs/lab05-dplyr-ggplot-basics.md)
 - :pill: __Vitamins__:
     + ["ggplot2" lecture](../slides/14-ggplot-lecture.pdf) (slides by Karthik Ram)
+- :microscope: __Lab__:
+    + [Getting started with dplyr and ggplot2](../labs/lab05-dplyr-ggplot-basics.md)
 - :books: __Reading__:
     + [Introduction to dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) introductory vignette by Hadley Wickham
 - :mag: __Cheat sheet__:
@@ -156,8 +158,7 @@ graphs with `"ggplot2"`.
 - :microscope: __Lab__:
     + [Getting started with functions and conditionals](../labs/lab06-simple-functions.md)
 - :books: __Reading__: 
-    + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) from _R for Data Science_ (by Grolemund and Wickham).
-- :mortar_board: __MIDTERM 1__: Friday Mar-09
+    + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) from _R for Data Science_ (by Grolemund and Wickham)
 
 
 -----
@@ -173,12 +174,57 @@ graphs with `"ggplot2"`.
 - :microscope: __Lab__: 
     + [Getting started with loops](../labs/lab07-simple-loops.md)
 - :books: __Reading__:
-    + [chapter 21: Iteration](http://r4ds.had.co.nz/iteration.html) from _R for Data Science_ (by Grolemund and Wickham).
+    + [chapter 21: Iteration](http://r4ds.had.co.nz/iteration.html) from _R for Data Science_ (by Grolemund and Wickham)
+- :mortar_board: __MIDTERM 1__: Friday Mar-09
 
 
 -----
 
 
-## 8. 
+## 8. Manipulating Character Strings and Testing Functions
 
 - :calendar: __Dates__: Mar 12-16
+- :pushpin: __Topics__: Introduction to character strings, basic manipulation of strings, 
+and testing functions.
+- :book: __Lecture__:
+    + [String Basics](../slides/17-strings-basics.pdf) (slides)
+    + [Intro to Strings](../tutorials/12-intro-to-strings.md) (tutorial)
+    + [Getting started with testing](../papers/testthat-wickham.pdf) by Wickham
+- :pill: __Vitamins__:
+    + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
+- :microscope: __Lab__: 
+    + [Getting started with strings](../labs/lab08-strings-basics.md)
+- :books: __Reading__:
+    + [chapter 14: Strings](http://r4ds.had.co.nz/strings.html) from _R for Data Science_ (by Grolemund and Wickham)
+
+
+-----
+
+
+## 9. Regular Expressions (part 1)
+
+- :calendar: __Dates__: Mar 19-23
+- :pushpin:  __Topics__: Introduction to Regular Expressions.
+- :book: __Lecture__:
+    + [Introduction to regular expressions](../tutorials/13-intro-to-regex.md)
+    + [Regexpal](http://regexpal.com.s3-website-us-east-1.amazonaws.com/) tester tool.
+- :pill: __Vitamins__:
+    + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
+- :microscope: __Lab__:
+    + TBD
++ __Reading__:
+    + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
+- :mag: __Cheat sheet__:
+    + [Regular Expressions cheat sheet](../cheat-sheets/regular-expressions-cheatsheet.pdf)
+
+
+-----
+
+
+## 10. Spring Break
+
+- :calendar: __Dates__: Mar 26-30
+- :battery: (Re)charge your batteries!
+
+
+-----
