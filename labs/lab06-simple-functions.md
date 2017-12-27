@@ -12,6 +12,75 @@ Gaston Sanchez
 
 ------------------------------------------------------------------------
 
+Introduction
+------------
+
+In this lab you will practice writing simple functions, and some basic examples to make sure that the functions work as expected. Later in the course we will see how to write assertions (i.e. tests) for your functions in a more formal way.
+
+In addition to writing the functions, you should also practice documenting your functions. Writing this type of documentation should become second nature. To do this, include roxygen comments such as:
+
+-   `#' @title Name of your function`
+-   `#' @description What the function does`
+-   `#' @param x input(s)`
+-   `#' @return output`
+
+### Before you start ...
+
+If you use an `Rmd` to write narrative and code for this practice, you must include a code chunk at the top of your file like the one in the following screen capture:
+
+<img src="lab06-images/error-true.png" width="80%" style="display: block; margin: auto;" />
+
+By setting the global option `error = TRUE` you avoid the knitting process to be stopped in case a code chunk generates an error.
+
+Since you willl be writing a couple of functions with `stop()` statements, it is essential that you set up `error = TRUE`, otherwise `"knitr"` will stop knitting your `Rmd` if it encounters an error.
+
+### Toy Example
+
+Here's an example of how to write a function with its documentation:
+
+``` r
+#' @title area of rectangle
+#' @description calculates the area of a rectangle
+#' @param len length of the rectangle (numeric)
+#' @param wid width of the rectangle (numeric)
+#' @return computed area
+rect_area <- function(len = 1, wid = 1) {
+  if (len < 0) {
+    stop("len must be positive")
+  }
+  if (wid < 0) {
+    stop("wid must be positive")
+  }
+  area <- len * wid
+  return(area)
+}
+```
+
+Some tests:
+
+``` r
+# default
+rect_area()
+```
+
+    ## [1] 1
+
+``` r
+# len=2, wid=3
+rect_area(len = 2, wid = 3)
+```
+
+    ## [1] 6
+
+``` r
+# bad len
+rect_area(len = -2, wid = 3)
+```
+
+    ## Error in rect_area(len = -2, wid = 3): len must be positive
+
+------------------------------------------------------------------------
+
 Simple Math Functions
 ---------------------
 
@@ -20,12 +89,7 @@ Consider the following mathematical functions:
 -   *f*(*x*)=*x*<sup>2</sup>
 -   *g*(*x*)=2*x* + 5
 
-Write two functions `f()` and `g()` based on the previous equations. Include roxygen comments to document your functions:
-
--   `#' @title Name of your function`
--   `#' @description What the function does`
--   `#' @param x input(s)`
--   `#' @return output`
+Write two functions `f()` and `g()` based on the previous equations.
 
 ``` r
 # your function f()
