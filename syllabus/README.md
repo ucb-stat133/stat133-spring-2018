@@ -109,7 +109,7 @@
 - :book: __Lecture__:
     + [Data Tables](../slides/09-data-tables.pdf) (slides)
     + [Importing Tables in R](../slides/10-importing-tables.pdf) (slides)
-    + [Principal Component Analysis](../tutorials/06-principal-components.md) (tutorials)
+    + [Principal Component Analysis](../tutorials/06-principal-components.md) (tutorial)
 - :pill: __Vitamins__:
     + [Basic manipulation of Data Frames](../slides/11-data-frame-basics.pdf) (slides)
 - :microscope: __Lab__:
@@ -225,6 +225,58 @@ and testing functions.
 
 - :calendar: __Dates__: Mar 26-30
 - :battery: (Re)charge your batteries!
+
+
+-----
+
+
+## 11. Random Numbers and Simulations
+
+- :calendar: __Dates__: Apr 02-06
+- :pushpin: __Topics__: TBD
+- :book: __Lecture__:
+
+
+-----
+
+
+## 12. Shiny Apps
+
+- :calendar: __Dates__: Apr 09-13
+- :pushpin: __Topics__: TBD
+- :book: __Lecture__:
+
+
+-----
+
+
+## 13. R packaging
+
+- :calendar: __Dates__: Apr 16-20
+- :pushpin: __Topics__: TBD
+- :book: __Lecture__:
+
+
+-----
+
+
+## 14. R Packaging
+
+- :calendar: __Dates__: Apr 23-27
+- :pushpin: __Topics__: TBD
+- :book: __Lecture__:
+
+
+-----
+
+
+## 15. RRR Week
+
+- :calendar: __Dates__: Apr 30-May 04
+- :pushpin: __Topics__: Prepare for final examination
+- :book: __Lecture__:
+    + No lecture. Instructor will hold OH (in 309 Evans)
+- :mortar_board: __FINAL__: TBA
 
 
 -----
