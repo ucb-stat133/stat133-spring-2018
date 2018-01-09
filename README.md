@@ -6,7 +6,7 @@ __Statistics 133: Concepts in Computing with Data__ at UC Berkeley.
 
 - __Instructor:__ [Gaston Sanchez](http://gastonsanchez.com), gasigiri [at] berkeley.edu
 - __Class Time:__ MWF 8-9am in [Dwinelle 155](http://www.berkeley.edu/map?dwinelle)
-- __Session Dates:__ 01/23/18 - 05/04/18
+- __Session Dates:__ 01/17/18 - 05/04/18
 - __Code #:__ 30844
 - __Units:__ 3 (more info [here](http://classes.berkeley.edu/content/2018-spring-stat-133-001-lec-001))
 - __Office Hours:__ MWF 1-2pm 309 Evans
