@@ -18,9 +18,10 @@
 - :file_folder: __Notes__:
     + [About the Course](../slides/00-about-course.pdf) (slides)
     + [Introduction: Big Picture](../slides/01-big-picture.pdf) (slides)
+- :book: __Reading__:
+    + [Course policies](policies.md), and [FAQs](faqs.md)
 - :microscope: __Lab__: No lab
 - :newspaper: __Misc__:
-    + [Course policies](policies.md), and [FAQs](faqs.md)
     + [What is Data Science?](../papers/what-is-data-science.pdf)
 - :speaker: __To Do__: 
     + Install [__R__](https://cran.cnr.berkeley.edu/) 
