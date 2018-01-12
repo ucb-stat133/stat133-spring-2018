@@ -49,9 +49,9 @@ others might have the same question and we don't need to answer them
 multiple times.
 
 
-### 4. Piazza is not Office Hours. 5 minute-test.
+### 4. Piazza is not Office Hours. 3 minute-test.
 
-If you think your questions may take more than 5 minutes to answer, 
+If you think your questions may take more than 3 minutes to answer, 
 please come to office hours or homework parties instead.
 
 
