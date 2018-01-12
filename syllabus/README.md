@@ -63,11 +63,12 @@
 - :file_folder: __Notes__:
     + [Data Types and Vectors](../slides/03-R-vector-types.pdf) (slides)
     + [Arrays and Factors](../slides/04-arrays-factors.pdf) (slides)
-    + [Base Graphics](../slides/05-base-graphics.pdf) (slides)
+    + [Base Graphics I](../slides/06-base-graphics1.pdf) (slides)
+    + [Base Graphics II](../slides/07-base-graphics2.pdf) (slides)
 - :book: __Reading__:
     + [Intro to vectors](../tutorials/03-intro-to-vectors.md) (tutorial)
 - :microscope: __Lab__:
-    + [Getting started with vectors, factors, and lists](../labs/lab02-vector-basics.md)
+    + [Getting started with vectors and factors](../labs/lab02-vector-basics.md)
 - :newspaper: __Misc__:
     + [chapter 20: Vectors](http://r4ds.had.co.nz/vectors.html) from _R for Data Science_ (by Grolemund and Wickham)
 - :bulb: __Cheat sheet__: 
