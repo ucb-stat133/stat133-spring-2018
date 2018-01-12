@@ -78,7 +78,9 @@ While writing the course policies, I've tried to be as comprehensive and clear a
     + __full credit__ = 100% correct.
 - In case there is a cascading error, you don't need to penalize multiple times. Just indicate the source of the error, and then give full credit for the other dependent parts as long as your work and code are consistent.
 - To submit your grade, use the _Assignment Comments_ section (associated to the corresponding assignment on bCourses) to enter the grade for each part justified with a comment, and a total score.
-![](../images/assignment-comments-bcourses.png)
+
+<img src="../images/assignment-comments-bcourses.png" width="600" height="400">
+
 - Note: If you are really confused about how to grade a particular problem, you should post on Piazza. This is not supposed to be a stressful process.
 - Your self-grades will be due three days after the homework deadline at 11:59 PM sharp.
 - If you don't enter a proper grade by this deadline, you are giving yourself a zero on that assignment.
