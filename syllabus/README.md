@@ -3,9 +3,9 @@
 - __Notes__:
     + Tentative calendar (weekly topics), subject to changes depending on 
     the pace of the course.
-    + Lecture (:file_folder:) involves supporting material discussed in class.
-    + Vitamins (:book:) involve coding examples that you should practice on your own.
-    + Reading (:newspaper:) is material that you should review on your own.
+    + Notes (:file_folder:) involves material discussed in class.
+    + Reading (:book:) involve material not covered in lecture, as well as coding examples that you should practice on your own.
+    + Misc (:newspaper:) is supporting material that is worth taking a look at.
 
 
 -----
