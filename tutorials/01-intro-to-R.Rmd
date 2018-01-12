@@ -3,8 +3,6 @@ title: "First contact with R and RStudio"
 subtitle: "Stat 133, Spring 2018"
 author: "Gaston Sanchez"
 output: github_document
-fontsize: 11pt
-urlcolor: blue
 ---
 
 > ### Learning Objectives:
