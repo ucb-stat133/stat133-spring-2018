@@ -4,7 +4,7 @@
     + Tentative calendar (weekly topics), subject to changes depending on 
     the pace of the course.
     + Notes (:file_folder:) involves material discussed in class.
-    + Reading (:book:) involve material not covered in lecture, as well as coding examples that you should practice on your own.
+    + Reading (:book:) involves material that expands lecture topics, as well as coding examples that you should practice on your own.
     + Misc (:newspaper:) is supporting material that is worth taking a look at.
 
 
