@@ -58,10 +58,10 @@
 -----
 
 
-## 2. Arrays, and Lists
+## 2. Arrays, Lists, and Base Graphics
 
 - :card_index: __Dates__: Jan 29-Feb 02
-- :paperclip: __Topics__: Review of dta structures like arrays and lists. Discussion of the traditional _base_ graphics approach that is based on R vectors.
+- :paperclip: __Topics__: Review of more data structures like arrays and lists. Discussion of the traditional _base_ graphics approach that is based on R vectors.
 - :file_folder: __Notes__:
     + [Arrays and Factors](../slides/04-arrays-factors.pdf) (slides)
     + [Lists](../slides/05-lists.pdf) (slides)
@@ -87,9 +87,10 @@
 - :card_index: __Dates__: Feb 05-09
 - :paperclip: __Topics__: Data Analysis Projects (DACs) are made of files and directories. Therefore, we need to review some fundamental concepts such as the file-system, command line, and basics of version control systems.
 - :file_folder: __Notes__:
-    + [Filesystem Basics](../slides/06-filesystem-basics.pdf) (slides)
-    + [Shell Basics](../slides/07-shell-basics.pdf) (slides)
-    + [Git Basics](../slides/08-git-basics.pdf) (slides)
+    + [Filesystem Basics](../slides/08-filesystem-basics.pdf) (slides)
+    + [Shell Basics](../slides/09-shell-basics.pdf) (slides)
+    + [Working with files](../slides/10-working-with-files.pdf) (slides)
+    + [Git Basics](../slides/11-git-basics.pdf) (slides)
 - :book: __Reading__:
     + [The Unix Shell](http://swcarpentry.github.io/shell-novice/) lessons 1-3 (by Software Carpentry)
     + [Linux Tutorial](https://ryanstutorials.net/linuxtutorial/) lessons 1-5 (by Ryan Chadwick)
@@ -108,17 +109,19 @@
 ## 4. Basics of Tabular Data, and PCA
 
 - :card_index: __Dates__: Feb 12-16
-- :paperclip: __Topics__: Data Tables, typical storage formats, and relation with data frames.
+- :paperclip: __Topics__: Tables are the most common form in which data is stored, handled, and manipulated. Consequently, we'll talk about the typical storage formats of tabular data, and the relationship between tables and R data frames. In addition, we'll cover Principal Components Analysis (PCA) which is an unsupervised learning technique for summarizing the systematic structure of a table consisting of quantitative variables.
 - :file_folder: __Notes__:
-    + [Data Tables](../slides/09-data-tables.pdf) (slides)
-    + [Importing Tables in R](../slides/10-importing-tables.pdf) (slides)
-    + [Principal Component Analysis](../tutorials/06-principal-components.md) (tutorial)
+    + [Data Tables](../slides/12-data-tables.pdf) (slides)
+    + [Importing Tables in R](../slides/13-importing-tables.pdf) (slides)
+    + [Principal Component Analysis 1](../slides/15-principal-components1.pdf) (slides)
+    + [Principal Component Analysis 2](../slides/16-principal-components2.pdf) (slides)
 - :book: __Reading__:
-    + [Basic manipulation of Data Frames](../slides/11-data-frame-basics.pdf) (slides)
+    + [Basic manipulation of Data Frames](../slides/14-data-frame-basics.pdf) (slides)
+    + [Organizing data in spreadsheets](http://kbroman.org/dataorg/) by Karl Broman
 - :microscope: __Lab__:
     + [Getting started with data frames](../labs/lab04-data-frame-basics.md)
 - :newspaper: __Misc__:
-    + [Organizing data in spreadsheets](http://kbroman.org/dataorg/) by Karl Broman
+    + [Data Import](http://r4ds.had.co.nz/data-import.html) from _R for Data Science_ (by Grolemund and Wickham)
 - :bulb: __Cheat sheet__:
     + [Data import cheat sheet](../cheat-sheets/data-import-cheatsheet.pdf)
 - :dart: __HW 1__: due Feb-23
