@@ -11,6 +11,7 @@ While writing the course policies, I've tried to be as comprehensive and clear a
 - [Labs](#labs)
 - [Homework](#homework)
 - [Assignments Grading](#assignments-grading)
+- [Piazza](#piazza)
 - [Tests](#tests)
 - [Oral Evaluation](#oral-evaluation)
 - [Learning Cooperatively](#learning-cooperatively)
@@ -86,6 +87,15 @@ While writing the course policies, I've tried to be as comprehensive and clear a
 - If you don't enter a proper grade by this deadline, you are giving yourself a zero on that assignment.
 - We will review your grade and adjust it if necessary.
 - Merely doing the homework is not enough, you must do the homework; submit it in on time; read the solutions; do the self-grade; and turn it in on time. Unless all of these steps are done, you will get a zero for that assignment.
+
+
+
+### Piazza
+
+- We will use Piazza as a Q&A forum (and for some official announcements).
+- If you have questions about anything related to the course, please post them on Piazza rather than emailing the instructor or GSIs.
+- Please do not post anything resembling a solution to a homework problem before it's due. If in doubt, you should make your post private (visible to instructors only).
+- See the [Piazza Etiquette](piazza.md) section for more on using Piazza. 
 
 
 
