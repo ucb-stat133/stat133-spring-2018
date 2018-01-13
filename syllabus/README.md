@@ -14,12 +14,14 @@
 ## 0. Course Introduction
 
 - :card_index: __Dates__: Jan 17-19
-- :paperclip: __Topics__: Introduction, policies/logistics, and course in a nutshell.
+- :paperclip: __Topics__: Introduction, course in a nutshell, and policies/logistics. Please take time to review the course policies, piazza etiquette rules, as well as the FAQs.
 - :file_folder: __Notes__:
     + [About the Course](../slides/00-about-course.pdf) (slides)
     + [Introduction: Big Picture](../slides/01-big-picture.pdf) (slides)
 - :book: __Reading__:
-    + [Course policies](policies.md), and [FAQs](faqs.md)
+    + [Course policies](policies.md)
+    + [Piazza etiquette](piazza.md)
+    + [FAQs](faqs.md)
 - :microscope: __Lab__: No lab
 - :newspaper: __Misc__:
     + [What is Data Science?](../papers/what-is-data-science.pdf)
@@ -31,14 +33,14 @@
 -----
 
 
-## 1. R Survival Skills
+## 1. R Survival Skills, Data Types, and Vectors
 
 - :card_index: __Dates__: Jan 22-26
-- :paperclip: __Topics__: "Mise en place" for data analysis projects, getting started with R, overall review of the RStudio workspace.
+- :paperclip: __Topics__: Getting started with R, overall review of the RStudio workspace. Getting to know R vectors and concepts like atomicity, vectorization, recycling, and subsetting.
 - :file_folder: __Notes__:
-    + Before you start: "Mise en place"
     + [First contact with R](../tutorials/01-intro-to-R.md) (tutorial)
     + [Intro to Rmd files](../tutorials/02-intro-to-Rmd-files.md) (tutorial)
+    + [Data Types and Vectors](../slides/03-R-vector-types.pdf) (slides)
 - :book: __Reading__:
     + [www.markdowntutorial.com](http://www.markdowntutorial.com)
     + [Markdown tutorial](http://commonmark.org/help/tutorial) by CommonMark
@@ -56,13 +58,13 @@
 -----
 
 
-## 2. Data Types, Vectors, Arrays, and Lists
+## 2. Arrays, and Lists
 
 - :card_index: __Dates__: Jan 29-Feb 02
-- :paperclip: __Topics__: Getting to know R vectors and concepts like atomicity, vectorization, recycling, and subsetting.
+- :paperclip: __Topics__: Review of dta structures like arrays and lists. Discussion of the traditional _base_ graphics approach that is based on R vectors.
 - :file_folder: __Notes__:
-    + [Data Types and Vectors](../slides/03-R-vector-types.pdf) (slides)
     + [Arrays and Factors](../slides/04-arrays-factors.pdf) (slides)
+    + [Lists](../slides/05-lists.pdf) (slides)
     + [Base Graphics I](../slides/06-base-graphics1.pdf) (slides)
     + [Base Graphics II](../slides/07-base-graphics2.pdf) (slides)
 - :book: __Reading__:
@@ -83,9 +85,8 @@
 ## 3. Housekeeping: Filesystem, Bash, Git, Github
 
 - :card_index: __Dates__: Feb 05-09
-- :paperclip: __Topics__: Fundamental low-level stuff for the rest of the course.
+- :paperclip: __Topics__: Data Analysis Projects (DACs) are made of files and directories. Therefore, we need to review some fundamental concepts such as the file-system, command line, and basics of version control systems.
 - :file_folder: __Notes__:
-    + [Lists](../slides/05-lists.pdf) (slides)
     + [Filesystem Basics](../slides/06-filesystem-basics.pdf) (slides)
     + [Shell Basics](../slides/07-shell-basics.pdf) (slides)
     + [Git Basics](../slides/08-git-basics.pdf) (slides)
