@@ -4,7 +4,7 @@ Gaston Sanchez
 
 > ### Learning Objectives
 >
-> -   Learn to how to write simple functions
+> -   Learn how to write simple functions
 > -   Get into the habit of writing simple functions
 > -   Get into the habit of documenting functions
 > -   Make sure your functions work
@@ -21,18 +21,18 @@ In addition to writing the functions, you should also practice documenting your 
 
 -   `#' @title Name of your function`
 -   `#' @description What the function does`
--   `#' @param x input(s)`
--   `#' @return output`
+-   `#' @param x input(s) of your function`
+-   `#' @return output of your function`
 
 ### Before you start ...
 
-If you use an `Rmd` to write narrative and code for this practice, you must include a code chunk at the top of your file like the one in the following screen capture:
+If you use an `Rmd` file to write narrative and code for this practice, you must include a code chunk at the top of your file like the one in the following screen capture:
 
-<img src="lab06-images/error-true.png" width="80%" style="display: block; margin: auto;" />
+<img src="lab06-images/error-true.png" width="70%" style="display: block; margin: auto;" />
 
 By setting the global option `error = TRUE` you avoid the knitting process to be stopped in case a code chunk generates an error.
 
-Since you willl be writing a couple of functions with `stop()` statements, it is essential that you set up `error = TRUE`, otherwise `"knitr"` will stop knitting your `Rmd` if it encounters an error.
+Since you willl be writing a couple of functions with `stop()` statements, it is essential that you set up `error = TRUE`, otherwise `"knitr"` will stop knitting your `Rmd` file if it encounters an error.
 
 ### Toy Example
 
@@ -89,7 +89,7 @@ Consider the following mathematical functions:
 -   *f*(*x*)=*x*<sup>2</sup>
 -   *g*(*x*)=2*x* + 5
 
-Write two functions `f()` and `g()` based on the previous equations.
+Write two functions `f()` and `g()` based on the previous equations. Don't forget to include roxygen comments to document your function!
 
 ``` r
 # your function f()
@@ -141,7 +141,7 @@ The pythagoras formula is used to compute the length of the hypotenuse, *c*, of 
 
 ![hypotenuse](https://wikimedia.org/api/rest_v1/media/math/render/svg/5fd521cee81d583ce94bf6710984cc2a9eb7c3da)
 
-Write a function `pythagoras()` that takes two arguments `a` and `b`, and returns the length of the hypotenuse:
+Write a function `pythagoras()` that takes two arguments `a` and `b`, and returns the length of the hypotenuse. Don't forget to include roxygen comments to document your function!
 
 ``` r
 # your pythagoras() function
@@ -175,7 +175,7 @@ area
 
     ## [1] 12.56637
 
-Write a function `circle_area()` that calculates the area of a circle. This function must take one argument `radius`. Give `radius` a default value of 1.
+Write a function `circle_area()` that calculates the area of a circle. This function must take one argument `radius`. Give `radius` a default value of 1. Don't forget to include roxygen comments to document your function!
 
 For example:
 
@@ -200,6 +200,7 @@ Area of a cylinder
 ------------------
 
 For a given cylinder of radius *r* and height *h* the area *A* is:
+
 *A* = 2*π**r**h* + 2*π**r*<sup>2</sup>
 
 For example. Say you have a cylinder with radius = 2, and height = 3.
@@ -246,6 +247,7 @@ Volume of a cylinder
 --------------------
 
 For a given cylinder of radius *r* and height *h* the volume *V* is:
+
 *V* = *π**r*<sup>2</sup>*h*
 
 Write a function `cylinder_volume()`, that calls `circle_area()`, to compute the volume of a cylinder. This function must take two arguments: `radius` and `height`. Give both arguments a default value of 1.
@@ -427,67 +429,6 @@ descriptive <- function() {
 
 }
 ```
-
-Binomial Formula
-----------------
-
-In [lab01](lab01-R-basics.md) you worked with the formula of the binomial probability:
-
-![binomial probability](https://wikimedia.org/api/rest_v1/media/math/render/svg/38d86cba65d40f015a2b807d2b736250805abe45)
-
-where:
-
--   *n* is the number of (fixed) trials
--   *p* is the probability of success on each trial
--   1 − *p* is the probability of failure on each trial
--   *k* is a variable that represents the number of successes out of *n* trials
--   the first term in parenthesis is not a fraction, it is the number of combinations in which *k* success can occur in *n* trials
-
-R provides the `choose()` function to compute the number of combinations:
-
-![combinations](https://wikimedia.org/api/rest_v1/media/math/render/svg/08bdf0fff474c26293414f9eb01ab4bc73ef941f)
-
-For instance, the number of combinations in which *k* = 2 success can occur in *n* = 5 trials is:
-
-``` r
-choose(n = 5, k = 2)
-```
-
-    ## [1] 10
-
-Combinations are typically expressed in terms of factorials as:
-
-![combs](https://wikimedia.org/api/rest_v1/media/math/render/svg/813f7124a61dac205542db3f8491b36cb306453a)
-
-Conveniently, R also provides the function `factorial()` to calculate the factorial of an integer:
-
-``` r
-factorial(4)
-```
-
-    ## [1] 24
-
-Your turn: write a binomial function
-------------------------------------
-
--   Use `factorial()` to create a `combinations()` function. Your function should have arguments `n` and `k`:
-
-    ``` r
-    # you should be able to call combinations() like this
-    combinations(n = 5, k = 2)
-    ```
-
--   Use your `combinations()` function to write a `binom_prob()` function that computes binomial probabilities. The arguments should be `n`, `k`, and `prob`. Here's an example of you should be able to call the function:
-
-    ``` r
-    # probability of getting 2 successes in 5 trials
-    # (assuming prob of success = 0.5)
-    binom_prob(n = 5, k = 2, prob = 0.5)
-    ```
-
--   Use `binom_prob()` to obtain the probability of getting more than 3 heads in 5 tosses with a biased coin of 35% chance of heads.
-
--   Consider rolling a fair die 10 times. Use `binom_prob()` to find the probability of getting exactly 3 sixes?
 
 ------------------------------------------------------------------------
 
