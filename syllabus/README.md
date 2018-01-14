@@ -14,7 +14,7 @@
 ## 0. Course Introduction
 
 - :card_index: __Dates__: Jan 17-19
-- :paperclip: __Topics__: Introduction, course in a nutshell, and policies/logistics. Please take time to review the course policies, piazza etiquette rules, as well as the FAQs.
+- :paperclip: __Topics__: Introduction, course in a nutshell, and policies/logistics. Please spend some time outsice class to review the course policies, piazza etiquette rules, as well as the FAQs.
 - :file_folder: __Notes__:
     + [About the Course](../slides/00-about-course.pdf) (slides)
     + [Introduction: Big Picture](../slides/01-big-picture.pdf) (slides)
@@ -36,7 +36,7 @@
 ## 1. R Survival Skills, Data Types, and Vectors
 
 - :card_index: __Dates__: Jan 22-26
-- :paperclip: __Topics__: Getting started with R, overall review of the RStudio workspace. Getting to know R vectors and concepts like atomicity, vectorization, recycling, and subsetting.
+- :paperclip: __Topics__: First things first, we begin with some basic survival skills for R, followed by an overall review of the RStudio workspace. Then we move on to discuss basic data types and their implementation in R around vectors. Likewise, we cover fundamental concepts like atomicity, vectorization, recycling, and subsetting.
 - :file_folder: __Notes__:
     + [First contact with R](../tutorials/01-intro-to-R.md) (tutorial)
     + [Intro to Rmd files](../tutorials/02-intro-to-Rmd-files.md) (tutorial)
@@ -109,7 +109,7 @@
 ## 4. Basics of Tabular Data, and PCA
 
 - :card_index: __Dates__: Feb 12-16
-- :paperclip: __Topics__: Tables are the most common form in which data is stored, handled, and manipulated. Consequently, we'll talk about the typical storage formats of tabular data, and the relationship between tables and R data frames. In addition, we'll cover Principal Components Analysis (PCA) which is an unsupervised learning technique for summarizing the systematic structure of a table consisting of quantitative variables.
+- :paperclip: __Topics__: Tables are the most common form in which data is stored, handled, and manipulated. Consequently, we need to talk about the typical storage formats of tabular data, and the relationship between tables and R data frames. In addition, we cover Principal Components Analysis (PCA) which is an unsupervised learning technique for summarizing the systematic structure of a table consisting of quantitative variables.
 - :file_folder: __Notes__:
     + [Data Tables](../slides/12-data-tables.pdf) (slides)
     + [Importing Tables in R](../slides/13-importing-tables.pdf) (slides)
@@ -137,15 +137,16 @@
 - :paperclip: __Topics__: Data wrangling (reshaping, aggregating) with `"dplyr"`, and 
 graphs with `"ggplot2"`.
 - :file_folder: __Notes__:
-    + [Introduction to the R package `"dplyr"`](../slides/12-dplyr-introduction.pdf) (slides by Hadley Wickham)
     + [Introduction to `"dplyr"`](../tutorials/05-intro-to-dplyr.md) (tutorial)
-    + [Introduction to the R package `"ggplot2"`](../slides/13-grammar-graphics.pdf) (slides)
+    + [Grammar of Graphics framework](../slides/18-grammar-graphics.pdf) (slides)
+    + Cluster Analysis
 - :book: __Reading__:
-    + ["ggplot2" lecture](../slides/14-ggplot-lecture.pdf) (slides by Karthik Ram)
+    + [`"dplyr"` tutorial](../slides/17-dplyr-tutorial.pdf) (slides by Hadley Wickham)
+    + ["ggplot2" lecture](../slides/19-ggplot-lecture.pdf) (slides by Karthik Ram)
 - :microscope: __Lab__:
     + [Getting started with dplyr and ggplot2](../labs/lab05-dplyr-ggplot-basics.md)
 - :newspaper: __Misc__:
-    + [Introduction to dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) introductory vignette by Hadley Wickham
+    + [Introduction to dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) (vignette by Hadley Wickham)
 - :bulb: __Cheat sheet__:
     + [Data transformation cheat sheet](../cheat-sheets/data-transformation-cheatsheet.pdf)
     + [Data visualization with ggplot2](../cheat-sheets/ggplot2-cheatsheet-2.1.pdf)
