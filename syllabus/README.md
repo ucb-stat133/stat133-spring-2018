@@ -43,11 +43,11 @@
     + [Data Types and Vectors](../slides/03-R-vector-types.pdf) (slides)
 - :book: __Reading__:
     + [www.markdowntutorial.com](http://www.markdowntutorial.com)
-    + [Markdown tutorial](http://commonmark.org/help/tutorial) by CommonMark
+    + [Markdown tutorial](http://commonmark.org/help/tutorial) (by CommonMark)
 - :microscope: __Lab__:
     + [Getting started with R and RStudio](../labs/lab01-R-basics.md)
 - :newspaper: __Misc__:
-    + [Introduction to R Markdown](http://rmarkdown.rstudio.com/lesson-1.html) by RStudio
+    + [Introduction to R Markdown](http://rmarkdown.rstudio.com/lesson-1.html) (by RStudio)
 - :bulb: __Cheat sheet__: 
     + [RStudio cheat sheet](../cheatsheets/rstudio-IDE-cheatsheet.pdf)
     + [R markdown cheat sheet](../cheatsheets/rmarkdown-cheatsheet-2.0.pdf)
@@ -72,7 +72,7 @@
 - :microscope: __Lab__:
     + [Getting started with vectors and factors](../labs/lab02-vector-basics.md)
 - :newspaper: __Misc__:
-    + [chapter 20: Vectors](http://r4ds.had.co.nz/vectors.html) from _R for Data Science_ (by Grolemund and Wickham)
+    + [chapter 20: Vectors](http://r4ds.had.co.nz/vectors.html) (_R for Data Science_ by Grolemund and Wickham)
 - :bulb: __Cheat sheet__: 
     + [Base R](../cheatsheets/base-r-cheatsheet.pdf)
 - :dart: __WARM-UP 2__:
@@ -97,7 +97,7 @@
 - :microscope: __Lab__:
     + [Command Line Basics](../labs/lab03-command-line-basics.md)
 - :newspaper: __Misc__:
-    + Read sections 4 to 9 in Part I [Installation](http://happygitwithr.com/installation-pain.html) from _Happy Git and GitHub for the useR_ by Jenny Bryan et al.
+    + Read sections 4 to 9 in Part I [Installation](http://happygitwithr.com/installation-pain.html) (_Happy Git and GitHub for the useR_ by Jenny Bryan et al.)
 - :bulb: __Cheat sheet__:
     + [command line cheat sheet](../cheatsheets/command-line-cheatsheet.pdf)
     + [git cheat sheet](../cheatsheets/git-cheatsheet.pdf)
@@ -117,11 +117,11 @@
     + [Principal Component Analysis 2](../slides/16-principal-components2.pdf) (slides)
 - :book: __Reading__:
     + [Basic manipulation of Data Frames](../slides/14-data-frame-basics.pdf) (slides)
-    + [Organizing data in spreadsheets](http://kbroman.org/dataorg/) by Karl Broman
+    + [Organizing data in spreadsheets](http://kbroman.org/dataorg/) (by Karl Broman)
 - :microscope: __Lab__:
     + [Getting started with data frames](../labs/lab04-data-frame-basics.md)
 - :newspaper: __Misc__:
-    + [Data Import](http://r4ds.had.co.nz/data-import.html) from _R for Data Science_ (by Grolemund and Wickham)
+    + [Data Import](http://r4ds.had.co.nz/data-import.html) (_R for Data Science_ by Grolemund and Wickham)
 - :bulb: __Cheat sheet__:
     + [Data import cheat sheet](../cheat-sheets/data-import-cheatsheet.pdf)
 - :dart: __HW 1__: due Feb-23
@@ -131,22 +131,21 @@
 -----
 
 
-## 5. Wrangling and Exploring Tables
+## 5. Transforming and Visualizing Tabular Data
 
 - :card_index: __Dates__: Feb 19-23 _(Holiday Feb-19)_
-- :paperclip: __Topics__: Data wrangling (reshaping, aggregating) with `"dplyr"`, and 
-graphs with `"ggplot2"`.
+- :paperclip: __Topics__: We continue reviewing manipulation of data frames with the _data plying_ framework provided by the package `"dplyr"`. Likewise, we review the visualization paradigm of `"ggplot2"` which based on data frames. In addition, we'll briefly introduce  cluster analysis which involves the other major unsupervised learning flavor used to find groups in data. 
 - :file_folder: __Notes__:
     + [Introduction to `"dplyr"`](../tutorials/05-intro-to-dplyr.md) (tutorial)
     + [Grammar of Graphics framework](../slides/18-grammar-graphics.pdf) (slides)
     + Cluster Analysis
 - :book: __Reading__:
-    + [`"dplyr"` tutorial](../slides/17-dplyr-tutorial.pdf) (slides by Hadley Wickham)
-    + ["ggplot2" lecture](../slides/19-ggplot-lecture.pdf) (slides by Karthik Ram)
+    + [`"dplyr"` tutorial](../slides/17-dplyr-tutorial.pdf) (by Hadley Wickham)
+    + ["ggplot2" lecture](../slides/19-ggplot-lecture.pdf) (by Karthik Ram)
 - :microscope: __Lab__:
     + [Getting started with dplyr and ggplot2](../labs/lab05-dplyr-ggplot-basics.md)
 - :newspaper: __Misc__:
-    + [Introduction to dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) (vignette by Hadley Wickham)
+    + [Introduction to dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) (by Hadley Wickham)
 - :bulb: __Cheat sheet__:
     + [Data transformation cheat sheet](../cheat-sheets/data-transformation-cheatsheet.pdf)
     + [Data visualization with ggplot2](../cheat-sheets/ggplot2-cheatsheet-2.1.pdf)
@@ -165,7 +164,7 @@ graphs with `"ggplot2"`.
 - :microscope: __Lab__:
     + [Getting started with functions and conditionals](../labs/lab06-simple-functions.md)
 - :newspaper: __Misc__: 
-    + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) from _R for Data Science_ (by Grolemund and Wickham)
+    + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) (_R for Data Science_ by Grolemund and Wickham)
 
 
 -----
@@ -181,7 +180,7 @@ graphs with `"ggplot2"`.
 - :microscope: __Lab__: 
     + [Getting started with loops](../labs/lab07-simple-loops.md)
 - :newspaper: __Misc__:
-    + [chapter 21: Iteration](http://r4ds.had.co.nz/iteration.html) from _R for Data Science_ (by Grolemund and Wickham)
+    + [chapter 21: Iteration](http://r4ds.had.co.nz/iteration.html) (_R for Data Science_ by Grolemund and Wickham)
 - :mortar_board: __MIDTERM 1__: Friday Mar-09
 
 
@@ -196,13 +195,13 @@ and testing functions.
 - :file_folder: __Notes__:
     + [String Basics](../slides/17-strings-basics.pdf) (slides)
     + [Intro to Strings](../tutorials/12-intro-to-strings.md) (tutorial)
-    + [Getting started with testing](../papers/testthat-wickham.pdf) by Wickham
+    + [Getting started with testing](../papers/testthat-wickham.pdf) (by Wickham)
 - :book: __Reading__:
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :microscope: __Lab__: 
     + [Getting started with strings](../labs/lab08-strings-basics.md)
 - :newspaper: __Misc__:
-    + [chapter 14: Strings](http://r4ds.had.co.nz/strings.html) from _R for Data Science_ (by Grolemund and Wickham)
+    + [chapter 14: Strings](http://r4ds.had.co.nz/strings.html) (_R for Data Science_ by Grolemund and Wickham)
 
 
 -----
