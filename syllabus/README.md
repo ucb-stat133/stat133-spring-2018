@@ -154,10 +154,10 @@
 -----
 
 
-## 6. Programming Basics for data analysis (part 1)
+## 6. Transition to Programming Basics for data analysis (part 1)
 
 - :card_index: __Dates__: Feb 26-Mar 02
-- :paperclip: __Topics__: Basics of Functions, R expressions, and conditionals.
+- :paperclip: __Topics__: You don’t need to be an expert programmer to be a data scientist, but learning more about programming allows you to automate common tasks, and solve new problems with greater ease. We'll discuss how to write basic functions, the notion of R expressions, and an introduction to conditionals. 
 - :file_folder: __Notes__:
     + [Introduction to functions](../tutorials/06-intro-to-functions.md) (tutorial)
     + [Introduction to R expressions and conditionals](../tutorials/07-intro-to-expressions-conditionals.md) (tutorial)
@@ -173,7 +173,7 @@
 ## 7. Programming Basics for data analysis (part 2)
 
 - :card_index: __Dates__: Mar 05-09
-- :paperclip: __Topics__: Basics of loops, and more functions.
+- :paperclip: __Topics__: In addition to writing functions to reduce duplication in your code, you also need to learn about iteration, which helps you when you need to do the same operation several times. Namely, we review control flow structures such as `for` loops, `while` loops, `repeat` loops, and the `apply` family functions.
 - :file_folder: __Notes__:
     + [Introduction to loops](../tutorials/08-intro-to-loops.md) (tutorial)
     + [More about functions](../tutorials/09-more-functions.md) (tutorial)
@@ -227,7 +227,7 @@ and testing functions.
 -----
 
 
-## 10. Spring Break
+## Spring Break
 
 - :card_index: __Dates__: Mar 26-30
 - :battery: (Re)charge your batteries!
@@ -236,7 +236,7 @@ and testing functions.
 -----
 
 
-## 11. Random Numbers and Simulations
+## 10. Random Numbers and Simulations
 
 - :card_index: __Dates__: Apr 02-06
 - :paperclip: __Topics__: TBD
@@ -246,7 +246,7 @@ and testing functions.
 -----
 
 
-## 12. Shiny Apps
+## 11. Shiny Apps
 
 - :card_index: __Dates__: Apr 09-13
 - :paperclip: __Topics__: TBD
@@ -256,7 +256,7 @@ and testing functions.
 -----
 
 
-## 13. R packaging
+## 12. R packaging
 
 - :card_index: __Dates__: Apr 16-20
 - :paperclip: __Topics__: TBD
@@ -266,7 +266,7 @@ and testing functions.
 -----
 
 
-## 14. R Packaging
+## 13. R Packaging
 
 - :card_index: __Dates__: Apr 23-27
 - :paperclip: __Topics__: TBD
@@ -276,7 +276,7 @@ and testing functions.
 -----
 
 
-## 15. RRR Week
+## 14. RRR Week
 
 - :card_index: __Dates__: Apr 30-May 04
 - :paperclip: __Topics__: Prepare for final examination
