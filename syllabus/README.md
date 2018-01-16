@@ -246,6 +246,11 @@
 - :card_index: __Dates__: Apr 02-06
 - :paperclip: __Topics__: Random numbers have many applications in science and computer programming, especially when there are significant uncertainties in a phenomenon of interest. In this part of the course we'll look at some basic problmes involving working with random numbers and creating simulations.
 - :file_folder: __Notes__:
+    + TBD
+- :book: __Reading__:
+    + TBD
+- :microscope: __Lab__:
+    + TBD
 
 
 -----
@@ -256,6 +261,11 @@
 - :card_index: __Dates__: Apr 09-13
 - :paperclip: __Topics__: Shiny apps are a nice companion to R, making it quick and simple to deliver interactive analysis and graphics on any web browser. We'll review how to create simple shiny apps to display data summaries, queries, and interactive displays.
 - :file_folder: __Notes__:
+    + TBD
+- :book: __Reading__:
+    + TBD
+- :microscope: __Lab__:
+    + TBD
 - :dart: __HW 5__: due Apr-20
     + TBD
 
@@ -268,6 +278,11 @@
 - :card_index: __Dates__: Apr 16-20
 - :paperclip: __Topics__: Packages are the fundamental units of reproducible R code. They include reusable functions, the documentation that describes how to use them, and sample data. In this part we'll start describing how to turn your code into an R package.
 - :file_folder: __Notes__:
+    + TBD
+- :book: __Reading__:
+    + TBD
+- :microscope: __Lab__:
+    + TBD
 
 
 -----
@@ -278,6 +293,11 @@
 - :card_index: __Dates__: Apr 23-27
 - :paperclip: __Topics__: Creating an R package can seem overwhelming at first. So we'll keep working on the creation of a relatively basic package. This would give you the opportunity to apply most of the concepts seen in the course.
 - :file_folder: __Notes__:
+    + TBD
+- :book: __Reading__:
+    + TBD
+- :microscope: __Lab__:
+    + TBD
 - :dart: __HW 6__: due Apr-27
     + TBD
 
