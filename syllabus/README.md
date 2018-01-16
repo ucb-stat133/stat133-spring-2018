@@ -14,7 +14,7 @@
 ## 0. Course Introduction
 
 - :card_index: __Dates__: Jan 17-19
-- :paperclip: __Topics__: Introduction, course in a nutshell, and policies/logistics. Please spend some time outsice class to review the course policies, piazza etiquette rules, as well as the FAQs.
+- :paperclip: __Topics__: Introduction, course in a nutshell, and policies/logistics. Please spend some time outside class to review the course policies, piazza etiquette rules, as well as the FAQs.
 - :file_folder: __Notes__:
     + [About the Course](../slides/00-about-course.pdf) (slides)
     + [Introduction: Big Picture](../slides/01-big-picture.pdf) (slides)
@@ -125,7 +125,7 @@
 - :bulb: __Cheat sheet__:
     + [Data import cheat sheet](../cheat-sheets/data-import-cheatsheet.pdf)
 - :dart: __HW 1__: due Feb-23
-    + More Vectors (coming soon)
+    + TBD
 
 
 -----
@@ -140,7 +140,7 @@
     + [Grammar of Graphics framework](../slides/18-grammar-graphics.pdf) (slides)
     + Cluster Analysis
 - :book: __Reading__:
-    + [`"dplyr"` tutorial](../slides/17-dplyr-tutorial.pdf) (by Hadley Wickham)
+    + ["dplyr" tutorial](../slides/17-dplyr-tutorial.pdf) (by Hadley Wickham)
     + ["ggplot2" lecture](../slides/19-ggplot-lecture.pdf) (by Karthik Ram)
 - :microscope: __Lab__:
     + [Getting started with dplyr and ggplot2](../labs/lab05-dplyr-ggplot-basics.md)
@@ -165,6 +165,8 @@
     + [Getting started with functions and conditionals](../labs/lab06-simple-functions.md)
 - :newspaper: __Misc__: 
     + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) (_R for Data Science_ by Grolemund and Wickham)
+- :dart: __HW 2__: due Mar-09
+    + TBD
 
 
 -----
@@ -202,6 +204,8 @@ and testing functions.
     + [Getting started with strings](../labs/lab08-strings-basics.md)
 - :newspaper: __Misc__:
     + [chapter 14: Strings](http://r4ds.had.co.nz/strings.html) (_R for Data Science_ by Grolemund and Wickham)
+- :dart: __HW 3__: due Mar-23
+    + TBD
 
 
 -----
@@ -231,6 +235,8 @@ and testing functions.
 
 - :card_index: __Dates__: Mar 26-30
 - :battery: (Re)charge your batteries!
+- :dart: __HW 3__: due Apr-06
+    + TBD
 
 
 -----
@@ -251,6 +257,8 @@ and testing functions.
 - :card_index: __Dates__: Apr 09-13
 - :paperclip: __Topics__: TBD
 - :file_folder: __Notes__:
+- :dart: __HW 4__: due Apr-20
+    + TBD
 
 
 -----
@@ -271,6 +279,8 @@ and testing functions.
 - :card_index: __Dates__: Apr 23-27
 - :paperclip: __Topics__: TBD
 - :file_folder: __Notes__:
+- :dart: __HW 5__: due Apr-17
+    + TBD
 
 
 -----
