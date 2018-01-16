@@ -18,16 +18,16 @@ You can go to the office hours of __any__ GSI, not just your own.
 | Lab | Date       | Room         | GSI             |
 |-----|------------|--------------|-----------------|
 | 101 | W 10-12pm  | 342 Evans    |       TBA       |
-| 102 | W 12-2pm   | 340 Evans    |       TBA       |
-| 103 | W 2-4pm    | 342 Evans    |       TBA       |
-| 104 | W 2-4pm    | 340 Evans    |       TBA       |
-| 105 | W 9-11am   | 342 Evans    |       TBA       |
-| 106 | Th 9-11am  | 342 Evans    |       TBA       |
-| 107 | Th 9-11am  | 330 Evans    |       TBA       |
-| 108 | Th 11-1pm  | 342 Evans    |       TBA       |
-| 109 | Th 11-1pm  | 330 Evans    |       TBA       |
-| 110 | Th 1-3pm   | 342 Evans    |       TBA       |
-| 111 | Th 2-4pm   | 340 Evans    |       TBA       |
+| 102 | W 12-2pm   | 340 Evans    | Qi Chen         |
+| 103 | W 2-4pm    | 342 Evans    | Ninh Do         |
+| 104 | W 2-4pm    | 340 Evans    | Qi Chen         |
+| 105 | W 9-11am   | 342 Evans    | Rui Chen        |
+| 106 | Th 9-11am  | 342 Evans    | Ninh Do         |
+| 107 | Th 9-11am  | 330 Evans    | Da Xu           |
+| 108 | Th 11-1pm  | 342 Evans    | Minchul Shin    |
+| 109 | Th 11-1pm  | 330 Evans    | Rui Chen        |
+| 110 | Th 1-3pm   | 342 Evans    | Minchul Shin    |
+| 111 | Th 2-4pm   | 340 Evans    | Da Xu           |
 | 112 | Th 3-5pm   | 342 Evans    |       TBA       |
 
 
@@ -138,7 +138,7 @@ You will also use a terminal emulator to work with command line.
 
 ### Other
 
-- Please read the course [logistics and policies](syllabus/policies.md) for more details
+- Please read the course [logistics and policies](syllabus/policies.md), and the [piazza etiquette rules](syllabus/piazza.md) for more details
 about the structure of the course, DO's and DONT's, etc.
 
 <a href="syllabus/policies.md"><img src="images/it-is-in-the-syllabus.png" width="580" height="330"></a>
