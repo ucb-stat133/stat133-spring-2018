@@ -235,7 +235,7 @@ and testing functions.
 
 - :card_index: __Dates__: Mar 26-30
 - :battery: (Re)charge your batteries!
-- :dart: __HW 3__: due Apr-06
+- :dart: __HW 4__: due Apr-06
     + TBD
 
 
@@ -257,7 +257,7 @@ and testing functions.
 - :card_index: __Dates__: Apr 09-13
 - :paperclip: __Topics__: TBD
 - :file_folder: __Notes__:
-- :dart: __HW 4__: due Apr-20
+- :dart: __HW 5__: due Apr-20
     + TBD
 
 
@@ -279,7 +279,7 @@ and testing functions.
 - :card_index: __Dates__: Apr 23-27
 - :paperclip: __Topics__: TBD
 - :file_folder: __Notes__:
-- :dart: __HW 5__: due Apr-17
+- :dart: __HW 6__: due Apr-17
     + TBD
 
 
