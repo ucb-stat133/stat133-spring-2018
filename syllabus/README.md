@@ -192,8 +192,7 @@
 ## 8. Manipulating Character Strings and Testing Functions
 
 - :card_index: __Dates__: Mar 12-16
-- :paperclip: __Topics__: Introduction to character strings, basic manipulation of strings, 
-and testing functions.
+- :paperclip: __Topics__: At its heart, computing involves working with numbers. However, a considerable amount of information and data is in the form of text. Therefore, you also need to learn about character strings, and how to perform basic manipulation of strings. In parallel, we'll keep working on writing funtions, especially focusing on testing functions.
 - :file_folder: __Notes__:
     + [String Basics](../slides/17-strings-basics.pdf) (slides)
     + [Intro to Strings](../tutorials/12-intro-to-strings.md) (tutorial)
@@ -214,7 +213,7 @@ and testing functions.
 ## 9. Regular Expressions
 
 - :card_index: __Dates__: Mar 19-23
-- :paperclip:  __Topics__: Introduction to Regular Expressions.
+- :paperclip:  __Topics__: To unleash the power of strings manipulation, we need to take things to the next level and learn about Regular Expressions. Namely, Regular expressions are a tool that allows us to describe a certain amount of text called "patterns". We'll describe the basic concepts of regex and the common operations to match text patters.
 - :file_folder: __Notes__:
     + [Introduction to regular expressions](../tutorials/13-intro-to-regex.md)
     + [Regexpal](http://regexpal.com.s3-website-us-east-1.amazonaws.com/) tester tool.
@@ -245,7 +244,7 @@ and testing functions.
 ## 10. Random Numbers and Simulations
 
 - :card_index: __Dates__: Apr 02-06
-- :paperclip: __Topics__: TBD
+- :paperclip: __Topics__: Random numbers have many applications in science and computer programming, especially when there are significant uncertainties in a phenomenon of interest. In this part of the course we'll look at some basic problmes involving working with random numbers and creating simulations.
 - :file_folder: __Notes__:
 
 
@@ -255,7 +254,7 @@ and testing functions.
 ## 11. Shiny Apps
 
 - :card_index: __Dates__: Apr 09-13
-- :paperclip: __Topics__: TBD
+- :paperclip: __Topics__: Shiny apps are a nice companion to R, making it quick and simple to deliver interactive analysis and graphics on any web browser. We'll review how to create simple shiny apps to display data summaries, queries, and interactive displays.
 - :file_folder: __Notes__:
 - :dart: __HW 5__: due Apr-20
     + TBD
@@ -264,20 +263,20 @@ and testing functions.
 -----
 
 
-## 12. R packaging
+## 12. R packaging (part 1)
 
 - :card_index: __Dates__: Apr 16-20
-- :paperclip: __Topics__: TBD
+- :paperclip: __Topics__: Packages are the fundamental units of reproducible R code. They include reusable functions, the documentation that describes how to use them, and sample data. In this part we'll start describing how to turn your code into an R package.
 - :file_folder: __Notes__:
 
 
 -----
 
 
-## 13. R Packaging
+## 13. R Packaging (part 2)
 
 - :card_index: __Dates__: Apr 23-27
-- :paperclip: __Topics__: TBD
+- :paperclip: __Topics__: Creating an R package can seem overwhelming at first. So we'll keep working on the creation of a relatively basic package. This would give you the opportunity to apply most of the concepts seen in the course.
 - :file_folder: __Notes__:
 - :dart: __HW 6__: due Apr-27
     + TBD
