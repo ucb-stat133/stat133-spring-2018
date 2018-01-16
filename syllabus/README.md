@@ -279,7 +279,7 @@ and testing functions.
 - :card_index: __Dates__: Apr 23-27
 - :paperclip: __Topics__: TBD
 - :file_folder: __Notes__:
-- :dart: __HW 6__: due Apr-17
+- :dart: __HW 6__: due Apr-27
     + TBD
 
 
