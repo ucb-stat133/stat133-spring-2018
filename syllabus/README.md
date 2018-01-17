@@ -291,7 +291,7 @@
 ## 13. R Packaging (part 2)
 
 - :card_index: __Dates__: Apr 23-27
-- :paperclip: __Topics__: Creating an R package can seem overwhelming at first. So we'll keep working on the creation of a relatively basic package. This would give you the opportunity to apply most of the concepts seen in the course.
+- :paperclip: __Topics__: Creating an R package can seem overwhelming at first. So we'll keep working on the creation of a relatively basic package. This will give you the opportunity to apply most of the concepts seen in the course.
 - :file_folder: __Notes__:
     + TBD
 - :book: __Reading__:
