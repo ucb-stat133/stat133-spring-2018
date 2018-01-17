@@ -24,11 +24,11 @@ You can go to the office hours of __any__ GSI, not just your own.
 | 105 | W 2-4pm    | 342 Evans    | Rui Chen        |
 | 106 | Th 9-11am  | 342 Evans    | Ninh Do         |
 | 107 | Th 9-11am  | 330 Evans    | Da Xu           |
-| 108 | Th 11-1pm  | 342 Evans    | Minchul Shin    |
+| 108 | Th 11-1pm  | 342 Evans    | TBA             |
 | 109 | Th 11-1pm  | 330 Evans    | Rui Chen        |
 | 110 | Th 1-3pm   | 342 Evans    | Minchul Shin    |
 | 111 | Th 2-4pm   | 340 Evans    | Da Xu           |
-| 112 | Th 3-5pm   | 342 Evans    |       TBA       |
+| 112 | Th 3-5pm   | 342 Evans    | Minchul Shin    |
 
 
 -----
