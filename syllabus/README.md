@@ -134,7 +134,7 @@
 ## 5. Transforming and Visualizing Tabular Data
 
 - :card_index: __Dates__: Feb 19-23 _(Holiday Feb-19)_
-- :paperclip: __Topics__: We continue reviewing manipulation of data frames with the _data plying_ framework provided by the package `"dplyr"`. Likewise, we review the visualization paradigm of `"ggplot2"` which based on data frames. In addition, we'll briefly introduce  cluster analysis which involves the other major unsupervised learning flavor used to find groups in data. 
+- :paperclip: __Topics__: We continue reviewing manipulation of data frames with the _data plying_ framework provided by the package `"dplyr"`. Likewise, we review the visualization paradigm of `"ggplot2"` which is based on data frames. In addition, we'll briefly introduce  cluster analysis which involves the other major unsupervised learning flavor used to find groups in data. 
 - :file_folder: __Notes__:
     + [Introduction to `"dplyr"`](../tutorials/05-intro-to-dplyr.md) (tutorial)
     + [Grammar of Graphics framework](../slides/18-grammar-graphics.pdf) (slides)
