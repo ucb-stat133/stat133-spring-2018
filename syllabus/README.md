@@ -213,7 +213,7 @@
 ## 9. Regular Expressions
 
 - :card_index: __Dates__: Mar 19-23
-- :paperclip:  __Topics__: To unleash the power of strings manipulation, we need to take things to the next level and learn about Regular Expressions. Namely, Regular expressions are a tool that allows us to describe a certain amount of text called "patterns". We'll describe the basic concepts of regex and the common operations to match text patters.
+- :paperclip:  __Topics__: To unleash the power of strings manipulation, we need to take things to the next level and learn about Regular Expressions. Namely, Regular expressions are a tool that allows us to describe a certain amount of text called "patterns". We'll describe the basic concepts of regex and the common operations to match text patterns.
 - :file_folder: __Notes__:
     + [Introduction to regular expressions](../tutorials/13-intro-to-regex.md)
     + [Regexpal](http://regexpal.com.s3-website-us-east-1.amazonaws.com/) tester tool.
@@ -244,7 +244,7 @@
 ## 10. Random Numbers and Simulations
 
 - :card_index: __Dates__: Apr 02-06
-- :paperclip: __Topics__: Random numbers have many applications in science and computer programming, especially when there are significant uncertainties in a phenomenon of interest. In this part of the course we'll look at some basic problmes involving working with random numbers and creating simulations.
+- :paperclip: __Topics__: Random numbers have many applications in science and computer programming, especially when there are significant uncertainties in a phenomenon of interest. In this part of the course we'll look at some basic problems involving working with random numbers and creating simulations.
 - :file_folder: __Notes__:
     + TBD
 - :book: __Reading__:
