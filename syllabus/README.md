@@ -221,7 +221,7 @@
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :microscope: __Lab__:
     + TBD
-+ __Misc__:
+- :newspaper: __Misc__:
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :bulb: __Cheat sheet__:
     + [Regular Expressions cheat sheet](../cheat-sheets/regular-expressions-cheatsheet.pdf)
@@ -261,11 +261,14 @@
 - :card_index: __Dates__: Apr 09-13
 - :paperclip: __Topics__: Shiny apps are a nice companion to R, making it quick and simple to deliver interactive analysis and graphics on any web browser. We'll review how to create simple shiny apps to display data summaries, queries, and interactive displays.
 - :file_folder: __Notes__:
-    + TBD
+    + [shiny tutorial](../slides/shiny-tutorial.pdf) (by Grolemund)
 - :book: __Reading__:
-    + TBD
+    + [Part 1 - How to build a Shiny app](https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=0m0s) (video)
 - :microscope: __Lab__:
     + TBD
+- :newspaper: __Misc__:
+    + [Part 2 - How to customize reactions](https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=42m2s) (video)
+    + [Part 3 - How to customize appearance](https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=1h32m41s) (video)
 - :dart: __HW 5__: due Apr-20
     + TBD
 
@@ -280,7 +283,8 @@
 - :file_folder: __Notes__:
     + TBD
 - :book: __Reading__:
-    + TBD
+    + [Package Structure](http://r-pkgs.had.co.nz/package.html) (R packages by Wickham)
+    + See package components: [http://r-pkgs.had.co.nz/](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
     + TBD
 
@@ -295,7 +299,7 @@
 - :file_folder: __Notes__:
     + TBD
 - :book: __Reading__:
-    + TBD
+    + See package components: [http://r-pkgs.had.co.nz/](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
     + TBD
 - :dart: __HW 6__: due Apr-27
