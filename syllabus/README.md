@@ -125,7 +125,7 @@
 - :bulb: __Cheat sheet__:
     + [Data import cheat sheet](../cheat-sheets/data-import-cheatsheet.pdf)
 - :dart: __HW 1__: due Feb-23
-    + TBD
+    + TBA
 
 
 -----
@@ -166,7 +166,7 @@
 - :newspaper: __Misc__: 
     + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) (_R for Data Science_ by Grolemund and Wickham)
 - :dart: __HW 2__: due Mar-09
-    + TBD
+    + TBA
 
 
 -----
@@ -204,7 +204,7 @@
 - :newspaper: __Misc__:
     + [chapter 14: Strings](http://r4ds.had.co.nz/strings.html) (_R for Data Science_ by Grolemund and Wickham)
 - :dart: __HW 3__: due Mar-23
-    + TBD
+    + TBA
 
 
 -----
@@ -220,7 +220,7 @@
 - :book: __Reading__:
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :microscope: __Lab__:
-    + TBD
+    + TBA
 - :newspaper: __Misc__:
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :bulb: __Cheat sheet__:
@@ -235,7 +235,7 @@
 - :card_index: __Dates__: Mar 26-30
 - :battery: (Re)charge your batteries!
 - :dart: __HW 4__: due Apr-06
-    + TBD
+    + TBA
 
 
 -----
@@ -246,11 +246,11 @@
 - :card_index: __Dates__: Apr 02-06
 - :paperclip: __Topics__: Random numbers have many applications in science and computer programming, especially when there are significant uncertainties in a phenomenon of interest. In this part of the course we'll look at some basic problems involving working with random numbers and creating simulations.
 - :file_folder: __Notes__:
-    + TBD
+    + TBA
 - :book: __Reading__:
-    + TBD
+    + TBA
 - :microscope: __Lab__:
-    + TBD
+    + TBA
 
 
 -----
@@ -265,12 +265,12 @@
 - :book: __Reading__:
     + [Part 1 - How to build a Shiny app](https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=0m0s) (video)
 - :microscope: __Lab__:
-    + TBD
+    + TBA
 - :newspaper: __Misc__:
     + [Part 2 - How to customize reactions](https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=42m2s) (video)
     + [Part 3 - How to customize appearance](https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=1h32m41s) (video)
 - :dart: __HW 5__: due Apr-20
-    + TBD
+    + TBA
 
 
 -----
@@ -281,12 +281,12 @@
 - :card_index: __Dates__: Apr 16-20
 - :paperclip: __Topics__: Packages are the fundamental units of reproducible R code. They include reusable functions, the documentation that describes how to use them, and sample data. In this part we'll start describing how to turn your code into an R package.
 - :file_folder: __Notes__:
-    + TBD
+    + TBA
 - :book: __Reading__:
     + [Package Structure](http://r-pkgs.had.co.nz/package.html) (R packages by Wickham)
     + See package components: [http://r-pkgs.had.co.nz/](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
-    + TBD
+    + TBA
 
 
 -----
@@ -297,13 +297,13 @@
 - :card_index: __Dates__: Apr 23-27
 - :paperclip: __Topics__: Creating an R package can seem overwhelming at first. So we'll keep working on the creation of a relatively basic package. This will give you the opportunity to apply most of the concepts seen in the course.
 - :file_folder: __Notes__:
-    + TBD
+    + TBA
 - :book: __Reading__:
     + See package components: [http://r-pkgs.had.co.nz/](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
-    + TBD
+    + TBA
 - :dart: __HW 6__: due Apr-27
-    + TBD
+    + TBA
 
 
 -----
@@ -315,7 +315,7 @@
 - :paperclip: __Topics__: Prepare for final examination
 - :file_folder: __Notes__:
     + No lecture. Instructor will hold OH (in 309 Evans)
-- :mortar_board: __FINAL__: TBA
+- :mortar_board: __FINAL__: Mon May 7, 8-11am (room TBA)
 
 
 -----
