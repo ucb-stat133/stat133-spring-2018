@@ -17,14 +17,14 @@ You can go to the office hours of __any__ GSI, not just your own.
 
 | Lab | Date       | Room         | GSI             |
 |-----|------------|--------------|-----------------|
-| 101 | W 10-12pm  | 342 Evans    |       TBA       |
+| 101 | W 10-12pm  | 342 Evans    | Jin Kweon       |
 | 102 | W 12-2pm   | 340 Evans    | Qi Chen         |
 | 103 | W 12-2pm   | 342 Evans    | Ninh Do         |
 | 104 | W 2-4pm    | 340 Evans    | Qi Chen         |
 | 105 | W 2-4pm    | 342 Evans    | Rui Chen        |
 | 106 | Th 9-11am  | 342 Evans    | Ninh Do         |
 | 107 | Th 9-11am  | 330 Evans    | Da Xu           |
-| 108 | Th 11-1pm  | 342 Evans    | TBA             |
+| 108 | Th 11-1pm  | 342 Evans    | Jin Kweon       |
 | 109 | Th 11-1pm  | 330 Evans    | Rui Chen        |
 | 110 | Th 1-3pm   | 342 Evans    | Minchul Shin    |
 | 111 | Th 2-4pm   | 340 Evans    | Da Xu           |
