@@ -299,7 +299,7 @@
 - :file_folder: __Notes__:
     + TBA
 - :book: __Reading__:
-    + See package components: [http://r-pkgs.had.co.nz/](http://r-pkgs.had.co.nz/) (R packages by Wickham)
+    + See package components: [http://r-pkgs.had.co.nz](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
     + TBA
 - :dart: __HW 6__: due Apr-27
@@ -309,7 +309,7 @@
 -----
 
 
-## 14. RRR Week
+## 14. RRR Week and Final Exam
 
 - :card_index: __Dates__: Apr 30-May 04
 - :paperclip: __Topics__: Prepare for final examination
