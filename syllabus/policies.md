@@ -93,7 +93,7 @@ While writing the course policies, I've tried to be as comprehensive and clear a
 ### Piazza
 
 - We will use Piazza as a Q&A forum (and for some official announcements).
-- To join the class on Piazza, follow this link [piazza.com/berkeley/spring2018/stat133](piazza.com/berkeley/spring2018/stat133)
+- To join the class on Piazza, follow this link [piazza.com/berkeley/spring2018/stat133](https://piazza.com/berkeley/spring2018/stat133)
 - If you have questions about anything related to the course, please post them on Piazza rather than emailing the instructor or GSIs.
 - Please do not post anything resembling a solution to a homework problem before it's due. If in doubt, you should make your post private (visible to instructors only).
 - See the [Piazza Etiquette](piazza.md) section for more on using Piazza. 
