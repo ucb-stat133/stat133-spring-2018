@@ -85,7 +85,7 @@
 ## 3. Housekeeping: Filesystem, Bash, Git, Github
 
 - :card_index: __Dates__: Feb 05-09
-- :paperclip: __Topics__: Data Analysis Projects (DACs) are made of files and directories. Therefore, we need to review some fundamental concepts such as the file-system, command line, and basics of version control systems.
+- :paperclip: __Topics__: Data Analysis Projects (DAPs) are made of files and directories. Therefore, we need to review some fundamental concepts such as the file-system, command line, and basics of version control systems.
 - :file_folder: __Notes__:
     + [Filesystem Basics](../slides/08-filesystem-basics.pdf) (slides)
     + [Shell Basics](../slides/09-shell-basics.pdf) (slides)
