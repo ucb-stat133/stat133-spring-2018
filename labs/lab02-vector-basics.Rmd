@@ -21,11 +21,13 @@ urlcolor: blue
 In this lab, you are going to work with a handful of variables about NBA players
 from the regular season 2016-2017:
 
-- `player`: name of the player.
+- `player`: name of player.
 - `team`: team name abbreviation.
 - `position`: player position.
+- `age`: age of player.
+- `experience`: years of experience in NBA.
 - `salary`: salary (in dollars).
-- `points`: total scored points.
+- `scored`: total scored points.
 - `points1`: number of free throws, worth 1 point each.
 - `points2`: number of 2-point field goals, worth 2 points each.
 - `points3`: number of 3-point field goals, worth 3 points each.
@@ -114,7 +116,8 @@ Check that the following objects are available in your session:
 - `team`
 - `position`
 - `salary`
-- `points`
+- `scored`
+- etc
 
 
 ### About `.RData` files
@@ -184,7 +187,7 @@ Figure out how to use `seq()`, `rep()` to extract:
 - all the even elements in `player`
 - all the odd elements in `salary`
 - all multiples of 5 (e.g. 5, 10, 15, etc) of `team`
-- elements in positions 10, 20, 30, 40, etc of `points`
+- elements in positions 10, 20, 30, 40, etc of `scored`
 - all the even elements in `team` but this time in reverse order
 
 
@@ -237,19 +240,19 @@ Notice that a comparison operation always returns a logical vector.
 Here's how you actually extract the values of a vector based on logical indexing:
 
 ```r
-points_four <- points[1:4]
+scored_four <- scored[1:4]
 
 # elements greater than 100
-points_four[points_four > 100]
+scored_four[scored_four > 100]
 
 # elements less than 100
-points_four[points_four < 100]
+scored_four[scored_four < 100]
 
 # elements less than or equal to 10
-points_four[points_four <= 10]
+scored_four[scored_four <= 10]
 
 # elements different from 10
-points_four[points_four != 10]
+scored_four[scored_four != 10]
 ```
 
 In addition to using comparison operators, you can also use __logical operators__ to
@@ -287,7 +290,7 @@ player[team == 'GSW']
 player[salary > 20000000]
 
 # name of players with scored points between 1000 and 1200 (exclusive)
-player[points > 1000 & points < 1200]
+player[scored > 1000 & points < 1200]
 ```
 
 
@@ -302,10 +305,10 @@ Write commands, using bracket notation, to answer the following questions
 - subset Small Forwards of GSW and LAL
 - name of the player with largest salary
 - name of the player with smallest salary
-- name of the player with largest number of points
+- name of the player with largest number of scored points
 - salary of the player with largest number of points
 - largest salary of all Centers
-- team of the player with the largest number of points
+- team of the player with the largest number of scored points
 - name of the player with the largest number of 3-pointers
 
 
@@ -316,7 +319,7 @@ A third type of subsetting involves passing a character vector inside brackets.
 When you do this, the characters are supposed to be names of the manipulated
 vector.
 
-None of the vectors `player`, `position`, `points`, and `salary` have names.
+None of the vectors `player`, `position`, `scored`, and `salary` have names.
 You can confirm that with the `names()` function applied on any of the vectors:
 
 ```r
@@ -325,7 +328,7 @@ names(player)
 
 - Create a vector `warriors_player` by selecting the players of `team == 'GSW'`
 - then create a vector `warriors_salary` with their salaries, and another
-vector `warriors_points` with their `points`. 
+vector `warriors_points` with their `scored`. 
 - Assign `warriors_player` as the names of `warriors_salary`.
 
 You should have a vector `warriors_salary` with named elements. 
@@ -340,10 +343,10 @@ warriors_salary[c("Stephen Curry", "Kevin Durant")]
 
 ### Some plotting
 
-Use the function `plot()` to make a scatterplot of `points` and `salary`
+Use the function `plot()` to make a scatterplot of `scored` and `salary`
 
 ```r
-plot(points, salary)
+plot(scored, salary)
 ```
 
 Keep in mind that `plot()` is a generic function. This means that the behavior
@@ -353,34 +356,34 @@ of `plot()` depends on the type of input. When you pass two numeric vectors,
 Looking at the generated plot, can you see any issues?
 
 To get a better display of the scatterplot, let's create two vectors
-`log_points` and `log_salary` by transforming `points` and `salary` with the 
+`log_scored` and `log_salary` by transforming `scored` and `salary` with the 
 logarithm function `log()`
 
 ```r
-log_points <- log(points)
+log_scored <- log(scored)
 log_salary <- log(salary)
 ```
 
 Make another scatterplot but now use the log-transformed vectors:
 
 ```{r, eval = FALSE}
-plot(log_points, log_salary)
+plot(log_scored, log_salary)
 ```
 
 To add the names of the players in the plot, you can use the low-level graphing
 function `text()`:
 
 ```{r, eval = FALSE}
-plot(log_points, log_salary)
-text(log_points, log_salary, labels = player)
+plot(log_scored, log_salary)
+text(log_scored, log_salary, labels = player)
 ```
 
 Now we have another problem. The labels in the plot are very messy. A quick
 and dirty fix is to use `abbreviate()` to shorten the displayed names:
 
 ```{r, eval = FALSE}
-plot(log_points, log_salary)
-text(log_points, log_salary, labels = abbreviate(player))
+plot(log_scored, log_salary)
+text(log_scored, log_salary, labels = abbreviate(player))
 ```
 
 __Your Turn__: create a scatterplot of points and salary for the Warriors (GSW),
@@ -390,7 +393,7 @@ values (original scale, and another plot with log-transformations).
 
 ## Vectorization
 
-When you create the vectors `log_points <- log(points)` and 
+When you create the vectors `log_scored <- log(scored)` and 
 `log_salary <- log(salary)`, what you're doing is applying a function to a 
 vector, which in turn acts on all elements of the vector.
 
@@ -438,7 +441,8 @@ obtain the salaries in millions of dollars?. Create a new vector
 # your code here
 ```
 
-Take the values in `points1`, `points2`, and `points3` and figure out to create a new vector `scored_points` that gives you the same values of `points`.
+Take the values in `points1`, `points2`, and `points3` and figure out to create 
+a new vector `scored_points` that gives you the same values of `points`.
 
 What you just did (assuming that you did things correctly) is called 
 __Recycling__. To understand this concept, you need to remember that R does 
@@ -502,10 +506,10 @@ Practice manipulating `position_fac` to get:
 
 ### More Plots
 
-Let's go back to the scatterplot of `points` and `salary`
+Let's go back to the scatterplot of `scored` and `salary`
 
 ```r
-plot(points, salary)
+plot(scored, salary)
 ```
 
 - Use your factor `position_fac` to add some color to the dots in the
