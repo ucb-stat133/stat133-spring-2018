@@ -15,6 +15,15 @@ __Statistics 133: Concepts in Computing with Data__ at UC Berkeley.
 - __GSIs:__ Office hours of the GSIs displayed below.
 You can go to the office hours of __any__ GSI, not just your own.
 
+| GSI          | Office Hours in 342 |
+|--------------|---------------|
+| Jin Kweon    | M Tu 9 - 11am |
+| Da Xu        | W 4-6pm, Th 8-9am & 5-6 pm |
+| Minchul Shin | M 10:30am-12:30pm, Th 5-7 pm |
+| Ninh Do      | M 8-11am, Th 8-9 am |
+| Qi Chen      | M 3-5pm, Tu 8-10 am |
+
+- Lab Sections:
 
 | Lab | Date       | Room         | GSI             |
 |-----|------------|--------------|-----------------|
@@ -30,17 +39,6 @@ You can go to the office hours of __any__ GSI, not just your own.
 | 110 | Th 1-3pm   | 342 Evans    | Minchul Shin    |
 | 111 | Th 2-4pm   | 340 Evans    | Da Xu           |
 | 112 | Th 3-5pm   | 342 Evans    | Minchul Shin    |
-
-
-OH in 342
-
-| GSI          | Time          |
-|--------------|---------------|
-| Jin Kweon    | M Tu 9 - 11am |
-| Da Xu        | W 4-6pm, Th 8-9am & 5-6 pm |
-| Minchul Shin | M 10:30am-12:30pm, Th 5-7 pm |
-| Ninh Do      | M 8-11am, Th 8-9 am |
-| Qi Chen      | M 3-5pm, Tu 8-10 am |
 
 
 -----
