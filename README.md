@@ -20,7 +20,7 @@ You can go to the office hours of __any__ GSI, not just your own.
 | Jin Kweon    | M Tu 9 - 11am |
 | Da Xu        | W 4-6pm, Th 8-9am & 5-6 pm |
 | Minchul Shin | M 10:30am-12:30pm, Th 5-7 pm |
-| Ninh Do      | M 8-11am, Th 8-9 am |
+| Ninh Do      | M 9-11am, Th 8-9 am |
 | Qi Chen      | M 3-5pm, Tu 8-10 am |
 
 - __Lab Sections:__
