@@ -6,9 +6,10 @@ Here's the description of the R objects in `nba2017-salary-points.RData`:
 - `player`: name of the player.
 - `team`: team name abbreviation.
 - `position`: player position.
+- `age`: age (in years).
 - `experience`: years of experience.
 - `salary`: salary (in dollars).
-- `points`: total scored points.
+- `scored`: total scored points.
 - `points1`: number of free throws, worth 1 point each.
 - `points2`: number of 2-point field goals, worth 2 points each.
 - `points3`: number of 3-point field goals, worth 3 points each.
@@ -21,7 +22,7 @@ There are five types of player positions (see [wikipedia](https://en.wikipedia.o
 + `PF`: power forward
 + `C`: center
 
-The values in `points` result from adding all scored points:
+The values in `scored` result from adding all scored points:
 
 ```r
 points1 + (2 * points2) + (3 * points3)
@@ -34,9 +35,10 @@ Although each object has its own data type, you can think of each of them as a v
 | `player`     | categorical  |
 | `team`       | categorical  |
 | `position`   | categorical  |
+| `age`        | quantitative |
 | `experience` | quantitative |
 | `salary`     | quantitative |
-| `points`     | quantitative |
+| `scored`     | quantitative |
 | `points1`    | quantitative |
 | `points2`    | quantitative |
 | `points3`    | quantitative |
