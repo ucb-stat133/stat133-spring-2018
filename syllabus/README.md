@@ -96,6 +96,7 @@
     + [Linux Tutorial](https://ryanstutorials.net/linuxtutorial/) lessons 1-5 (by Ryan Chadwick)
 - :microscope: __Lab__:
     + [Command Line Basics](../labs/lab03-command-line-basics.md)
+    + [GitHub Classroom](../labs/lab03-github-classroom.pdf)
 - :newspaper: __Misc__:
     + Read sections 4 to 9 in Part I [Installation](http://happygitwithr.com/installation-pain.html) (_Happy Git and GitHub for the useR_ by Jenny Bryan et al.)
 - :bulb: __Cheat sheet__:
