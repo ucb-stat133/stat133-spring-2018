@@ -1,5 +1,5 @@
 ---
-title: "Lab 3: Command Line Basics"
+title: "Lab 3: Command Line Basics and Git"
 subtitle: "Stat 133, Spring 2018"
 author: "Gaston Sanchez"
 output: github_document
@@ -102,5 +102,146 @@ from within R. See `?files` for more information.
 - `file.rename()`
 - `file.remove()`
 
+-----
+
+# Git and GitHub Practice
+
+> ### Learning Objectives
+>
+> * Create a GitHub repository
+> * Create a local Git repository
+> * Practice adding, and committing changes to your (local) Git repo
+> * Practice pushing commited changes to a remote repo
+
+
+### 1) Create a New GitHub Repository
+
+- Open your browser and Sign in to your github account.
+- Locate the `+` button (next to your avatar).
+- Select the `New repository` option.
+- Choose a name for your repository: e.g. `demo-repo`.
+- In the __Description__ field add a brief description: e.g. "this is a demo repo"
+- Use the default settings, and click the green button __Create repository__.
+- You should see some content similar (but not identical) to the one below:
+
+```bash
+echo "# Demo Repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/gastonstat/demo-repo.git
+git push -u origin master
+```
+
+### 2) Create a local Git Repository
+
+- Open the terminal (Mac Terminal, or Git-Bash for Windows users).
+- Optional: change directory to your preferred location
+e.g. your `Desktop`
+```bash
+cd Desktop
+```
+- Create a directory with the name of your github repo
+```bash
+mkdir demo-repo
+```
+- Change to the directory you just created
+```bash
+cd demo-repo
+```
+- Initialize the directory as a git repository
+```bash
+git init
+```
+
+It's possible that you encounter some error message, e.g. Mac users may get a 
+message related with a missing component for `CommandLineTools`. If this your 
+case, then type in the terminal console:
+
+```bash
+# Mac users may need to run this command
+xcode-select --install
+```
+
+The command `git init` will set-up your directory `demo-repo` as a Git 
+repository (NOT to confuse with your GitHub repository). This is basically
+your __local__ repository.
+
+
+### 3) Adding a README file
+
+- It is customary to add a `README.md` file at the top level. This file must
+contain (at least) a description of what the repository is about. The following
+command will create a `README.md` file with some minimalist content:
+```bash
+echo "# Demo Repo" >> README.md
+```
+- So far there you have a "new" file in your local repo, but this change has
+not been recorded by Git. You can confirm this by checking the status of the repo:
+```bash
+git status
+```
+- Notice that Git knows that `README.md` is untracked. So let's add the 
+changes to Git's database:
+```bash
+git add README.md
+```
+- Check the status of the repo again:
+```bash
+git status
+```
+- Now Git is tracking the file `README.md`.
+- Next thing consists of __committing__ the changes
+```bash
+git commit -m "first commit"
+```
+
+### 4) Adding a remote
+
+Right now you have a (local) Git repository in your computer. And you also have 
+a GitHub repository in your GitHub account. Both repositories should have the 
+same name, and the goal is to link them. To do this, you need to tell Git that 
+a _remote_ repository (i.e. the one in GitHub) will be added:
+
+- To add a remote repository use the command below __with your own username__:
+```bash
+git remote add origin https://github.com/username/demo-repo.git
+```
+- Verify your new remote
+```bash
+git remote -v
+```
+- If everything is okay, you should be able to see a message 
+(with your own username) like this:
+```
+# Verify new remote
+origin  https://github.com/username/demo-repo.git (fetch)
+origin  https://github.com/username/demo-repo.git (push)
+```
+
+### 5) Pushing changes to a remote repo
+
+- Now that you have linked your local repo with your remote repo, you can 
+start pushing (i.e. uploading) commits to GitHub.
+- As part of the basic workflow with git and github, you want to constantly 
+check the status of your repo
+```
+git status
+```
+- Now let's push your recent commit to the remote branch (`origin`) from
+the local branch (`master`):
+```bash
+git push origin master
+```
+- Go to your Github repository and refresh the browser. If everything went fine, 
+you should be able to see the contents of your customized `README.md` file.
+
 
 -----
+
+## GitHub Classroom Repository
+
+Read and follow the instructions to get your won __GitHub Classroom__ repository, available in the following link:
+
+[lab03-github-classroom.pdf](lab03-github-classroom.pdf)
+
