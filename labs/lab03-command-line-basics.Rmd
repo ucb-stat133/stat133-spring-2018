@@ -241,7 +241,7 @@ you should be able to see the contents of your customized `README.md` file.
 
 ## GitHub Classroom Repository
 
-Read and follow the instructions to get your won __GitHub Classroom__ repository, available in the following link:
+Read and follow the instructions to get your own __GitHub Classroom__ repository, available in the following link:
 
 [lab03-github-classroom.pdf](lab03-github-classroom.pdf)
 

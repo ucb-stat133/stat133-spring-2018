@@ -230,8 +230,9 @@ Right now you have a (local) Git repository in your computer. And you also have 
 
 ------------------------------------------------------------------------
 
-### GitHub Classroom Repository
+GitHub Classroom Repository
+---------------------------
 
-Read and follow the instructions to get your won **GitHub Classroom** repository, available in the following link:
+Read and follow the instructions to get your own **GitHub Classroom** repository, available in the following link:
 
 [lab03-github-classroom.pdf](lab03-github-classroom.pdf)
