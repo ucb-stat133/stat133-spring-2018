@@ -126,7 +126,7 @@
 - :bulb: __Cheat sheet__:
     + [Data import cheat sheet](../cheat-sheets/data-import-cheatsheet.pdf)
 - :dart: __HW 1__: due Feb-23
-    + TBA
+    + [Data Frame Basics](../hws/hw01-data-frame-basics.pdf)
 
 
 -----
