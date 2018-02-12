@@ -1,0 +1,391 @@
+---
+title: "Intro to Principal Components Analysis (PCA)"
+subtitle: "Stat 133, Spring 2018"
+author: "Gaston Sanchez"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, fig.path = '06-images/')
+library(knitr)
+library(dplyr)
+library(ggplot2)
+library(GGally)
+library(FactoMineR)
+```
+
+
+# Introduction
+
+The goal of this tutorial is to go over the various options and steps required to 
+perform a Principal Components Analysis (PCA). 
+You will also learn about the functions `prcomp()` and `princomp()`, and
+how to use their outputs to answer questions like:
+
+- How many principal components to retain.
+- How to visualize the observations.
+- How to visualize the relationships among variables.
+
+
+## Dataset `mtcars`
+
+In this tutorial we are going to use data about _Motor Trend Car Road Tests_
+containing fuel consumption and 10 aspects of automobile design and performance 
+for 32 automobiles (1973–74 models).
+
+The corresponding data set comes in R as a built-in data frame called `mtcars`. 
+This object has 32 observations on 11 variables:
+
+- `mpg`	Miles/(US) gallon
+- `cyl`	Number of cylinders
+- `disp`	Displacement (cu.in.)
+- `hp`	Gross horsepower
+- `drat`	Rear axle ratio
+- `wt`	Weight (1000 lbs)
+- `qsec`	1/4 mile time
+- `vs`	V/S
+- `am`	Transmission (0 = automatic, 1 = manual)
+- `gear`	Number of forward gears
+- `carb`	Number of carburetors
+
+The first 5 rows of the data set look like:
+
+```{r}
+head(mtcars)
+```
+
+
+## About PCA
+
+Principal Components Analysis is one of those jack of all trades methods whose behavior accepts different yet equivalent interpretations. We can use PCA to reduce the dimensionality of a data set (i.e. reduce the number of variables) while retaining as much as possible of the variation present in it. Likewise, we can use PCA for data visualization and exploration purposes using its outputs to obtain a map to visualize the objects in terms of their proximities, and another map to visualize the variables in terms of their correlations. 
+
+Overall, PCA helps us to summarize the systematic patterns of variation within observations, within variables, and between observations and variables. In summary, PCA allows us to:
+
+- to __"best summarize"__ the important information contained in a data table.
+- to find a __"graphical representation"__ of the essential information contained within a data set.
+- to find an __"optimal approximation"__ of a data set with a minimal loss of information.
+
+
+## PCA Idea
+
+We look to transform the original variables into a smaller set of new variables, the Principal Components (PCs), that __summarize the variation in data__. The PCs are obtained as linear combinations (i.e. weighted sums) of the original variables. We look for PCs is in such a way that they have maximum variance, and being mutually uncorrelated.
+
+## R Functions for PCA
+
+R provides two built-in functions to perform Principal Components Analysis:
+
+1. `prcomp()`
+2. `princomp()`
+
+Both functions are part of the `"stats"` package which comes in the default 
+distribution of R.
+In addition to `prcomp()` and `princomp()`, there are various packages 
+(e.g. `"FactoMineR"`, `"ade4"`, etc.) that provide other functions for PCA.
+
+
+
+# PCA with `prcomp()`
+
+The main input of `prcomp()` is a data frame or a data matrix. In order to 
+perform PCA on standardized data (mean = 0, variance = 1), we use the argument 
+`scale. = TRUE`.
+
+Let's apply `prcomp()` on the quantitative variables---these are the 
+_active_ variables. We'll use the categorical
+variables as _supplementary_ variables. Although all the quantitative variables 
+are supposedly measured on the same scale (monetary units), it is usually 
+preferable to standardize the data so that no single variable dominates the 
+output because of the magnitude of its variability.
+
+```{r prcomp}
+# PCA with prcomp()
+pca_prcomp <- prcomp(mtcars, scale. = TRUE)
+
+# what's in a prcomp object?
+names(pca_prcomp)
+```
+
+
+The object `pca_prcomp` is an object of class `"prcomp"`, basically a list that 
+contains the following results:
+
+- `sdev` corresponds to the standard deviations of the principal components.
+- `rotation` is the rotation matrix or loadings
+- `center` is the vector of means of the raw data.
+- `scale` is the vector of standard deviations of the raw data.
+- `x` is the matrix of principal components.
+
+As we saw in lecture, the minimal output of a PCA procedure should consists 
+of eigenvalues, loadings, and principal components:
+
+The eigenvalues are the squared `sdev`:
+
+```{r prcomp_eigenvalues}
+# eigenvalues
+eigenvalues <- pca_prcomp$sdev^2
+eigenvalues
+```
+
+The reason why these are called `sdev` has to do with the variance of each 
+principal component. The elements in `sdev` are simply the standard deviations 
+of the PCs: 
+
+The loadings or PC weights are in `rotation`:
+
+```{r prcomp_loadings}
+# loadings or weights
+loadings <- pca_prcomp$rotation 
+round(loadings, 3)
+```
+
+
+And the principal components, aka scores, are in the object `x`:
+
+```{r prcomp_scores}
+# scores or principal components
+scores <- pca_prcomp$x
+round(head(scores, 5), 3)
+```
+
+Before discussing what to do with the output of a PCA, let's quickly talk about 
+the other function `princomp()`.
+
+
+
+# PCA with `princomp()`
+
+Another function to perform PCA is `princomp()`. The main input is a data frame 
+or a data matrix. In order to perform PCA on standardized data 
+(mean = 0, variance = 1), we use the argument `cor = TRUE`, which means that 
+the analysis is performed using the correlation matrix.
+
+```{r princomp}
+# PCA with princomp()
+pca_princomp <- princomp(mtcars, cor = TRUE)
+
+# what's in a princomp object?
+names(pca_princomp)
+```
+
+The object `pca_princomp` is an object of class `"princomp"`, basically a list 
+that contains various results: 
+
+- `sdev` corresponds to the standard deviations of the principal components.
+- `loadings`: object of class `"loadings"`
+- `center`: vector of variable means of the raw data.
+- `scale`: vector of standard deviations of the raw data.
+- `n.obs`: number of observations in the data.
+- `scores`: matrix of principal components.
+- `call`: function call.
+
+The eigenvales, PCs and loadings are:
+
+```{r princomp_eigenvalues}
+# eigenvalues
+pca_princomp$sdev^2
+```
+
+
+```{r princomp_scores}
+# scores or principal components
+round(head(pca_princomp$scores, 5), 3)
+```
+
+
+```{r princomp_loads}
+# loadings or weights
+pca_princomp$loadings
+```
+
+If you carefully look at the loadings, you should notice that some values
+are left in blank. Why is this? Check the documentation `?princomp`
+
+__Challenge__: Notice that `pca_princomp$loadings` is an object of class 
+`"loadings"`. How would you retrieve just the matrix of loadings?
+
+
+
+### Important Note
+
+The signs of the columns of the loadings and scores are arbitrary, and so may
+differ between different programs for PCA, and even between different builds 
+of R.
+
+Look around at the output of your neighbors to see who has similar results 
+to yours, and who has different outputs.
+
+
+-----
+
+
+# Stages of a Principal Components Analysis
+
+The primary goal in PCA is to summarize the systematic patterns of variation
+in a data set, which is done via the principal components (PCs). Derived from 
+this idea, the most common uses of the PCA results is to visualize multivariate 
+data and/or to perform a dimension reduction (for other analytical purposes).
+
+
+## Eigenvalues and Proportion of Variance Explained
+
+The first step when examining the results of a PCA is to look at how much 
+variability is captured by each PC. This is done by examining the eigenvalues. 
+
+With the eigenvalues we can compute a table containing three columns: 
+the eigenvalues, the variance in terms of percentages, and the cumulative 
+percentages, like the table below:
+
+```{r eigenvalues, echo = FALSE, comment = ""}
+eigs <- eigenvalues
+eigs_perc <- 100 * eigs / sum(eigs)
+eigs_cum <- cumsum(eigs_perc)
+
+eigs_df <- data.frame(
+  eigenvalue = eigs,
+  percentage = eigs_perc,
+  'cumulative percentage' = eigs_cum
+)
+
+print(round(eigs_df, 4), print.gap = 2)
+```
+
+
+In addition to the table of eigenvalues, analysts typically look at a bar-chart 
+of the eigenvalues (see figure below).
+
+```{r eig_barchart, echo = FALSE, out.width='70%', fig.align='center'}
+barplot(eigs, border = NA, las = 1, names.arg = paste('PC', 1:ncol(mtcars)), 
+        main = 'Bar-chart of eigenvalues')
+```
+
+- How much of the variation in the data is captured by the first PC?
+- How much of the variation in the data is captured by the second PC?
+- How much of the variation in the data is captured by the first two PCs?
+
+
+## Choosing the number of components
+
+A related concern is to be able to determine how many PCs should be retained.
+There are various strategies:
+
+- Retain just enough components to explain some specified, large percentage 
+of the total variation of the original variables. For example, how many PCs
+would you retain to capture 70% of the total variation?
+
+- Exclude those PCs whose eigenvalues are less than the average.
+
+- When the PCs are extracted from the correlation matrix, like in this case,
+the average eigenvalue is one; components with eigenvalues less than one 
+are therefore excluded. This rule is known as _Kaiser's rule_.
+
+- Cattel (1965) suggests plotting the eigenvalues with the so-called 
+_scree-plot_ or _scree diagram_---like the bar-chart of eigenvalues. Cattel
+suggests looking for an "elbow" in the diagram, this would correspond to a 
+point where "large" eigenvalues cease and "small" eigenvalues begin. 
+
+
+## Variable Loadings and Correlations with PCs
+
+The next stage consists of examining how PCs are formed. Recall that PCs are 
+linear combinations of the input variables, in which the coefficients of 
+such linear combinations are given by the loadings. A starting point is to 
+check the matrix of loadings. The larger the loading of a variable in a given 
+PC, the more associated the variable is with that PC.
+
+Another way to examine how variables are associated with the PCs is to look at 
+their correlations. More specifically, we can calculate the (matris of) 
+correlations between the active variables and the PCs:
+
+```{r pc_correlations, echo = FALSE, comment = ""}
+pc_cors <- cor(mtcars, scores)
+round(pc_cors, 4)
+```
+
+Less common, but extremely helpful, is to use the columns of the correlation 
+matrix to visualize how variables are associated with the PCs. 
+
+```{r circle_correlations, echo = FALSE, out.width='60%', fig.align='center', fig.height=6, fig.width=6}
+# function to create a circle
+circle <- function(center = c(0, 0), npoints = 100) {
+  r = 1
+  tt = seq(0, 2 * pi, length = npoints)
+  xx = center[1] + r * cos(tt)
+  yy = center[1] + r * sin(tt)
+  return(data.frame(x = xx, y = yy))
+}
+
+corcir <- circle(c(0, 0), npoints = 100)
+
+# circle of correlations
+plot(pc_cors[ ,1:2], type = 'n', las = 1, xlim = c(-1, 1), ylim = c(-1, 1),
+     xlab = "Axis 1", ylab = "Axis 2", asp = 1)
+title("Correlations between variables and PCs (2 first dimensions)",
+      cex.main = 1)
+lines(corcir, col = "gray70")
+abline(h = 0, v = 0, col = "gray80")
+arrows(rep(0, nrow(pc_cors)), rep(0, nrow(pc_cors)), pc_cors[,1], pc_cors[,2], 
+       length = 0.05)
+text(pc_cors[ ,1], pc_cors[ ,2], rownames(pc_cors), col = "#55555588")
+```
+
+This graph is known as the _circle of correlations_. The variables are plotted 
+as arrows, with the length of the arrow equal to the correlation coefficient. 
+The closer the arrowhead to the circumference (of radious 1), the better its 
+representation with the associated PCs. Try to plot a graph like the one above.
+
+
+
+## Visualizing observations
+
+The next stage involves visualizing the observations in a low dimensional space.
+This is typically achieved with scatterplots of the components. 
+
+### Your turn
+
+Begin with a scatterplot of the first two PCs (see figure below). 
+
+```{r pc_plot, echo = FALSE, out.width='70%', fig.align='center'}
+plot(pca_prcomp$x, type = "n", las = 1)
+abline(h = 0, v = 0)
+points(pca_prcomp$x[ ,1], pca_prcomp$x[ ,2], pch = 19, 
+       col = "#88888877")
+title(main = "PC Plot of Customers")
+```
+
+- Also plot PC1 - PC3, and then plot PC2 - PC3. If you want, 
+continue visualizing other scatterplots.
+- What patterns do you see?
+- Try adding numeric labels to the points to see which observations seem to
+be potential outliers.
+
+
+## Biplot: Another visual display
+
+A fourth (optional) stage consists of obtaining a simultaneous visual display 
+of both the observations and the variables in a low dimensional space.
+This is done with the so-called __biplot__, originally proposed by Ruben 
+Gabriel in 1971, and available in R with the homonym function `biplot()`. 
+
+Some authors are opposed to this type of visualization arguing that it is a 
+fictitious display. Personally, I'm not opposed to this type of display, 
+as long as you know how to read it. The important thing to keep in mind is that, 
+in a biplot, you are superimposing two different low-dimensional spaces: 
+one corresponds to the observations, and the other corresponds to the variables. 
+Also, because you are superimposing two clouds of objects, typically the scale 
+of one---or both---of them will be distorted.
+
+```{r biplot, out.width='70%', fig.align='center'}
+biplot(pca_prcomp, scale = 0)
+```
+
+The `scale = 0` argument to `biplot()` ensures that the arrows are scaled to
+represent the loadings, while the PCs are scaled to unit variance; also, 
+when specifying `scale = 0` the distances between the observations correspond 
+to Mahalanobis distances. Other values for `scale` give slightly different 
+biplots with different scaling distortions. 
+
+__Your turn__: Graph various `biplot()`'s with different values of `scale`
+(e.g. 0, 0.3, 0.5, 1). How do the relative positions of the arrows change 
+with respect to the points? Under which scale value you find it easier to 
+read the biplot?
+
