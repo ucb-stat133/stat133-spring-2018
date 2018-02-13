@@ -16,7 +16,7 @@ Gaston Sanchez
 Abalone Data Set
 ----------------
 
-The first data set to consider is the **Abalone Data Set** that is part of the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Abalone)
+The first data set that you will working with is the **Abalone Data Set** that is part of the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Abalone)
 
 The location of the data file is:
 
@@ -42,14 +42,45 @@ abalone <- read.table(url, sep = ",")
 
 ### Getting a Local Copy of the Data
 
-My suggestion when reading datasets from the Web, is to always try to get a local copy of the data file in your machine (as long as you have enough free space to save it in your computer). To do this, you can use the function `download.file()` and specify the url address, and the name of the file that will be created in your computer. For instance, to save the abalone data file in **your working directory**, type the following commands:
+My suggestion when reading datasets from the Web, is to always try to get a local copy of the data file in your machine (as long as you have enough free space to save it in your computer). To do this, you can use the function `download.file()` and specify the url address, and the name of the file that will be created in your computer. For instance, to save the abalone data file in **your working directory**, type the following commands directly on the R console:
 
 ``` r
-# download copy
+# do NOT include this code in your Rmd file
+# download copy to your working directory
 origin <- 'http://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data'
 destination <- 'abalone.data'
 download.file(origin, destination)
 ```
+
+Some Bash Commands
+------------------
+
+Before describing some of the reading-table functions in R, let's practice some basic bash commands to inspect the downloaded data file.
+
+-   For those of you using Gitbash, go to your browser and open a tab to get the *Linux Man Pages Online* available in the website: <http://man.he.net/>
+
+-   Open the terminal (e.g. Mac terminal or Gitbash) and change directories to the folder that contains the downloaded file `abalone.data`.
+
+-   Use the `file` command to know what type of file is `abalone.data`.
+
+-   Use the *word count* command `wc` to obtain information about: 1) newline count, 2) word count, and 3) byte count, of the `abalone.data` file.
+
+-   See the `man` documentation of `wc` and learn what option you should use to otabin only the number of lines in `abalone.data`.
+
+-   Use `head` to take a peek at the first lines (10 lines by default) of `abalone.data`
+
+-   See the `man` documentation of `head` and learn what option you should use to display only the first 5 files in `abalone.data`.
+
+-   Use `tail` to take a peek at the last lines (10 lines by default) of `abalone.data`
+
+-   See the `man` documentation of `tail` and learn what option you should use to display only the last 3 files in `abalone.data`.
+
+-   Use the `less` command to look at the contents of `abalone.data` (this command opens a *paginator* so you can move up and down the contents of the file).
+
+------------------------------------------------------------------------
+
+Basic Importing
+---------------
 
 Now that you have a local copy of the dataset, you can read it in R with `read.table()` like so:
 
