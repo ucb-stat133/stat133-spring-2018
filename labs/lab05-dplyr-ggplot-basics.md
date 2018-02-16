@@ -29,8 +29,8 @@ Use the first hour of the lab to get as far as possible with the material associ
 
 While you follow this lab, you may want to open these cheat sheets:
 
--   [dplyr cheatsheet](../cheat-sheets/data-transformation-cheatsheet.pdf)
--   [ggplot2 cheatsheet](../cheat-sheets/ggplot2-cheatsheet-2.1.pdf)
+-   [dplyr cheatsheet](../cheatsheets/data-transformation-cheatsheet.pdf)
+-   [ggplot2 cheatsheet](../cheatsheets/ggplot2-cheatsheet-2.1.pdf)
 
 ### Installing packages
 
@@ -108,23 +108,17 @@ Filtering, slicing, and selecting
 ``` r
 # first three rows
 three_rows <- slice(dat, 1:3)
-```
-
-    ## Warning: package 'bindrcpp' was built under R version 3.3.2
-
-``` r
 three_rows
 ```
 
     ## # A tibble: 3 x 15
-    ##          player  team position height weight   age experience
-    ##           <chr> <chr>    <chr>  <int>  <int> <int>      <int>
-    ## 1    Al Horford   BOS        C     82    245    30          9
-    ## 2  Amir Johnson   BOS       PF     81    240    29         11
-    ## 3 Avery Bradley   BOS       SG     74    180    26          6
-    ## # ... with 8 more variables: college <chr>, salary <dbl>, games <int>,
-    ## #   minutes <int>, points <int>, points3 <int>, points2 <int>,
-    ## #   points1 <int>
+    ##   player   team  position height weight   age experience college    salary
+    ##   <chr>    <chr> <chr>     <int>  <int> <int>      <int> <chr>       <dbl>
+    ## 1 Al Horf… BOS   C            82    245    30          9 Universit… 2.65e⁷
+    ## 2 Amir Jo… BOS   PF           81    240    29         11 ""         1.20e⁷
+    ## 3 Avery B… BOS   SG           74    180    26          6 Universit… 8.27e⁶
+    ## # ... with 6 more variables: games <int>, minutes <int>, points <int>,
+    ## #   points3 <int>, points2 <int>, points1 <int>
 
 `filter()` allows you to select rows by condition:
 
@@ -190,13 +184,13 @@ gsw
 ```
 
     ## # A tibble: 5 x 3
-    ##           player height weight
-    ##            <chr>  <int>  <int>
+    ##   player         height weight
+    ##   <chr>           <int>  <int>
     ## 1 Draymond Green     79    230
-    ## 2   Kevin Durant     81    240
-    ## 3  Klay Thompson     79    215
-    ## 4  Stephen Curry     75    190
-    ## 5  Zaza Pachulia     83    270
+    ## 2 Kevin Durant       81    240
+    ## 3 Klay Thompson      79    215
+    ## 4 Stephen Curry      75    190
+    ## 5 Zaza Pachulia      83    270
 
 Now, let's use `mutate()` to (temporarily) add a column with the ratio `height / weight`:
 
@@ -205,13 +199,13 @@ mutate(gsw, height / weight)
 ```
 
     ## # A tibble: 5 x 4
-    ##           player height weight `height/weight`
-    ##            <chr>  <int>  <int>           <dbl>
-    ## 1 Draymond Green     79    230       0.3434783
-    ## 2   Kevin Durant     81    240       0.3375000
-    ## 3  Klay Thompson     79    215       0.3674419
-    ## 4  Stephen Curry     75    190       0.3947368
-    ## 5  Zaza Pachulia     83    270       0.3074074
+    ##   player         height weight `height/weight`
+    ##   <chr>           <int>  <int>           <dbl>
+    ## 1 Draymond Green     79    230           0.343
+    ## 2 Kevin Durant       81    240           0.338
+    ## 3 Klay Thompson      79    215           0.367
+    ## 4 Stephen Curry      75    190           0.395
+    ## 5 Zaza Pachulia      83    270           0.307
 
 You can also give a new name, like: `ht_wt = height / weight`:
 
@@ -220,13 +214,13 @@ mutate(gsw, ht_wt = height / weight)
 ```
 
     ## # A tibble: 5 x 4
-    ##           player height weight     ht_wt
-    ##            <chr>  <int>  <int>     <dbl>
-    ## 1 Draymond Green     79    230 0.3434783
-    ## 2   Kevin Durant     81    240 0.3375000
-    ## 3  Klay Thompson     79    215 0.3674419
-    ## 4  Stephen Curry     75    190 0.3947368
-    ## 5  Zaza Pachulia     83    270 0.3074074
+    ##   player         height weight ht_wt
+    ##   <chr>           <int>  <int> <dbl>
+    ## 1 Draymond Green     79    230 0.343
+    ## 2 Kevin Durant       81    240 0.338
+    ## 3 Klay Thompson      79    215 0.367
+    ## 4 Stephen Curry      75    190 0.395
+    ## 5 Zaza Pachulia      83    270 0.307
 
 In order to permanently change the data, you need to assign the changes to an object:
 
@@ -236,13 +230,13 @@ gsw2
 ```
 
     ## # A tibble: 5 x 5
-    ##           player height weight   ht_m   wt_kg
-    ##            <chr>  <int>  <int>  <dbl>   <dbl>
-    ## 1 Draymond Green     79    230 2.0066 104.328
-    ## 2   Kevin Durant     81    240 2.0574 108.864
-    ## 3  Klay Thompson     79    215 2.0066  97.524
-    ## 4  Stephen Curry     75    190 1.9050  86.184
-    ## 5  Zaza Pachulia     83    270 2.1082 122.472
+    ##   player         height weight  ht_m wt_kg
+    ##   <chr>           <int>  <int> <dbl> <dbl>
+    ## 1 Draymond Green     79    230  2.01 104  
+    ## 2 Kevin Durant       81    240  2.06 109  
+    ## 3 Klay Thompson      79    215  2.01  97.5
+    ## 4 Stephen Curry      75    190  1.90  86.2
+    ## 5 Zaza Pachulia      83    270  2.11 122
 
 Reordering rows: `arrange()`
 ----------------------------
@@ -255,13 +249,13 @@ arrange(gsw, height)
 ```
 
     ## # A tibble: 5 x 3
-    ##           player height weight
-    ##            <chr>  <int>  <int>
-    ## 1  Stephen Curry     75    190
+    ##   player         height weight
+    ##   <chr>           <int>  <int>
+    ## 1 Stephen Curry      75    190
     ## 2 Draymond Green     79    230
-    ## 3  Klay Thompson     79    215
-    ## 4   Kevin Durant     81    240
-    ## 5  Zaza Pachulia     83    270
+    ## 3 Klay Thompson      79    215
+    ## 4 Kevin Durant       81    240
+    ## 5 Zaza Pachulia      83    270
 
 By default `arrange()` sorts rows in increasing. To arrande rows in descending order you need to use the auxiliary function `desc()`.
 
@@ -271,13 +265,13 @@ arrange(gsw, desc(height))
 ```
 
     ## # A tibble: 5 x 3
-    ##           player height weight
-    ##            <chr>  <int>  <int>
-    ## 1  Zaza Pachulia     83    270
-    ## 2   Kevin Durant     81    240
+    ##   player         height weight
+    ##   <chr>           <int>  <int>
+    ## 1 Zaza Pachulia      83    270
+    ## 2 Kevin Durant       81    240
     ## 3 Draymond Green     79    230
-    ## 4  Klay Thompson     79    215
-    ## 5  Stephen Curry     75    190
+    ## 4 Klay Thompson      79    215
+    ## 5 Stephen Curry      75    190
 
 ``` r
 # order rows by height, and then weight
@@ -285,13 +279,13 @@ arrange(gsw, height, weight)
 ```
 
     ## # A tibble: 5 x 3
-    ##           player height weight
-    ##            <chr>  <int>  <int>
-    ## 1  Stephen Curry     75    190
-    ## 2  Klay Thompson     79    215
+    ##   player         height weight
+    ##   <chr>           <int>  <int>
+    ## 1 Stephen Curry      75    190
+    ## 2 Klay Thompson      79    215
     ## 3 Draymond Green     79    230
-    ## 4   Kevin Durant     81    240
-    ## 5  Zaza Pachulia     83    270
+    ## 4 Kevin Durant       81    240
+    ## 5 Zaza Pachulia      83    270
 
 ------------------------------------------------------------------------
 
@@ -381,18 +375,18 @@ summarise(
 ```
 
     ## # A tibble: 30 x 2
-    ##     team avg_salary
+    ##    team  avg_salary
     ##    <chr>      <dbl>
-    ##  1   ATL    6491892
-    ##  2   BOS    6127673
-    ##  3   BRK    4363414
-    ##  4   CHI    6138459
-    ##  5   CHO    6683086
-    ##  6   CLE    8386014
-    ##  7   DAL    6139880
-    ##  8   DEN    5225533
-    ##  9   DET    6871594
-    ## 10   GSW    6579394
+    ##  1 ATL      6491892
+    ##  2 BOS      6127673
+    ##  3 BRK      4363414
+    ##  4 CHI      6138459
+    ##  5 CHO      6683086
+    ##  6 CLE      8386014
+    ##  7 DAL      6139880
+    ##  8 DEN      5225533
+    ##  9 DET      6871594
+    ## 10 GSW      6579394
     ## # ... with 20 more rows
 
 Here's a similar example with the average salary by position:
@@ -407,12 +401,12 @@ summarise(
 
     ## # A tibble: 5 x 2
     ##   position avg_salary
-    ##      <chr>      <dbl>
-    ## 1        C    6987682
-    ## 2       PF    5890363
-    ## 3       PG    6069029
-    ## 4       SF    6513374
-    ## 5       SG    5535260
+    ##   <chr>         <dbl>
+    ## 1 C           6987682
+    ## 2 PF          5890363
+    ## 3 PG          6069029
+    ## 4 SF          6513374
+    ## 5 SG          5535260
 
 Here's a more fancy example: average weight and height, by position, displayed in desceding order by average height:
 
@@ -428,12 +422,12 @@ arrange(
 
     ## # A tibble: 5 x 3
     ##   position avg_height avg_weight
-    ##      <chr>      <dbl>      <dbl>
-    ## 1        C   83.25843   250.7978
-    ## 2       PF   81.50562   235.8539
-    ## 3       SF   79.63855   220.4699
-    ## 4       SG   77.02105   204.7684
-    ## 5       PG   74.30588   188.5765
+    ##   <chr>         <dbl>      <dbl>
+    ## 1 C              83.3        251
+    ## 2 PF             81.5        236
+    ## 3 SF             79.6        220
+    ## 4 SG             77.0        205
+    ## 5 PG             74.3        189
 
 ### Your turn:
 

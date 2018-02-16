@@ -51,8 +51,8 @@ graphics with `"ggplot2"`.
 
 While you follow this lab, you may want to open these cheat sheets:
 
-- [dplyr cheatsheet](../cheat-sheets/data-transformation-cheatsheet.pdf)
-- [ggplot2 cheatsheet](../cheat-sheets/ggplot2-cheatsheet-2.1.pdf)
+- [dplyr cheatsheet](../cheatsheets/data-transformation-cheatsheet.pdf)
+- [ggplot2 cheatsheet](../cheatsheets/ggplot2-cheatsheet-2.1.pdf)
 
 
 ### Installing packages
