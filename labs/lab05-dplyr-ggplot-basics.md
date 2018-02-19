@@ -257,7 +257,7 @@ arrange(gsw, height)
     ## 4 Kevin Durant       81    240
     ## 5 Zaza Pachulia      83    270
 
-By default `arrange()` sorts rows in increasing. To arrande rows in descending order you need to use the auxiliary function `desc()`.
+By default `arrange()` sorts rows in increasing order. To arrange rows in descending order you need to use the auxiliary function `desc()`.
 
 ``` r
 # order rows by height (decreasingly)
@@ -362,7 +362,7 @@ c(min = min(dat$salary),
 Grouped operations
 ------------------
 
-To actually appreciate the power of `summarise()`, we need to introduce the other major basic verb in `"dplyr"`: `group_by()`. This is the function that allows you to do perform data aggregations, or *grouped operations*.
+To actually appreciate the power of `summarise()`, we need to introduce the other major basic verb in `"dplyr"`: `group_by()`. This is the function that allows you to perform data aggregations, or *grouped operations*.
 
 Let's see the combination of `summarise()` and `group_by()` to calculate the average salary by team:
 
@@ -444,7 +444,7 @@ arrange(
 ------------------------------------------------------------------------
 
 First contact with `ggplot()`
------------------------------
+=============================
 
 The package `"ggplot2"` is probably the most popular package in R to create *beautiful* static graphics. Comapred to the functions in the base package `"graphcics"`, the package `"ggplot2`" follows a somewhat different philosophy, and it tries to be more consistent and modular as possible.
 
@@ -481,7 +481,7 @@ ggplot(data = dat, aes(x = points, y = salary)) +
   geom_point()
 ```
 
-Say you want to color code the points in terms of the `position`
+Say you want to color code the points in terms of `position`
 
 ``` r
 # colored scatterplot 
@@ -501,7 +501,7 @@ ggplot(data = dat, aes(x = points, y = salary)) +
 
 ![](lab05-images/unnamed-chunk-22-1.png)
 
-To add some transparency effect to the dots, you can use the `alpha` parameter
+To add some transparency effect to the dots, you can use the `alpha` parameter.
 
 ``` r
 # sized and colored scatterplot 
@@ -515,15 +515,17 @@ Notice that `alpha` was specified outside `aes()`. This is because we are not us
 
 ### Your turn:
 
--   If you didn't before, now it's time to open the [ggplot2 cheatsheet](../cheat-sheets/ggplot2-cheatsheet-2.1.pdf)
--   Use the data frame `gsw` to make a scatterplot of `height` and `weight`
--   Find out how to make another scatterplot of `height` and `weight`, using `geom_text()` to display the names of the players
--   Get a scatter plot of `height` and `weight`, for ALL the warriors, displaying their names with `geom_label()`
--   Get a density plot of `salary` (for all NBA players)
--   Get a histogram of `points2` with binwidth of 50 (for all NBA players)
--   Get a barchart of the `position` frequencies (for all NBA players)
--   Make a scatterplot of `experience` and `salary` of all centers, and use `geom_smooth()` to add a regression line
--   Repeat the same scatterplot of `experience` and `salary` of all centers, but now use `geom_smooth()` to add a loess line
+-   Open the [ggplot2 cheatsheet](../cheatsheets/ggplot2-cheatsheet-2.1.pdf)
+-   Use the data frame `gsw` to make a scatterplot of `height` and `weight`.
+-   Find out how to make another scatterplot of `height` and `weight`, using `geom_text()` to display the names of the players.
+-   Get a scatter plot of `height` and `weight`, for ALL the warriors, displaying their names with `geom_label()`.
+-   Get a density plot of `salary` (for all NBA players).
+-   Get a histogram of `points2` with binwidth of 50 (for all NBA players).
+-   Get a barchart of the `position` frequencies (for all NBA players).
+-   Make a scatterplot of `experience` and `salary` of all Centers, and use `geom_smooth()` to add a regression line.
+-   Repeat the same scatterplot of `experience` and `salary` of all Centers, but now use `geom_smooth()` to add a loess line (i.e. smooth line).
+
+------------------------------------------------------------------------
 
 Faceting
 --------
