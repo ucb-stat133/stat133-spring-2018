@@ -54,6 +54,46 @@ While you follow this lab, you may want to open these cheat sheets:
 - [dplyr cheatsheet](../cheatsheets/data-transformation-cheatsheet.pdf)
 - [ggplot2 cheatsheet](../cheatsheets/ggplot2-cheatsheet-2.1.pdf)
 
+-----
+
+## Filestructure and Shell Commands
+
+We want you to keep practicing with the command line (e.g. Mac Terminal, Gitbash). Follow the steps listed below to create the 
+necessary subdirectories like those depicted in this scheme:
+
+```
+    lab05/
+      README.md
+      data/
+        nba2017-players.csv
+      report/
+        lab05.Rmd
+        lab05.html
+      images/
+        ... # all the plot files
+```
+
+- Open a command line interface (e.g. Terminal or GitBash)
+- Change your working directory to a location where you will store all the 
+materials for this lab
+- Use `mkdir` to create a directory `lab05` for the lab materials
+- Use `cd` to change directory to (i.e. move inside) `lab05`
+- Create other subdirectories: `data`, `report`, `images`
+- Use `ls` to list the contents of `lab05` and confirm that you have all the subdirectories.
+- Use `touch` to create an empty `README.md` text file
+- Use a text editor (e.g. the one in RStudio) to open the `README.md` file, and then add a brief description of today's lab, using markdown syntax.
+- Change directory to the `data/` folder.
+- Download the data file with the command `curl`, and the `-O` option (letter O)
+```bash
+curl -O https://raw.githubusercontent.com/ucb-stat133/stat133-spring-2018/master/data/nba2017-players.csv
+```
+- Use `ls` to confirm that the csv file is in `data/`
+- Use _word count_ `wc` to count the lines of the csv file
+- Take a peek at the first rows of the csv file with `head`
+- Take a peek at the last 5 rows of the csv file with `tail`
+
+-----
+
 
 ### Installing packages
 
@@ -85,6 +125,24 @@ Avoid calling the `library()` function in the middle of a script. Instead,
 load all the packages before anything else.
 
 
+### Path for Images
+
+The other important specification to include in your Rmd file is a global 
+chunk option to specify the location of plots and graphics. This is done by 
+setting the `fig.path` argument inside the `knitr::opts_chunk$set()` function.
+
+![](lab05-images/knitr-fig-path.png)
+
+If you don't specify `fig.path`, `"knitr"` will create a default directory to store
+all the plots produced when knitting an Rmd file. This time, however, we want 
+to have more control over where things are placed. Because you already have a 
+folder `images/` as part of the filestructure, this is where we want `"knitr"` 
+to save all the generated graphics.
+
+Notice the use of a relative path `fig.path = '../images/'`. This is because
+your Rmd file should be inside the folder `report/`, but the folder `images/`
+is outside `report/` (i.e. in the same parent directory of `report/`).
+
 -----
 
 ## NBA Players Data
@@ -93,17 +151,7 @@ load all the packages before anything else.
 dat <- read.csv('../data/nba2017-players.csv', stringsAsFactors = FALSE)
 ```
 
-The data file for this lab is the same you used last week: `nba2017-players.csv`, 
-which is located in the `data/` folder of the course github repository. 
-I assume that you already downloaded a copy of the csv file to your computer. 
-If that is not the case, here's one option to get your own copy:
-
-```r
-# download RData file into your working directory
-github <- "https://github.com/ucb-stat133/stat133-spring-2018/raw/master/"
-csv <- "data/nba2017-players.csv"
-download.file(url = paste0(github, csv), destfile = 'nba2017-players.csv')
-```
+The data file for this lab is the same you used last week: `nba2017-players.csv`.
 
 To import the data in R you can use the base function `read.csv()`, or you 
 can also use `read_csv()` from the package `"readr"`:
@@ -424,6 +472,24 @@ ggplot(data = dat, aes(x = points, y = salary)) +
   geom_point()
 ```
 
+
+### Label your chunks!
+
+When including code for plots and graphics, we strongly recommend that you create an
+individual code chunk for each plot, and that you __give a label__ to that chunk.
+This is illustrated in the following screenshot. 
+
+![](lab05-images/named-chunk.png)
+
+Note that the code chunk has
+a label `scatterplot1`; moreover, the code is exclusively decidated to this
+plot. Why should you care? Because when `"knitr"` creates the file of the plot, 
+it will use the chunk label for the graph. So it's better to give meaningful
+names to those chunks containing graphics.
+
+
+### Adding color
+
 Say you want to color code the points in terms of `position`
 
 ```{r}
@@ -516,3 +582,30 @@ ggplot(data = dat, aes(x = points, y = salary)) +
 - Make a scatterplot of `experience` and `salary` for the Warriors, but this time add a layer with `theme_bw()` to get a simpler background
 - Repeat any of the previous plots but now adding a leyer with another 
 theme e.g. `theme_minimal()`, `theme_dark()`, `theme_classic()`
+
+
+-----
+
+## More shell commands
+
+Now that you have a bunch of images inside the `images/` subdirectory, let's 
+keep practicing some basic commands.
+
+- Open the terminal.
+- Move inside the `images/` directory of the lab.
+- List the contents of this directory.
+- Now list the contents of the directory in _long format_.
+- How would you list the contents in long format, by time?
+- How would you list the contents displaying the results in reverse (alphabetical)? order
+- Without changing your current directory, create a directory `copies` at the
+parent level (i.e. `lab05/`).
+- Copy one of the PNG files to the `copies` folder.
+- Use the wildcard `*` to copy all the `.png` files in the directory `copies`.
+- Change to the directory `copies`.
+- Use the command `mv` to rename some of your PNG files.
+- Change to the `report/` directory.
+- From within `report/`, find out how to rename the directory `copies` as `copy-files`.
+- From within `report/`, delete one or two PNG files in `copy-files`.
+- From within `report/`, find out how to delete the directory `copy-files`.
+
+
