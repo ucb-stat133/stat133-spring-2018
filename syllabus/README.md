@@ -144,6 +144,7 @@
 - :microscope: __Lab__:
     + [Getting started with dplyr and ggplot2](../labs/lab05-dplyr-ggplot-basics.md)
 - :newspaper: __Misc__:
+    + [tibbles vignette](https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html)
     + [Introduction to dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) (by Hadley Wickham)
 - :bulb: __Cheat sheet__:
     + [Data transformation cheat sheet](../cheat-sheets/data-transformation-cheatsheet.pdf)
@@ -163,7 +164,7 @@
 - :book: __Reading__:
     + ["dplyr" tutorial](../slides/17-dplyr-tutorial.pdf) (by Hadley Wickham)
 - :microscope: __Lab__:
-    + [More dplyr, ggplot2, and exporting outputs](../labs/lab06-more-dplyr-ggplot.md)
+    + [More data wrangling, and exporting outputs](../labs/lab06-more-data-wrangling.md)
 - :newspaper: __Misc__:
     + [Tidy Data](../papers/tidy-data-wickham) (by Hadley Wickham)
 - :bulb: __Cheat sheet__:
