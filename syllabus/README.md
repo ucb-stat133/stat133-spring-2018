@@ -137,10 +137,9 @@
 - :card_index: __Dates__: Feb 19-23 _(Holiday Feb-19)_
 - :paperclip: __Topics__: We continue reviewing manipulation of data frames with an introduction to the _data plying_ framework provided by the package `"dplyr"`. Likewise, we begin reviewing the visualization paradigm of `"ggplot2"` which is based on data frames.
 - :file_folder: __Notes__:
-    + [Introduction to `"dplyr"`](../tutorials/05-intro-to-dplyr.md) (tutorial)
+    + ["dplyr" tutorial slides](../slides/17-dplyr-tutorial.pdf) (by Hadley Wickham)
     + [Grammar of Graphics framework](../slides/18-grammar-graphics.pdf) (slides)
 - :book: __Reading__:
-    + ["dplyr" tutorial](../slides/17-dplyr-tutorial.pdf) (by Hadley Wickham)
     + ["ggplot2" lecture](../slides/19-ggplot-lecture.pdf) (by Karthik Ram)
 - :microscope: __Lab__:
     + [Getting started with dplyr and ggplot2](../labs/lab05-dplyr-ggplot-basics.md)
@@ -163,7 +162,6 @@
     + Cluster Analysis
 - :book: __Reading__:
     + ["dplyr" tutorial](../slides/17-dplyr-tutorial.pdf) (by Hadley Wickham)
-    + ["ggplot2" lecture](../slides/19-ggplot-lecture.pdf) (by Karthik Ram)
 - :microscope: __Lab__:
     + [More dplyr, ggplot2, and exporting outputs](../labs/lab06-more-dplyr-ggplot.md)
 - :newspaper: __Misc__:
