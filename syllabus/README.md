@@ -124,7 +124,7 @@
 - :newspaper: __Misc__:
     + [Data Import](http://r4ds.had.co.nz/data-import.html) (_R for Data Science_ by Grolemund and Wickham)
 - :bulb: __Cheat sheet__:
-    + [Data import cheat sheet](../cheat-sheets/data-import-cheatsheet.pdf)
+    + [Data import cheat sheet](../cheatsheets/data-import-cheatsheet.pdf)
 - :dart: __HW 1__: due Feb-23
     + [Data Frame Basics](../hws/hw01-data-frame-basics.pdf)
 
@@ -147,8 +147,8 @@
     + [tibbles vignette](https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html)
     + [Introduction to dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) (by Hadley Wickham)
 - :bulb: __Cheat sheet__:
-    + [Data transformation cheat sheet](../cheat-sheets/data-transformation-cheatsheet.pdf)
-    + [Data visualization with ggplot2](../cheat-sheets/ggplot2-cheatsheet-2.1.pdf)
+    + [Data transformation cheat sheet](../cheatsheets/data-transformation-cheatsheet.pdf)
+    + [Data visualization with ggplot2](../cheatsheets/ggplot2-cheatsheet-2.1.pdf)
 
 
 -----
@@ -168,8 +168,8 @@
 - :newspaper: __Misc__:
     + [Tidy Data](../papers/tidy-data-wickham) (by Hadley Wickham)
 - :bulb: __Cheat sheet__:
-    + [Data transformation cheat sheet](../cheat-sheets/data-transformation-cheatsheet.pdf)
-    + [Data visualization with ggplot2](../cheat-sheets/ggplot2-cheatsheet-2.1.pdf)
+    + [Data transformation cheat sheet](../cheatsheets/data-transformation-cheatsheet.pdf)
+    + [Data visualization with ggplot2](../cheatsheets/ggplot2-cheatsheet-2.1.pdf)
 - :dart: __HW 2__: due Mar-09
     + TBA
 
@@ -256,7 +256,7 @@
 - :newspaper: __Misc__:
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :bulb: __Cheat sheet__:
-    + [Regular Expressions cheat sheet](../cheat-sheets/regular-expressions-cheatsheet.pdf)
+    + [Regular Expressions cheat sheet](../cheatsheets/regular-expressions-cheatsheet.pdf)
 
 
 -----
