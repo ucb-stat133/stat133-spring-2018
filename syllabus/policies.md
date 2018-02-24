@@ -74,9 +74,11 @@ While writing the course policies, I've tried to be as comprehensive and clear a
 - You should grade the work as it appears in the _status_ of the closest commit before the deadline, of your github repository. 
 - __No late submission:__ you should NOT grade any pushed commits after 11:59 PM of the HW deadline.
 - After the HW deadline, a rubric with the solutions will be posted on bCourses (in the __Files__ section). You will then be expected to read them and enter your own scores and comments for (every part) of every problem in the homework on a simple coarse scale:
-    + __0__ = Didn't attempt or very wrong,
-    + __half credit__ = Mostly right but a minor thing missing or somewhat wrong,
-    + __full credit__ = 100% correct.
+    + __0__ = Didn't attempt or very very wrong,
+    + __2__ = Got started and made some progress, but went off in the wrong direction or with no clear direction,
+    + __5__ = Right direction and got half-way there,
+    + __8__ = Mostly right but a minor thing missing or wrong,
+    + __10__ = 100% correct.
 - In case there is a cascading error, you don't need to penalize multiple times. Just indicate the source of the error, and then give full credit for the other dependent parts as long as your work and code are consistent.
 - To submit your grade, use the _Assignment Comments_ section (associated to the corresponding assignment on bCourses) to enter the grade for each part justified with a comment, and a total score. Here's screenshot example of the grading comments:
 
