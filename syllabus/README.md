@@ -171,7 +171,7 @@
     + [Data transformation cheat sheet](../cheatsheets/data-transformation-cheatsheet.pdf)
     + [Data visualization with ggplot2](../cheatsheets/ggplot2-cheatsheet-2.1.pdf)
 - :dart: __HW 2__: due Mar-09
-    + TBA
+    + [Data Wrangling and visualization](../hws/hw02-shot-charts.pdf)
 
 
 -----
