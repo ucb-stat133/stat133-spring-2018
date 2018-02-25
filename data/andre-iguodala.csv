@@ -1,0 +1,372 @@
+team_name,game_date,season,period,minutes_remaining,seconds_remaining,shot_made_flag,action_type,shot_type,shot_distance,opponent,x,y
+Golden State Warriors,3/24/17,2016,3,2,35,n,Alley Oop Dunk Shot,2PT Field Goal,0,Sacramento Kings,0,1
+Golden State Warriors,11/3/16,2016,2,10,51,n,Alley Oop Dunk Shot,2PT Field Goal,1,Oklahoma City Thunder,-12,13
+Golden State Warriors,10/25/16,2016,2,0,6,y,Alley Oop Dunk Shot,2PT Field Goal,0,San Antonio Spurs,0,1
+Golden State Warriors,11/3/16,2016,2,11,10,n,Alley Oop Layup shot,2PT Field Goal,1,Oklahoma City Thunder,-1,11
+Golden State Warriors,1/8/17,2016,4,0,32,y,Cutting Dunk Shot,2PT Field Goal,0,Sacramento Kings,0,1
+Golden State Warriors,3/16/17,2016,3,5,30,y,Cutting Dunk Shot,2PT Field Goal,0,Orlando Magic,0,1
+Golden State Warriors,1/2/17,2016,4,7,57,y,Cutting Dunk Shot,2PT Field Goal,0,Denver Nuggets,0,1
+Golden State Warriors,12/7/16,2016,4,9,31,y,Cutting Dunk Shot,2PT Field Goal,0,Los Angeles Clippers,0,1
+Golden State Warriors,2/28/17,2016,2,0,23,y,Cutting Dunk Shot,2PT Field Goal,0,Washington Wizards,0,1
+Golden State Warriors,2/1/17,2016,2,0,2,y,Cutting Dunk Shot,2PT Field Goal,0,Charlotte Hornets,0,1
+Golden State Warriors,11/25/16,2016,1,0,44,y,Cutting Dunk Shot,2PT Field Goal,0,Los Angeles Lakers,0,1
+Golden State Warriors,2/13/17,2016,1,0,41,y,Cutting Dunk Shot,2PT Field Goal,0,Denver Nuggets,0,1
+Golden State Warriors,12/28/16,2016,2,3,34,y,Cutting Dunk Shot,2PT Field Goal,0,Toronto Raptors,0,1
+Golden State Warriors,3/28/17,2016,3,5,56,y,Cutting Dunk Shot,2PT Field Goal,0,Houston Rockets,0,1
+Golden State Warriors,12/7/16,2016,3,3,23,y,Cutting Dunk Shot,2PT Field Goal,0,Los Angeles Clippers,0,1
+Golden State Warriors,11/16/16,2016,2,1,23,y,Cutting Dunk Shot,2PT Field Goal,0,Toronto Raptors,0,1
+Golden State Warriors,11/18/16,2016,1,3,36,y,Cutting Dunk Shot,2PT Field Goal,0,Boston Celtics,0,1
+Golden State Warriors,2/13/17,2016,1,1,3,y,Cutting Dunk Shot,2PT Field Goal,0,Denver Nuggets,0,1
+Golden State Warriors,2/11/17,2016,1,0,59,y,Cutting Dunk Shot,2PT Field Goal,0,Oklahoma City Thunder,0,1
+Golden State Warriors,11/25/16,2016,2,3,24,y,Cutting Dunk Shot,2PT Field Goal,0,Los Angeles Lakers,0,1
+Golden State Warriors,2/10/17,2016,3,1,21,y,Cutting Finger Roll Layup Shot,2PT Field Goal,1,Memphis Grizzlies,10,8
+Golden State Warriors,1/16/17,2016,2,5,8,y,Cutting Finger Roll Layup Shot,2PT Field Goal,1,Cleveland Cavaliers,-11,7
+Golden State Warriors,1/16/17,2016,4,9,39,y,Cutting Layup Shot,2PT Field Goal,0,Cleveland Cavaliers,-1,8
+Golden State Warriors,1/6/17,2016,2,2,34,n,Cutting Layup Shot,2PT Field Goal,1,Memphis Grizzlies,10,11
+Golden State Warriors,2/13/17,2016,1,2,55,y,Cutting Layup Shot,2PT Field Goal,1,Denver Nuggets,-14,7
+Golden State Warriors,3/2/17,2016,4,0,56,y,Driving Dunk Shot,2PT Field Goal,0,Chicago Bulls,-2,0
+Golden State Warriors,3/2/17,2016,1,2,35,y,Driving Dunk Shot,2PT Field Goal,0,Chicago Bulls,0,1
+Golden State Warriors,10/28/16,2016,4,11,8,y,Driving Dunk Shot,2PT Field Goal,0,New Orleans Pelicans,0,1
+Golden State Warriors,12/17/16,2016,2,0,8,y,Driving Dunk Shot,2PT Field Goal,0,Portland Trail Blazers,0,1
+Golden State Warriors,12/7/16,2016,2,3,28,y,Driving Dunk Shot,2PT Field Goal,0,Los Angeles Clippers,0,1
+Golden State Warriors,11/28/16,2016,1,2,29,y,Driving Dunk Shot,2PT Field Goal,0,Atlanta Hawks,0,1
+Golden State Warriors,3/26/17,2016,1,0,45,y,Driving Dunk Shot,2PT Field Goal,0,Memphis Grizzlies,0,1
+Golden State Warriors,11/28/16,2016,4,10,39,y,Driving Dunk Shot,2PT Field Goal,0,Atlanta Hawks,0,1
+Golden State Warriors,12/28/16,2016,4,8,7,y,Driving Finger Roll Layup Shot,2PT Field Goal,2,Toronto Raptors,-6,23
+Golden State Warriors,3/29/17,2016,4,2,20,n,Driving Finger Roll Layup Shot,2PT Field Goal,1,San Antonio Spurs,9,11
+Golden State Warriors,2/2/17,2016,3,0,0,y,Driving Floating Bank Jump Shot,2PT Field Goal,7,Los Angeles Clippers,46,62
+Golden State Warriors,12/23/16,2016,2,0,49,y,Driving Layup Shot,2PT Field Goal,1,Detroit Pistons,-9,7
+Golden State Warriors,3/31/17,2016,3,4,13,n,Driving Layup Shot,2PT Field Goal,2,Houston Rockets,-17,21
+Golden State Warriors,3/18/17,2016,1,3,45,y,Driving Reverse Dunk Shot,2PT Field Goal,0,Milwaukee Bucks,0,1
+Golden State Warriors,11/9/16,2016,2,3,48,y,Driving Reverse Layup Shot,2PT Field Goal,1,Dallas Mavericks,14,2
+Golden State Warriors,11/1/16,2016,1,3,11,n,Driving Reverse Layup Shot,2PT Field Goal,0,Portland Trail Blazers,2,7
+Golden State Warriors,1/8/17,2016,1,3,53,y,Dunk Shot,2PT Field Goal,0,Sacramento Kings,0,1
+Golden State Warriors,3/24/17,2016,3,3,1,y,Dunk Shot,2PT Field Goal,0,Sacramento Kings,0,1
+Golden State Warriors,10/28/16,2016,3,0,2,y,Dunk Shot,2PT Field Goal,0,New Orleans Pelicans,0,1
+Golden State Warriors,3/28/17,2016,1,3,15,y,Dunk Shot,2PT Field Goal,0,Houston Rockets,0,1
+Golden State Warriors,3/31/17,2016,4,0,29,y,Dunk Shot,2PT Field Goal,0,Houston Rockets,0,1
+Golden State Warriors,3/20/17,2016,2,2,32,y,Dunk Shot,2PT Field Goal,0,Oklahoma City Thunder,0,1
+Golden State Warriors,2/28/17,2016,4,5,20,n,Dunk Shot,2PT Field Goal,0,Washington Wizards,0,1
+Golden State Warriors,1/28/17,2016,3,3,44,y,Dunk Shot,2PT Field Goal,0,Los Angeles Clippers,0,1
+Golden State Warriors,2/23/17,2016,3,5,22,y,Dunk Shot,2PT Field Goal,0,Los Angeles Clippers,0,1
+Golden State Warriors,10/30/16,2016,2,0,43,y,Dunk Shot,2PT Field Goal,0,Phoenix Suns,0,1
+Golden State Warriors,1/28/17,2016,2,0,28,y,Dunk Shot,2PT Field Goal,0,Los Angeles Clippers,0,1
+Golden State Warriors,1/18/17,2016,4,10,24,y,Dunk Shot,2PT Field Goal,0,Oklahoma City Thunder,0,1
+Golden State Warriors,11/3/16,2016,4,10,13,y,Fadeaway Jump Shot,2PT Field Goal,19,Oklahoma City Thunder,195,-1
+Golden State Warriors,12/28/16,2016,3,1,10,y,Finger Roll Layup Shot,2PT Field Goal,1,Toronto Raptors,-1,16
+Golden State Warriors,2/10/17,2016,2,4,36,y,Floating Jump shot,2PT Field Goal,17,Memphis Grizzlies,-109,136
+Golden State Warriors,1/2/17,2016,3,0,0,n,Floating Jump shot,2PT Field Goal,10,Denver Nuggets,-29,97
+Golden State Warriors,12/28/16,2016,4,11,14,y,Hook Shot,2PT Field Goal,5,Toronto Raptors,-29,41
+Golden State Warriors,11/18/16,2016,2,3,4,y,Hook Shot,2PT Field Goal,0,Boston Celtics,0,1
+Golden State Warriors,11/1/16,2016,4,9,22,n,Hook Shot,2PT Field Goal,3,Portland Trail Blazers,-32,7
+Golden State Warriors,12/25/16,2016,2,0,46,n,Jump Bank Shot,2PT Field Goal,7,Cleveland Cavaliers,68,36
+Golden State Warriors,3/2/17,2016,2,0,22,n,Jump Shot,3PT Field Goal,26,Chicago Bulls,-191,180
+Golden State Warriors,4/4/17,2016,1,0,18,y,Jump Shot,2PT Field Goal,18,Minnesota Timberwolves,117,144
+Golden State Warriors,3/31/17,2016,1,2,2,y,Jump Shot,3PT Field Goal,27,Houston Rockets,81,262
+Golden State Warriors,3/31/17,2016,2,0,0,y,Jump Shot,3PT Field Goal,27,Houston Rockets,-215,165
+Golden State Warriors,3/31/17,2016,4,8,12,n,Jump Shot,3PT Field Goal,25,Houston Rockets,87,242
+Golden State Warriors,3/31/17,2016,2,8,11,n,Jump Shot,3PT Field Goal,25,Houston Rockets,-60,247
+Golden State Warriors,3/31/17,2016,1,1,29,n,Jump Shot,3PT Field Goal,25,Houston Rockets,-119,228
+Golden State Warriors,3/31/17,2016,4,1,39,n,Jump Shot,3PT Field Goal,23,Houston Rockets,-227,67
+Golden State Warriors,3/31/17,2016,1,5,0,n,Jump Shot,2PT Field Goal,19,Houston Rockets,109,159
+Golden State Warriors,3/29/17,2016,2,10,3,n,Jump Shot,3PT Field Goal,24,San Antonio Spurs,161,183
+Golden State Warriors,3/29/17,2016,1,2,31,y,Jump Shot,3PT Field Goal,23,San Antonio Spurs,233,2
+Golden State Warriors,3/29/17,2016,2,4,39,y,Jump Shot,3PT Field Goal,25,San Antonio Spurs,-207,154
+Golden State Warriors,3/29/17,2016,1,0,49,y,Jump Shot,2PT Field Goal,19,San Antonio Spurs,-158,120
+Golden State Warriors,3/28/17,2016,3,4,31,y,Jump Shot,3PT Field Goal,23,Houston Rockets,233,26
+Golden State Warriors,3/28/17,2016,3,6,52,n,Jump Shot,3PT Field Goal,22,Houston Rockets,223,51
+Golden State Warriors,3/28/17,2016,4,10,38,n,Jump Shot,3PT Field Goal,24,Houston Rockets,225,97
+Golden State Warriors,3/28/17,2016,2,9,9,n,Jump Shot,3PT Field Goal,23,Houston Rockets,228,70
+Golden State Warriors,3/26/17,2016,2,8,39,n,Jump Shot,2PT Field Goal,14,Memphis Grizzlies,-133,46
+Golden State Warriors,3/26/17,2016,1,5,5,y,Jump Shot,3PT Field Goal,26,Memphis Grizzlies,-212,160
+Golden State Warriors,3/24/17,2016,1,2,31,n,Jump Shot,3PT Field Goal,25,Sacramento Kings,-55,247
+Golden State Warriors,3/24/17,2016,2,11,38,n,Jump Shot,2PT Field Goal,17,Sacramento Kings,-124,129
+Golden State Warriors,3/20/17,2016,3,0,35,n,Jump Shot,3PT Field Goal,25,Oklahoma City Thunder,-189,164
+Golden State Warriors,3/20/17,2016,1,2,33,n,Jump Shot,2PT Field Goal,17,Oklahoma City Thunder,171,11
+Golden State Warriors,3/18/17,2016,4,8,11,n,Jump Shot,2PT Field Goal,3,Milwaukee Bucks,17,28
+Golden State Warriors,3/16/17,2016,4,10,21,n,Jump Shot,3PT Field Goal,26,Orlando Magic,-122,232
+Golden State Warriors,3/14/17,2016,2,7,38,n,Jump Shot,2PT Field Goal,3,Philadelphia 76ers,-29,26
+Golden State Warriors,3/6/17,2016,4,2,38,y,Jump Shot,3PT Field Goal,23,Atlanta Hawks,233,18
+Golden State Warriors,3/6/17,2016,4,5,18,n,Jump Shot,3PT Field Goal,25,Atlanta Hawks,168,193
+Golden State Warriors,3/6/17,2016,2,4,48,y,Jump Shot,3PT Field Goal,23,Atlanta Hawks,236,16
+Golden State Warriors,3/6/17,2016,1,4,44,y,Jump Shot,3PT Field Goal,24,Atlanta Hawks,238,46
+Golden State Warriors,3/6/17,2016,2,7,10,n,Jump Shot,3PT Field Goal,22,Atlanta Hawks,-227,13
+Golden State Warriors,3/6/17,2016,4,6,9,y,Jump Shot,3PT Field Goal,24,Atlanta Hawks,-60,242
+Golden State Warriors,3/5/17,2016,4,6,56,n,Jump Shot,3PT Field Goal,24,New York Knicks,191,151
+Golden State Warriors,3/5/17,2016,2,8,1,n,Jump Shot,3PT Field Goal,23,New York Knicks,-233,-31
+Golden State Warriors,3/5/17,2016,2,8,32,n,Jump Shot,3PT Field Goal,23,New York Knicks,232,-26
+Golden State Warriors,3/5/17,2016,2,4,51,y,Jump Shot,3PT Field Goal,24,New York Knicks,-158,188
+Golden State Warriors,3/5/17,2016,2,4,1,y,Jump Shot,3PT Field Goal,24,New York Knicks,205,136
+Golden State Warriors,3/2/17,2016,4,10,17,n,Jump Shot,3PT Field Goal,23,Chicago Bulls,233,-6
+Golden State Warriors,2/15/17,2016,2,8,48,n,Jump Shot,3PT Field Goal,25,Sacramento Kings,1,257
+Golden State Warriors,2/13/17,2016,2,1,14,n,Jump Shot,3PT Field Goal,23,Denver Nuggets,232,7
+Golden State Warriors,2/13/17,2016,2,9,31,n,Jump Shot,3PT Field Goal,25,Denver Nuggets,161,203
+Golden State Warriors,2/13/17,2016,3,2,27,n,Jump Shot,3PT Field Goal,25,Denver Nuggets,-173,183
+Golden State Warriors,2/13/17,2016,3,3,2,y,Jump Shot,2PT Field Goal,16,Denver Nuggets,168,21
+Golden State Warriors,2/13/17,2016,3,0,27,y,Jump Shot,3PT Field Goal,25,Denver Nuggets,200,164
+Golden State Warriors,2/11/17,2016,4,11,26,n,Jump Shot,2PT Field Goal,18,Oklahoma City Thunder,-66,169
+Golden State Warriors,2/11/17,2016,3,2,45,n,Jump Shot,3PT Field Goal,24,Oklahoma City Thunder,179,169
+Golden State Warriors,2/11/17,2016,1,1,23,y,Jump Shot,3PT Field Goal,22,Oklahoma City Thunder,-225,-10
+Golden State Warriors,2/11/17,2016,2,7,47,n,Jump Shot,3PT Field Goal,22,Oklahoma City Thunder,223,38
+Golden State Warriors,2/11/17,2016,4,8,15,n,Jump Shot,3PT Field Goal,24,Oklahoma City Thunder,-143,193
+Golden State Warriors,2/10/17,2016,2,5,22,y,Jump Shot,3PT Field Goal,25,Memphis Grizzlies,28,249
+Golden State Warriors,2/10/17,2016,3,3,3,n,Jump Shot,3PT Field Goal,25,Memphis Grizzlies,186,178
+Golden State Warriors,2/10/17,2016,2,10,22,y,Jump Shot,3PT Field Goal,22,Memphis Grizzlies,-227,2
+Golden State Warriors,2/8/17,2016,2,8,42,n,Jump Shot,3PT Field Goal,26,Chicago Bulls,64,259
+Golden State Warriors,2/4/17,2016,2,10,42,n,Jump Shot,3PT Field Goal,23,Sacramento Kings,-233,31
+Golden State Warriors,2/4/17,2016,4,8,47,n,Jump Shot,3PT Field Goal,24,Sacramento Kings,-202,141
+Golden State Warriors,2/4/17,2016,4,10,7,n,Jump Shot,3PT Field Goal,25,Sacramento Kings,187,174
+Golden State Warriors,2/4/17,2016,4,4,35,n,Jump Shot,2PT Field Goal,17,Sacramento Kings,171,13
+Golden State Warriors,2/2/17,2016,4,0,11,y,Jump Shot,3PT Field Goal,25,Los Angeles Clippers,-174,193
+Golden State Warriors,2/2/17,2016,4,10,3,y,Jump Shot,3PT Field Goal,25,Los Angeles Clippers,-63,249
+Golden State Warriors,2/2/17,2016,3,5,5,y,Jump Shot,3PT Field Goal,23,Los Angeles Clippers,-233,3
+Golden State Warriors,2/2/17,2016,4,4,16,n,Jump Shot,3PT Field Goal,26,Los Angeles Clippers,-165,205
+Golden State Warriors,2/1/17,2016,1,0,8,n,Jump Shot,3PT Field Goal,26,Charlotte Hornets,-179,193
+Golden State Warriors,1/29/17,2016,4,6,6,y,Jump Shot,3PT Field Goal,23,Portland Trail Blazers,-228,46
+Golden State Warriors,1/29/17,2016,2,10,3,n,Jump Shot,3PT Field Goal,22,Portland Trail Blazers,-225,7
+Golden State Warriors,1/28/17,2016,3,2,3,y,Jump Shot,3PT Field Goal,25,Los Angeles Clippers,153,210
+Golden State Warriors,1/28/17,2016,3,5,3,n,Jump Shot,3PT Field Goal,24,Los Angeles Clippers,182,159
+Golden State Warriors,1/28/17,2016,4,11,40,n,Jump Shot,2PT Field Goal,11,Los Angeles Clippers,-12,115
+Golden State Warriors,1/28/17,2016,3,4,31,n,Jump Shot,3PT Field Goal,23,Los Angeles Clippers,232,26
+Golden State Warriors,1/25/17,2016,2,10,44,n,Jump Shot,2PT Field Goal,15,Charlotte Hornets,-73,134
+Golden State Warriors,1/22/17,2016,4,11,36,y,Jump Shot,3PT Field Goal,22,Orlando Magic,-228,3
+Golden State Warriors,1/22/17,2016,4,10,20,n,Jump Shot,3PT Field Goal,23,Orlando Magic,-238,0
+Golden State Warriors,1/22/17,2016,2,3,15,n,Jump Shot,3PT Field Goal,25,Orlando Magic,179,188
+Golden State Warriors,1/22/17,2016,2,10,45,n,Jump Shot,3PT Field Goal,25,Orlando Magic,125,223
+Golden State Warriors,1/20/17,2016,1,0,26,n,Jump Shot,2PT Field Goal,14,Houston Rockets,-137,41
+Golden State Warriors,1/20/17,2016,2,11,33,y,Jump Shot,3PT Field Goal,25,Houston Rockets,-171,183
+Golden State Warriors,1/20/17,2016,2,7,2,n,Jump Shot,3PT Field Goal,23,Houston Rockets,238,3
+Golden State Warriors,1/18/17,2016,1,6,38,y,Jump Shot,2PT Field Goal,20,Oklahoma City Thunder,-73,188
+Golden State Warriors,1/16/17,2016,1,4,23,y,Jump Shot,3PT Field Goal,25,Cleveland Cavaliers,-205,156
+Golden State Warriors,1/8/17,2016,4,3,6,y,Jump Shot,3PT Field Goal,24,Sacramento Kings,225,97
+Golden State Warriors,1/8/17,2016,1,2,12,n,Jump Shot,2PT Field Goal,21,Sacramento Kings,109,185
+Golden State Warriors,1/8/17,2016,3,2,19,n,Jump Shot,2PT Field Goal,16,Sacramento Kings,91,139
+Golden State Warriors,1/6/17,2016,4,11,39,n,Jump Shot,3PT Field Goal,25,Memphis Grizzlies,132,218
+Golden State Warriors,1/4/17,2016,1,1,58,y,Jump Shot,3PT Field Goal,26,Portland Trail Blazers,-129,232
+Golden State Warriors,1/2/17,2016,3,0,13,n,Jump Shot,3PT Field Goal,23,Denver Nuggets,-235,8
+Golden State Warriors,12/30/16,2016,2,9,55,n,Jump Shot,3PT Field Goal,23,Dallas Mavericks,230,18
+Golden State Warriors,12/30/16,2016,1,0,0,n,Jump Shot,3PT Field Goal,28,Dallas Mavericks,-68,277
+Golden State Warriors,12/25/16,2016,2,1,55,n,Jump Shot,3PT Field Goal,23,Cleveland Cavaliers,230,2
+Golden State Warriors,12/25/16,2016,2,1,22,n,Jump Shot,3PT Field Goal,23,Cleveland Cavaliers,-237,2
+Golden State Warriors,12/23/16,2016,1,4,6,n,Jump Shot,2PT Field Goal,15,Detroit Pistons,-137,62
+Golden State Warriors,12/22/16,2016,4,6,56,y,Jump Shot,3PT Field Goal,25,Brooklyn Nets,-179,175
+Golden State Warriors,12/22/16,2016,3,1,39,y,Jump Shot,3PT Field Goal,24,Brooklyn Nets,99,228
+Golden State Warriors,12/22/16,2016,2,1,24,n,Jump Shot,3PT Field Goal,23,Brooklyn Nets,-230,-19
+Golden State Warriors,12/22/16,2016,1,4,0,y,Jump Shot,2PT Field Goal,18,Brooklyn Nets,125,139
+Golden State Warriors,12/22/16,2016,3,3,48,n,Jump Shot,3PT Field Goal,22,Brooklyn Nets,223,11
+Golden State Warriors,12/22/16,2016,4,9,9,n,Jump Shot,3PT Field Goal,23,Brooklyn Nets,233,-15
+Golden State Warriors,12/17/16,2016,1,2,56,n,Jump Shot,2PT Field Goal,17,Portland Trail Blazers,122,129
+Golden State Warriors,12/17/16,2016,4,11,4,y,Jump Shot,2PT Field Goal,18,Portland Trail Blazers,-65,169
+Golden State Warriors,12/17/16,2016,1,1,49,n,Jump Shot,3PT Field Goal,22,Portland Trail Blazers,227,-1
+Golden State Warriors,12/17/16,2016,4,11,40,y,Jump Shot,2PT Field Goal,20,Portland Trail Blazers,-9,205
+Golden State Warriors,12/15/16,2016,4,9,15,n,Jump Shot,3PT Field Goal,23,New York Knicks,-232,61
+Golden State Warriors,12/13/16,2016,3,0,48,n,Jump Shot,3PT Field Goal,22,New Orleans Pelicans,-228,7
+Golden State Warriors,12/13/16,2016,4,8,0,y,Jump Shot,3PT Field Goal,25,New Orleans Pelicans,123,224
+Golden State Warriors,12/13/16,2016,1,0,0,n,Jump Shot,3PT Field Goal,26,New Orleans Pelicans,-214,164
+Golden State Warriors,12/13/16,2016,2,2,27,n,Jump Shot,3PT Field Goal,23,New Orleans Pelicans,238,8
+Golden State Warriors,12/13/16,2016,2,9,41,y,Jump Shot,3PT Field Goal,25,New Orleans Pelicans,235,105
+Golden State Warriors,12/11/16,2016,2,9,20,n,Jump Shot,2PT Field Goal,19,Minnesota Timberwolves,-76,183
+Golden State Warriors,12/11/16,2016,4,4,33,y,Jump Shot,3PT Field Goal,24,Minnesota Timberwolves,215,124
+Golden State Warriors,12/11/16,2016,3,0,0,n,Jump Shot,3PT Field Goal,47,Minnesota Timberwolves,-125,457
+Golden State Warriors,12/11/16,2016,4,9,29,n,Jump Shot,3PT Field Goal,23,Minnesota Timberwolves,232,11
+Golden State Warriors,12/8/16,2016,3,3,5,n,Jump Shot,2PT Field Goal,18,Utah Jazz,-168,65
+Golden State Warriors,12/8/16,2016,4,10,4,n,Jump Shot,3PT Field Goal,24,Utah Jazz,-202,134
+Golden State Warriors,12/7/16,2016,4,11,13,n,Jump Shot,2PT Field Goal,3,Los Angeles Clippers,-4,33
+Golden State Warriors,12/7/16,2016,2,2,4,n,Jump Shot,3PT Field Goal,24,Los Angeles Clippers,-240,16
+Golden State Warriors,12/7/16,2016,4,10,6,n,Jump Shot,3PT Field Goal,25,Los Angeles Clippers,159,200
+Golden State Warriors,12/5/16,2016,2,1,58,n,Jump Shot,2PT Field Goal,18,Indiana Pacers,-137,124
+Golden State Warriors,12/3/16,2016,2,8,26,n,Jump Shot,2PT Field Goal,7,Phoenix Suns,-74,28
+Golden State Warriors,12/3/16,2016,1,1,48,n,Jump Shot,2PT Field Goal,17,Phoenix Suns,135,116
+Golden State Warriors,12/1/16,2016,3,4,39,n,Jump Shot,3PT Field Goal,23,Houston Rockets,233,28
+Golden State Warriors,12/1/16,2016,2,4,13,y,Jump Shot,3PT Field Goal,23,Houston Rockets,-227,43
+Golden State Warriors,11/28/16,2016,4,2,28,n,Jump Shot,3PT Field Goal,22,Atlanta Hawks,227,23
+Golden State Warriors,11/28/16,2016,3,1,26,n,Jump Shot,3PT Field Goal,25,Atlanta Hawks,110,229
+Golden State Warriors,11/28/16,2016,3,0,26,n,Jump Shot,3PT Field Goal,22,Atlanta Hawks,-228,21
+Golden State Warriors,11/28/16,2016,4,9,9,n,Jump Shot,3PT Field Goal,24,Atlanta Hawks,233,67
+Golden State Warriors,11/26/16,2016,3,3,14,n,Jump Shot,2PT Field Goal,4,Minnesota Timberwolves,6,43
+Golden State Warriors,11/26/16,2016,2,3,50,n,Jump Shot,3PT Field Goal,25,Minnesota Timberwolves,-181,183
+Golden State Warriors,11/25/16,2016,2,10,31,y,Jump Shot,2PT Field Goal,16,Los Angeles Lakers,-153,72
+Golden State Warriors,11/25/16,2016,3,2,45,n,Jump Shot,3PT Field Goal,24,Los Angeles Lakers,187,163
+Golden State Warriors,11/23/16,2016,3,0,33,n,Jump Shot,3PT Field Goal,23,Los Angeles Lakers,236,31
+Golden State Warriors,11/23/16,2016,4,10,49,n,Jump Shot,3PT Field Goal,25,Los Angeles Lakers,114,232
+Golden State Warriors,11/23/16,2016,2,9,40,n,Jump Shot,3PT Field Goal,25,Los Angeles Lakers,177,178
+Golden State Warriors,11/21/16,2016,1,1,57,y,Jump Shot,3PT Field Goal,24,Indiana Pacers,212,124
+Golden State Warriors,11/21/16,2016,3,2,29,y,Jump Shot,3PT Field Goal,23,Indiana Pacers,233,-26
+Golden State Warriors,11/21/16,2016,3,4,40,y,Jump Shot,3PT Field Goal,23,Indiana Pacers,232,-11
+Golden State Warriors,11/21/16,2016,2,2,35,n,Jump Shot,3PT Field Goal,26,Indiana Pacers,87,247
+Golden State Warriors,11/21/16,2016,3,1,16,n,Jump Shot,3PT Field Goal,23,Indiana Pacers,-233,-6
+Golden State Warriors,11/19/16,2016,2,11,17,y,Jump Shot,3PT Field Goal,25,Milwaukee Bucks,212,149
+Golden State Warriors,11/19/16,2016,4,9,47,n,Jump Shot,3PT Field Goal,24,Milwaukee Bucks,222,111
+Golden State Warriors,11/19/16,2016,3,0,0,n,Jump Shot,3PT Field Goal,40,Milwaukee Bucks,-99,391
+Golden State Warriors,11/19/16,2016,2,2,5,n,Jump Shot,2PT Field Goal,17,Milwaukee Bucks,140,100
+Golden State Warriors,11/19/16,2016,2,10,49,y,Jump Shot,3PT Field Goal,24,Milwaukee Bucks,-245,2
+Golden State Warriors,11/19/16,2016,4,9,19,n,Jump Shot,3PT Field Goal,25,Milwaukee Bucks,-238,95
+Golden State Warriors,11/18/16,2016,2,11,46,n,Jump Shot,2PT Field Goal,16,Boston Celtics,-47,159
+Golden State Warriors,11/18/16,2016,3,2,19,n,Jump Shot,3PT Field Goal,25,Boston Celtics,76,242
+Golden State Warriors,11/16/16,2016,1,5,40,y,Jump Shot,3PT Field Goal,25,Toronto Raptors,-91,239
+Golden State Warriors,11/16/16,2016,4,9,20,y,Jump Shot,3PT Field Goal,23,Toronto Raptors,-237,-11
+Golden State Warriors,11/13/16,2016,4,7,47,n,Jump Shot,3PT Field Goal,25,Phoenix Suns,105,228
+Golden State Warriors,11/13/16,2016,2,8,10,n,Jump Shot,3PT Field Goal,25,Phoenix Suns,189,169
+Golden State Warriors,11/10/16,2016,2,9,54,n,Jump Shot,2PT Field Goal,16,Denver Nuggets,-50,159
+Golden State Warriors,11/10/16,2016,2,2,58,n,Jump Shot,3PT Field Goal,26,Denver Nuggets,181,193
+Golden State Warriors,11/9/16,2016,2,11,26,n,Jump Shot,3PT Field Goal,26,Dallas Mavericks,-192,185
+Golden State Warriors,11/7/16,2016,1,3,1,n,Jump Shot,3PT Field Goal,23,New Orleans Pelicans,-238,7
+Golden State Warriors,11/7/16,2016,3,4,32,n,Jump Shot,3PT Field Goal,23,New Orleans Pelicans,-232,21
+Golden State Warriors,11/7/16,2016,1,2,7,n,Jump Shot,3PT Field Goal,24,New Orleans Pelicans,-179,174
+Golden State Warriors,11/7/16,2016,2,8,8,n,Jump Shot,3PT Field Goal,26,New Orleans Pelicans,-183,188
+Golden State Warriors,11/4/16,2016,4,11,42,n,Jump Shot,3PT Field Goal,24,Los Angeles Lakers,-238,31
+Golden State Warriors,11/4/16,2016,2,0,1,n,Jump Shot,3PT Field Goal,24,Los Angeles Lakers,178,174
+Golden State Warriors,11/4/16,2016,1,0,1,y,Jump Shot,3PT Field Goal,24,Los Angeles Lakers,62,241
+Golden State Warriors,11/4/16,2016,4,10,31,n,Jump Shot,2PT Field Goal,19,Los Angeles Lakers,-78,184
+Golden State Warriors,11/3/16,2016,4,9,43,n,Jump Shot,3PT Field Goal,23,Oklahoma City Thunder,-230,7
+Golden State Warriors,11/1/16,2016,4,8,33,y,Jump Shot,3PT Field Goal,24,Portland Trail Blazers,-63,239
+Golden State Warriors,10/30/16,2016,1,2,39,n,Jump Shot,3PT Field Goal,26,Phoenix Suns,-156,213
+Golden State Warriors,10/30/16,2016,4,3,26,n,Jump Shot,3PT Field Goal,23,Phoenix Suns,-235,-19
+Golden State Warriors,10/30/16,2016,2,5,8,n,Jump Shot,3PT Field Goal,23,Phoenix Suns,230,33
+Golden State Warriors,10/28/16,2016,3,6,23,y,Jump Shot,3PT Field Goal,22,New Orleans Pelicans,-227,-5
+Golden State Warriors,10/28/16,2016,3,5,34,y,Jump Shot,2PT Field Goal,16,New Orleans Pelicans,96,134
+Golden State Warriors,10/28/16,2016,4,2,54,n,Jump Shot,3PT Field Goal,23,New Orleans Pelicans,-233,-1
+Golden State Warriors,10/28/16,2016,3,5,49,n,Jump Shot,3PT Field Goal,23,New Orleans Pelicans,-233,3
+Golden State Warriors,10/25/16,2016,2,9,7,n,Jump Shot,3PT Field Goal,23,San Antonio Spurs,228,72
+Golden State Warriors,10/25/16,2016,2,3,56,n,Jump Shot,3PT Field Goal,23,San Antonio Spurs,225,61
+Golden State Warriors,2/28/17,2016,4,4,20,n,Jump Shot,3PT Field Goal,26,Washington Wizards,222,136
+Golden State Warriors,2/28/17,2016,2,1,44,n,Jump Shot,3PT Field Goal,23,Washington Wizards,236,36
+Golden State Warriors,2/27/17,2016,3,0,0,n,Jump Shot,3PT Field Goal,49,Philadelphia 76ers,27,497
+Golden State Warriors,2/25/17,2016,1,0,57,n,Jump Shot,2PT Field Goal,8,Brooklyn Nets,-56,70
+Golden State Warriors,2/25/17,2016,2,1,39,y,Jump Shot,2PT Field Goal,19,Brooklyn Nets,112,154
+Golden State Warriors,2/25/17,2016,4,9,19,n,Jump Shot,3PT Field Goal,22,Brooklyn Nets,225,41
+Golden State Warriors,2/25/17,2016,1,5,5,y,Jump Shot,3PT Field Goal,26,Brooklyn Nets,137,228
+Golden State Warriors,2/23/17,2016,1,0,5,n,Jump Shot,3PT Field Goal,25,Los Angeles Clippers,140,213
+Golden State Warriors,2/23/17,2016,3,3,48,n,Jump Shot,3PT Field Goal,26,Los Angeles Clippers,-155,218
+Golden State Warriors,2/23/17,2016,4,6,39,n,Jump Shot,2PT Field Goal,14,Los Angeles Clippers,133,51
+Golden State Warriors,1/8/17,2016,1,0,2,n,Layup Shot,2PT Field Goal,3,Sacramento Kings,28,16
+Golden State Warriors,12/8/16,2016,2,8,6,n,Layup Shot,2PT Field Goal,1,Utah Jazz,0,11
+Golden State Warriors,11/1/16,2016,3,5,6,n,Layup Shot,2PT Field Goal,1,Portland Trail Blazers,0,11
+Golden State Warriors,12/11/16,2016,4,2,0,n,Layup Shot,2PT Field Goal,1,Minnesota Timberwolves,9,13
+Golden State Warriors,11/21/16,2016,1,2,34,n,Layup Shot,2PT Field Goal,1,Indiana Pacers,9,7
+Golden State Warriors,2/13/17,2016,3,3,42,y,Layup Shot,2PT Field Goal,1,Denver Nuggets,15,2
+Golden State Warriors,11/21/16,2016,2,2,10,n,Layup Shot,2PT Field Goal,1,Indiana Pacers,12,7
+Golden State Warriors,1/20/17,2016,1,0,38,n,Layup Shot,2PT Field Goal,2,Houston Rockets,4,26
+Golden State Warriors,1/2/17,2016,2,11,28,y,Layup Shot,2PT Field Goal,1,Denver Nuggets,-9,7
+Golden State Warriors,3/29/17,2016,1,5,24,n,Layup Shot,2PT Field Goal,1,San Antonio Spurs,-12,-6
+Golden State Warriors,11/13/16,2016,3,1,54,n,Layup Shot,2PT Field Goal,1,Phoenix Suns,-9,8
+Golden State Warriors,10/28/16,2016,1,3,48,n,Layup Shot,2PT Field Goal,1,New Orleans Pelicans,6,8
+Golden State Warriors,3/20/17,2016,2,5,3,n,Layup Shot,2PT Field Goal,2,Oklahoma City Thunder,27,2
+Golden State Warriors,11/18/16,2016,4,8,27,n,Layup Shot,2PT Field Goal,2,Boston Celtics,-22,8
+Golden State Warriors,3/16/17,2016,4,8,39,n,Layup Shot,2PT Field Goal,1,Orlando Magic,-11,13
+Golden State Warriors,12/7/16,2016,4,8,11,y,Layup Shot,2PT Field Goal,2,Los Angeles Clippers,-20,18
+Golden State Warriors,2/2/17,2016,3,1,26,n,Layup Shot,2PT Field Goal,0,Los Angeles Clippers,4,8
+Golden State Warriors,11/28/16,2016,3,2,14,y,Pullup Jump shot,3PT Field Goal,23,Atlanta Hawks,-235,26
+Golden State Warriors,11/23/16,2016,4,8,30,y,Pullup Jump shot,2PT Field Goal,19,Los Angeles Lakers,78,178
+Golden State Warriors,12/20/16,2016,2,10,25,y,Pullup Jump shot,3PT Field Goal,24,Utah Jazz,233,77
+Golden State Warriors,11/23/16,2016,4,7,54,n,Pullup Jump shot,3PT Field Goal,25,Los Angeles Lakers,-181,174
+Golden State Warriors,12/17/16,2016,2,8,52,y,Pullup Jump shot,3PT Field Goal,26,Portland Trail Blazers,64,257
+Golden State Warriors,2/23/17,2016,2,8,28,n,Pullup Jump shot,2PT Field Goal,18,Los Angeles Clippers,-137,129
+Golden State Warriors,2/15/17,2016,3,1,3,y,Pullup Jump shot,3PT Field Goal,23,Sacramento Kings,-227,41
+Golden State Warriors,3/6/17,2016,3,2,23,y,Pullup Jump shot,2PT Field Goal,16,Atlanta Hawks,104,131
+Golden State Warriors,3/29/17,2016,3,1,19,y,Pullup Jump shot,2PT Field Goal,15,San Antonio Spurs,64,144
+Golden State Warriors,3/14/17,2016,1,1,27,y,Pullup Jump shot,3PT Field Goal,22,Philadelphia 76ers,228,3
+Golden State Warriors,12/11/16,2016,4,2,43,n,Pullup Jump shot,2PT Field Goal,21,Minnesota Timberwolves,-166,134
+Golden State Warriors,12/8/16,2016,3,3,41,y,Pullup Jump shot,2PT Field Goal,17,Utah Jazz,78,156
+Golden State Warriors,4/4/17,2016,2,9,35,y,Pullup Jump shot,3PT Field Goal,23,Minnesota Timberwolves,227,62
+Golden State Warriors,3/31/17,2016,1,4,9,y,Pullup Jump shot,2PT Field Goal,20,Houston Rockets,99,174
+Golden State Warriors,1/29/17,2016,3,0,29,y,Pullup Jump shot,3PT Field Goal,24,Portland Trail Blazers,79,234
+Golden State Warriors,1/29/17,2016,3,0,56,y,Pullup Jump shot,3PT Field Goal,24,Portland Trail Blazers,30,244
+Golden State Warriors,3/26/17,2016,2,7,17,y,Pullup Jump shot,3PT Field Goal,23,Memphis Grizzlies,-235,23
+Golden State Warriors,3/28/17,2016,3,0,27,n,Pullup Jump shot,3PT Field Goal,24,Houston Rockets,125,214
+Golden State Warriors,12/3/16,2016,1,2,43,y,Pullup Jump shot,2PT Field Goal,18,Phoenix Suns,119,144
+Golden State Warriors,12/3/16,2016,4,11,10,y,Pullup Jump shot,3PT Field Goal,27,Phoenix Suns,-187,198
+Golden State Warriors,1/22/17,2016,4,3,15,n,Pullup Jump shot,2PT Field Goal,19,Orlando Magic,197,23
+Golden State Warriors,12/1/16,2016,1,3,47,y,Pullup Jump shot,3PT Field Goal,25,Houston Rockets,-158,203
+Golden State Warriors,1/16/17,2016,1,0,45,y,Pullup Jump shot,3PT Field Goal,23,Cleveland Cavaliers,-232,28
+Golden State Warriors,11/28/16,2016,1,3,27,y,Pullup Jump shot,3PT Field Goal,25,Atlanta Hawks,-174,193
+Golden State Warriors,3/18/17,2016,3,2,41,y,Pullup Jump shot,3PT Field Goal,23,Milwaukee Bucks,228,61
+Golden State Warriors,12/30/16,2016,1,1,27,n,Pullup Jump shot,3PT Field Goal,25,Dallas Mavericks,-184,174
+Golden State Warriors,3/29/17,2016,1,0,1,y,Pullup Jump shot,2PT Field Goal,19,San Antonio Spurs,169,106
+Golden State Warriors,11/13/16,2016,2,11,8,y,Pullup Jump shot,3PT Field Goal,26,Phoenix Suns,210,159
+Golden State Warriors,3/18/17,2016,3,4,7,y,Pullup Jump shot,2PT Field Goal,17,Milwaukee Bucks,133,110
+Golden State Warriors,3/18/17,2016,3,10,8,y,Pullup Jump shot,2PT Field Goal,21,Milwaukee Bucks,153,149
+Golden State Warriors,3/18/17,2016,1,4,19,n,Pullup Jump shot,3PT Field Goal,25,Milwaukee Bucks,-201,164
+Golden State Warriors,3/18/17,2016,1,5,22,y,Pullup Jump shot,2PT Field Goal,11,Milwaukee Bucks,-25,110
+Golden State Warriors,3/18/17,2016,3,1,45,n,Pullup Jump shot,3PT Field Goal,23,Milwaukee Bucks,232,-15
+Golden State Warriors,3/29/17,2016,3,2,1,y,Pullup Jump shot,2PT Field Goal,20,San Antonio Spurs,181,95
+Golden State Warriors,12/8/16,2016,2,8,41,y,Putback Dunk Shot,2PT Field Goal,0,Utah Jazz,0,1
+Golden State Warriors,11/19/16,2016,4,3,39,y,Putback Dunk Shot,2PT Field Goal,0,Milwaukee Bucks,0,1
+Golden State Warriors,2/11/17,2016,1,4,25,n,Putback Dunk Shot,2PT Field Goal,0,Oklahoma City Thunder,0,1
+Golden State Warriors,3/16/17,2016,3,5,51,y,Putback Dunk Shot,2PT Field Goal,0,Orlando Magic,0,1
+Golden State Warriors,11/18/16,2016,4,8,25,y,Putback Layup Shot,2PT Field Goal,2,Boston Celtics,-20,7
+Golden State Warriors,10/30/16,2016,4,9,48,y,Putback Layup Shot,2PT Field Goal,1,Phoenix Suns,9,8
+Golden State Warriors,2/15/17,2016,4,9,46,y,Putback Layup Shot,2PT Field Goal,1,Sacramento Kings,0,13
+Golden State Warriors,2/4/17,2016,4,2,35,y,Reverse Dunk Shot,2PT Field Goal,0,Sacramento Kings,0,1
+Golden State Warriors,12/7/16,2016,2,9,53,y,Reverse Dunk Shot,2PT Field Goal,2,Los Angeles Clippers,19,16
+Golden State Warriors,2/27/17,2016,3,0,47,y,Reverse Dunk Shot,2PT Field Goal,0,Philadelphia 76ers,0,1
+Golden State Warriors,1/6/17,2016,2,3,28,y,Reverse Dunk Shot,2PT Field Goal,0,Memphis Grizzlies,0,1
+Golden State Warriors,3/14/17,2016,2,0,37,n,Reverse Layup Shot,2PT Field Goal,1,Philadelphia 76ers,-7,8
+Golden State Warriors,2/28/17,2016,2,9,29,y,Reverse Layup Shot,2PT Field Goal,2,Washington Wizards,-19,16
+Golden State Warriors,3/16/17,2016,2,8,3,y,Running Alley Oop Dunk Shot,2PT Field Goal,0,Orlando Magic,0,1
+Golden State Warriors,11/23/16,2016,4,10,2,y,Running Alley Oop Dunk Shot,2PT Field Goal,0,Los Angeles Lakers,0,1
+Golden State Warriors,3/24/17,2016,3,3,28,y,Running Dunk Shot,2PT Field Goal,0,Sacramento Kings,0,1
+Golden State Warriors,2/1/17,2016,1,5,2,y,Running Dunk Shot,2PT Field Goal,0,Charlotte Hornets,0,1
+Golden State Warriors,3/26/17,2016,3,2,8,y,Running Dunk Shot,2PT Field Goal,0,Memphis Grizzlies,0,1
+Golden State Warriors,12/1/16,2016,1,8,50,y,Running Dunk Shot,2PT Field Goal,0,Houston Rockets,0,1
+Golden State Warriors,1/20/17,2016,2,1,28,y,Running Dunk Shot,2PT Field Goal,0,Houston Rockets,0,1
+Golden State Warriors,11/16/16,2016,4,11,6,y,Running Dunk Shot,2PT Field Goal,0,Toronto Raptors,0,1
+Golden State Warriors,3/16/17,2016,3,1,51,y,Running Dunk Shot,2PT Field Goal,0,Orlando Magic,0,1
+Golden State Warriors,12/28/16,2016,1,0,36,y,Running Dunk Shot,2PT Field Goal,0,Toronto Raptors,0,1
+Golden State Warriors,3/16/17,2016,2,9,15,y,Running Dunk Shot,2PT Field Goal,0,Orlando Magic,0,1
+Golden State Warriors,3/26/17,2016,4,1,43,y,Running Dunk Shot,2PT Field Goal,0,Memphis Grizzlies,0,1
+Golden State Warriors,3/6/17,2016,1,3,28,y,Running Dunk Shot,2PT Field Goal,0,Atlanta Hawks,2,2
+Golden State Warriors,2/11/17,2016,1,2,41,y,Running Dunk Shot,2PT Field Goal,0,Oklahoma City Thunder,0,1
+Golden State Warriors,2/10/17,2016,2,0,28,y,Running Dunk Shot,2PT Field Goal,0,Memphis Grizzlies,0,1
+Golden State Warriors,3/14/17,2016,2,8,10,y,Running Dunk Shot,2PT Field Goal,0,Philadelphia 76ers,0,1
+Golden State Warriors,2/10/17,2016,4,4,39,y,Running Dunk Shot,2PT Field Goal,0,Memphis Grizzlies,0,1
+Golden State Warriors,3/14/17,2016,3,7,4,y,Running Dunk Shot,2PT Field Goal,0,Philadelphia 76ers,0,1
+Golden State Warriors,12/15/16,2016,1,4,13,y,Running Dunk Shot,2PT Field Goal,0,New York Knicks,0,1
+Golden State Warriors,3/18/17,2016,3,6,3,y,Running Dunk Shot,2PT Field Goal,0,Milwaukee Bucks,0,1
+Golden State Warriors,4/4/17,2016,1,1,26,y,Running Finger Roll Layup Shot,2PT Field Goal,2,Minnesota Timberwolves,2,21
+Golden State Warriors,12/15/16,2016,2,9,59,y,Running Finger Roll Layup Shot,2PT Field Goal,1,New York Knicks,-11,8
+Golden State Warriors,3/2/17,2016,2,9,25,y,Running Jump Shot,2PT Field Goal,3,Chicago Bulls,-4,31
+Golden State Warriors,3/26/17,2016,2,10,6,y,Running Jump Shot,2PT Field Goal,4,Memphis Grizzlies,1,43
+Golden State Warriors,2/23/17,2016,1,0,54,y,Running Layup Shot,2PT Field Goal,1,Los Angeles Clippers,-14,13
+Golden State Warriors,1/16/17,2016,2,9,27,y,Running Layup Shot,2PT Field Goal,2,Cleveland Cavaliers,-16,16
+Golden State Warriors,12/25/16,2016,4,10,34,n,Running Layup Shot,2PT Field Goal,1,Cleveland Cavaliers,14,2
+Golden State Warriors,1/29/17,2016,1,3,54,n,Running Layup Shot,2PT Field Goal,1,Portland Trail Blazers,-12,11
+Golden State Warriors,1/29/17,2016,2,11,25,y,Running Layup Shot,2PT Field Goal,1,Portland Trail Blazers,12,-5
+Golden State Warriors,11/23/16,2016,2,2,19,n,Running Layup Shot,2PT Field Goal,0,Los Angeles Lakers,-7,3
+Golden State Warriors,11/10/16,2016,1,0,12,y,Running Layup Shot,2PT Field Goal,2,Denver Nuggets,10,23
+Golden State Warriors,11/18/16,2016,1,4,4,y,Running Layup Shot,2PT Field Goal,0,Boston Celtics,4,7
+Golden State Warriors,11/3/16,2016,1,4,42,n,Running Layup Shot,2PT Field Goal,1,Oklahoma City Thunder,-4,18
+Golden State Warriors,11/28/16,2016,4,11,11,y,Running Layup Shot,2PT Field Goal,0,Atlanta Hawks,1,7
+Golden State Warriors,2/15/17,2016,2,10,55,n,Running Layup Shot,2PT Field Goal,1,Sacramento Kings,9,16
+Golden State Warriors,1/4/17,2016,4,7,9,n,Running Layup Shot,2PT Field Goal,1,Portland Trail Blazers,14,13
+Golden State Warriors,3/2/17,2016,1,2,10,y,Running Layup Shot,2PT Field Goal,1,Chicago Bulls,6,11
+Golden State Warriors,11/1/16,2016,3,1,55,y,Running Layup Shot,2PT Field Goal,1,Portland Trail Blazers,12,11
+Golden State Warriors,12/5/16,2016,1,2,45,y,Running Layup Shot,2PT Field Goal,2,Indiana Pacers,20,21
+Golden State Warriors,3/31/17,2016,4,7,7,y,Running Layup Shot,2PT Field Goal,2,Houston Rockets,-6,23
+Golden State Warriors,11/1/16,2016,2,1,0,y,Running Layup Shot,2PT Field Goal,1,Portland Trail Blazers,19,0
+Golden State Warriors,3/24/17,2016,1,0,58,y,Running Layup Shot,2PT Field Goal,1,Sacramento Kings,0,16
+Golden State Warriors,3/14/17,2016,3,4,5,n,Running Layup Shot,2PT Field Goal,1,Philadelphia 76ers,0,11
+Golden State Warriors,3/24/17,2016,3,0,37,y,Running Reverse Dunk Shot,2PT Field Goal,0,Sacramento Kings,0,1
+Golden State Warriors,3/16/17,2016,3,4,39,y,Running Reverse Layup Shot,2PT Field Goal,1,Orlando Magic,-1,16
+Golden State Warriors,2/1/17,2016,4,5,31,y,Running Reverse Layup Shot,2PT Field Goal,2,Charlotte Hornets,-1,23
+Golden State Warriors,3/14/17,2016,4,7,11,n,Running Reverse Layup Shot,2PT Field Goal,1,Philadelphia 76ers,-11,16
+Golden State Warriors,12/20/16,2016,4,7,32,n,Running Reverse Layup Shot,2PT Field Goal,1,Utah Jazz,17,3
+Golden State Warriors,4/4/17,2016,3,3,46,y,Running Reverse Layup Shot,2PT Field Goal,1,Minnesota Timberwolves,4,13
+Golden State Warriors,2/2/17,2016,4,9,48,y,Running Reverse Layup Shot,2PT Field Goal,1,Los Angeles Clippers,9,13
+Golden State Warriors,3/14/17,2016,2,10,14,n,Step Back Jump shot,2PT Field Goal,9,Philadelphia 76ers,1,90
+Golden State Warriors,3/18/17,2016,1,7,52,n,Step Back Jump shot,2PT Field Goal,16,Milwaukee Bucks,-158,52
+Golden State Warriors,3/28/17,2016,3,6,9,n,Step Back Jump shot,2PT Field Goal,18,Houston Rockets,-181,41
+Golden State Warriors,2/2/17,2016,3,1,24,n,Tip Dunk Shot,2PT Field Goal,0,Los Angeles Clippers,0,1
+Golden State Warriors,3/31/17,2016,3,4,12,y,Tip Layup Shot,2PT Field Goal,1,Houston Rockets,4,11
+Golden State Warriors,1/25/17,2016,2,3,14,y,Tip Layup Shot,2PT Field Goal,0,Charlotte Hornets,1,2
+Golden State Warriors,11/10/16,2016,3,1,9,n,Turnaround Fadeaway shot,2PT Field Goal,16,Denver Nuggets,-168,2
+Golden State Warriors,3/28/17,2016,1,0,45,y,Turnaround Fadeaway shot,2PT Field Goal,11,Houston Rockets,89,77
+Golden State Warriors,11/25/16,2016,3,3,22,n,Turnaround Fadeaway shot,2PT Field Goal,11,Los Angeles Lakers,0,119
+Golden State Warriors,1/4/17,2016,3,0,54,y,Turnaround Fadeaway shot,2PT Field Goal,16,Portland Trail Blazers,-168,16
+Golden State Warriors,12/20/16,2016,1,0,0,n,Turnaround Hook Shot,2PT Field Goal,3,Utah Jazz,-7,33
+Golden State Warriors,1/18/17,2016,4,7,30,n,Turnaround Hook Shot,2PT Field Goal,4,Oklahoma City Thunder,-7,47
+Golden State Warriors,2/2/17,2016,2,11,40,n,Turnaround Jump Shot,2PT Field Goal,10,Los Angeles Clippers,-38,95
+Golden State Warriors,1/18/17,2016,4,10,41,y,Turnaround Jump Shot,2PT Field Goal,3,Oklahoma City Thunder,20,26
+Golden State Warriors,11/1/16,2016,3,2,23,y,Turnaround Jump Shot,2PT Field Goal,21,Portland Trail Blazers,-212,-16
+Golden State Warriors,3/26/17,2016,2,2,38,y,Turnaround Jump Shot,2PT Field Goal,8,Memphis Grizzlies,0,85
+Golden State Warriors,11/19/16,2016,1,2,7,y,Turnaround Jump Shot,2PT Field Goal,18,Milwaukee Bucks,181,-19
