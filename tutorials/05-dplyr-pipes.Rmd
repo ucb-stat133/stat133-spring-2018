@@ -10,7 +10,9 @@ urlcolor: blue
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, error = TRUE, fig.path = '05-images/')
 library(knitr)
+library(dplyr)
 library(ggplot2)
+library(magrittr)
 ```
 
 > ### Learning Objectives:
@@ -226,4 +228,49 @@ starwars %>%
     mean_mass = mean(mass, na.rm = TRUE)
   ) %>%
   arrange(desc(mean_height))
+```
+
+-----
+
+## Pipes and Plots
+
+You can also the `%>%` operator to chain dplyr commands with ggplot commans (and other R commands). The following examples combine some data manipulation to `filter()` female and males individuals, in order to graph a density plot of `height`
+
+```{r densities}
+starwars %>%
+  filter(gender %in% c('female', 'male')) %>%
+  ggplot(aes(x = height, fill = gender)) + 
+  geom_density(alpha = 0.7)
+```
+
+Here's another example in which instead of graphing density plots, we graph boxplots of `height` for female and male individuals:
+
+```{r boxplots}
+starwars %>%
+  filter(gender %in% c('female', 'male')) %>%
+  ggplot(aes(x = gender, y = height, fill = gender)) + 
+  geom_boxplot()
+```
+
+-----
+
+## More Pipes
+
+Often, you will work with functions that don't take data frames (or tibbles) as
+inputs. A typical example is the base `plot()` function used to produce a 
+scatterplot; you need to pass vectors to `plot()`, not data frames. In this 
+situations you might find the `%$%` operator extremely useful.
+
+```{r eval = FALSE}
+library(magrittr)
+```
+
+The `%$%` operator, also from the package `"magrittr"`, is a cousin of the 
+`%>%` operator. What `%$%` does is to _extract_ variables in a data frame
+so that you can refer to them explicitly. Let's see a quick example:
+
+```{r scatterplot}
+starwars %>%
+  filter(gender %in% c('female', 'male')) %$%
+  plot(x = height, y = mass, col = factor(gender), las = 1)
 ```

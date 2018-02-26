@@ -283,3 +283,55 @@ starwars %>%
     ## 1 Human         177        82.8
     ## 2 Droid         140        69.8
     ## 3 Ewok           88.0      20.0
+
+------------------------------------------------------------------------
+
+Pipes and Plots
+---------------
+
+You can also the `%>%` operator to chain dplyr commands with ggplot commans (and other R commands). The following examples combine some data manipulation to `filter()` female and males individuals, in order to graph a density plot of `height`
+
+``` r
+starwars %>%
+  filter(gender %in% c('female', 'male')) %>%
+  ggplot(aes(x = height, fill = gender)) + 
+  geom_density(alpha = 0.7)
+```
+
+    ## Warning: Removed 5 rows containing non-finite values (stat_density).
+
+![](05-images/densities-1.png)
+
+Here's another example in which instead of graphing density plots, we graph boxplots of `height` for female and male individuals:
+
+``` r
+starwars %>%
+  filter(gender %in% c('female', 'male')) %>%
+  ggplot(aes(x = gender, y = height, fill = gender)) + 
+  geom_boxplot()
+```
+
+    ## Warning: Removed 5 rows containing non-finite values (stat_boxplot).
+
+![](05-images/boxplots-1.png)
+
+------------------------------------------------------------------------
+
+More Pipes
+----------
+
+Often, you will work with functions that don't take data frames (or tibbles) as inputs. A typical example is the base `plot()` function used to produce a scatterplot; you need to pass vectors to `plot()`, not data frames. In this situations you might find the `%$%` operator extremely useful.
+
+``` r
+library(magrittr)
+```
+
+The `%$%` operator, also from the package `"magrittr"`, is a cousin of the `%>%` operator. What `%$%` does is to *extract* variables in a data frame so that you can refer to them explicitly. Let's see a quick example:
+
+``` r
+starwars %>%
+  filter(gender %in% c('female', 'male')) %$%
+  plot(x = height, y = mass, col = factor(gender), las = 1)
+```
+
+![](05-images/scatterplot-1.png)
