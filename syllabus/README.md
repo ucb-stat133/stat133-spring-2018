@@ -157,10 +157,10 @@
 ## 6. More Wrangling, Graphics, and Exporting Outputs
 
 - :card_index: __Dates__: Feb 26-Mar 02
-- :paperclip: __Topics__: We continue reviewing manipulation of data frames with the _data plying_ framework provided by the package `"dplyr"`. Likewise, we review the visualization paradigm of `"ggplot2"` which is based on data frames. In addition, we'll briefly introduce  cluster analysis which involves the other major unsupervised learning flavor used to find groups in data. 
+- :paperclip: __Topics__: We continue reviewing more aspects of `"dplyr"` and the famous pipe operator. 
 - :file_folder: __Notes__:
-    + [Introduction to `"dplyr"`](../tutorials/05-intro-to-dplyr.md) (tutorial)
-    + Cluster Analysis
+    + [Pipes with `"dplyr"`](../tutorials/05-dplyr-pipes.md) (tutorial)
+    + More shell commands
 - :book: __Reading__:
     + ["dplyr" tutorial](../slides/17-dplyr-tutorial.pdf) (by Hadley Wickham)
 - :microscope: __Lab__:
