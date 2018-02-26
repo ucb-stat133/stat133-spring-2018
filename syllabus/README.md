@@ -154,7 +154,7 @@
 -----
 
 
-## 6. More Wrangling, Graphics, and Exporting Outputs
+## 6. More Wrangling, Pipes, and Exporting Outputs
 
 - :card_index: __Dates__: Feb 26-Mar 02
 - :paperclip: __Topics__: We continue reviewing more aspects of `"dplyr"` and the famous pipe operator. 
@@ -162,7 +162,7 @@
     + [Pipes with `"dplyr"`](../tutorials/05-dplyr-pipes.md) (tutorial)
     + More shell commands
 - :book: __Reading__:
-    + ["dplyr" tutorial](../slides/17-dplyr-tutorial.pdf) (by Hadley Wickham)
+    + [Pipes](http://r4ds.had.co.nz/pipes.html) (_R for Data Science_ by Grolemund and Wickham)
 - :microscope: __Lab__:
     + [More data wrangling, and exporting outputs](../labs/lab06-more-data-wrangling.md)
 - :newspaper: __Misc__:
