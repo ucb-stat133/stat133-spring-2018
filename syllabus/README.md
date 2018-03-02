@@ -160,7 +160,8 @@
 - :paperclip: __Topics__: We continue reviewing more aspects of `"dplyr"` and the famous pipe operator. 
 - :file_folder: __Notes__:
     + [Pipes with `"dplyr"`](../tutorials/05-dplyr-pipes.md) (tutorial)
-    + More shell commands
+    + [Shell input/output redirection](../tutorials/07-shell-redirections.md) (tutorial)
+    + [Shell filters](../tutorials/08-shell-filters.md) (tutorial)
 - :book: __Reading__:
     + [Pipes](http://r4ds.had.co.nz/pipes.html) (_R for Data Science_ by Grolemund and Wickham)
 - :microscope: __Lab__:
@@ -169,7 +170,7 @@
     + [Tidy Data](../papers/tidy-data-wickham) (by Hadley Wickham)
 - :bulb: __Cheat sheet__:
     + [Data transformation cheat sheet](../cheatsheets/data-transformation-cheatsheet.pdf)
-    + [Data visualization with ggplot2](../cheatsheets/ggplot2-cheatsheet-2.1.pdf)
+    + [Command line cheat sheet](../cheatsheets/command-line-cheatsheet.pdf)
 - :dart: __HW 2__: due Mar-09
     + [Data Wrangling and visualization](../hws/hw02-shot-charts.pdf)
 
