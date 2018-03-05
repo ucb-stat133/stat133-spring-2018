@@ -302,5 +302,5 @@ standardize <- function(x, na_rm = FALSE) {
 - Check out each step of the way.
 - Don't try and do too much at once.
 - Create (encapsulate body) the function once everything works.
-- Optional: after you have a function that works, you may worry about "elegance", "efficiency", "cleveness", etc
+- Optional: after you have a function that works, you may worry about "elegance", "efficiency", "cleverness", etc
 - Include documentation; we suggest using Roxygen comments.
