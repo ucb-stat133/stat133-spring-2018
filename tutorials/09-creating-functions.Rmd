@@ -132,7 +132,7 @@ Let's see another example. Often, we need to transform the scale of one or more 
 
 ![standard score](https://wikimedia.org/api/rest_v1/media/math/render/svg/5ceed701c4042bb34618535c9a902ca1a937a351)
 
-R has the function `scale()` that can be used to perform this operation, but let's pretend for a minute that there's no function in R to calculate standard scores.
+R has the function `scale()` that can be used to perform this operation, but let's pretend for a minute that there's no function in R to calculate standard scores. Here are the primary steps to compute such score:
 
 - compute the mean
 - compute the standard deviation
@@ -195,7 +195,7 @@ standardize(ht10)
 standardize(starwars$height)
 ```
 
-Now `standardize()` is able to return a more useful output by removing missing values. However, we should let the user decide is `NA`s must be removed. We can include an argument in `standardize()` to indicate if missing values are to be removed:
+Now `standardize()` is able to return a more useful output by removing missing values. However, we should let the user decide if `NA`'s must be removed. We can include an argument in `standardize()` to indicate if missing values are to be removed:
 
 ```{r}
 # third round
@@ -232,9 +232,10 @@ The code above works, but it is very "verbose". We can take advantage of R's fun
 ```{r}
 x <- ht10
 z <- (x - mean(x)) / sd(x)
+z
 ```
 
-Having simplified the code, we can now modify our function:
+Having simplified the code, we can simplify our function:
 
 ```{r}
 # fifth round
@@ -277,9 +278,11 @@ standardize <- function(x, na_rm = FALSE) {
 }
 ```
 
-- Roxygen comments are R comments formed by the hash immediately followed by an apostrophe: `#'`
+- Roxygen comments are R comments formed by the hash symbol immediately followed by an apostrophe: `#'`
 
-- You specify a field with `@` and a keyword: e.g. `@title`
+- You specify the label of a field with `@` and a keyword: e.g. `@title`
+
+- The syntax highlighting of RStudio recognizes this type of comments and labels
 
 - Typical roxygen fields:
 
