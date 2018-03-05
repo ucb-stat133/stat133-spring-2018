@@ -1,5 +1,5 @@
 ---
-title: "Lab 6: Simple Functions and Conditionals"
+title: "Lab 7: Simple Functions and Conditionals"
 subtitle: "Stat 133, Spring 2018"
 author: "Gaston Sanchez"
 output: github_document
@@ -16,7 +16,7 @@ urlcolor: blue
 > - Use conditionals if-then-else
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, error = TRUE, fig.path = 'lab06-images/')
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, fig.path = 'lab07-images/')
 ```
 
 ------
@@ -45,7 +45,7 @@ include a code chunk at the top of your file like the one in the following
 screen capture:
 
 ```{r error_true, out.width='70%', echo = FALSE, fig.align='center'}
-knitr::include_graphics('lab06-images/error-true.png')
+knitr::include_graphics('lab07-images/error-true.png')
 ```
 
 By setting the global option `error = TRUE` you avoid the knitting process 

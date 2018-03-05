@@ -1,4 +1,4 @@
-Lab 6: Simple Functions and Conditionals
+Lab 7: Simple Functions and Conditionals
 ================
 Gaston Sanchez
 
@@ -28,7 +28,7 @@ In addition to writing the functions, you should also practice documenting your 
 
 If you use an `Rmd` file to write narrative and code for this practice, you must include a code chunk at the top of your file like the one in the following screen capture:
 
-<img src="lab06-images/error-true.png" width="70%" style="display: block; margin: auto;" />
+<img src="lab07-images/error-true.png" width="70%" style="display: block; margin: auto;" />
 
 By setting the global option `error = TRUE` you avoid the knitting process to be stopped in case a code chunk generates an error.
 
@@ -362,7 +362,7 @@ y_values <- dnorm(x_values, mean = 0, sd = 2)
 plot(x_values, y_values, las = 1, type = "l", lwd = 2)
 ```
 
-![](lab06-images/gaussian_plot-1.png)
+![](lab07-images/gaussian_plot-1.png)
 
 Your turn:
 
@@ -397,7 +397,7 @@ abline(h = 0, v = 0, col = '#888888aa', lwd = 1.5)
 title(main = expression(paste(f(x), ' = ', x^2, (x - 1))))
 ```
 
-![](lab06-images/polynomial_plot-1.png)
+![](lab07-images/polynomial_plot-1.png)
 
 Write functions and graph the following polynomials in the x-axis interval -4 to 4:
 
