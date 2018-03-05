@@ -1,0 +1,303 @@
+---
+title: "Getting started with functions"
+subtitle: "Stat 133, Spring 2018"
+author: "Gaston Sanchez"
+output: github_document
+fontsize: 11pt
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+```
+
+
+> ### Learning Objectives
+>
+> - Define a function that takes arguments
+> - Return a value from a function
+> - Test a function
+> - Set default values for function arguments
+> - Documenting a function
+
+------
+
+## Motivation
+
+- R comes with many functions (and packages) that let us perform a wide variety of tasks.
+- Most of the things we do in R is via calling some function.
+- Sometimes, however, there's no function to do what we want to achieve.
+- When that's the case, you will want to write your own functions.
+
+So far you've been using a number of functions in R. Now it's time to see 
+how you can create and use your own functions.
+
+Consider the data set `starwars` that comes in the package `"dplyr"`
+
+```{r}
+starwars
+```
+
+Let's focus on the variable `height`, more specifically on the first 10 values:
+
+```{r}
+ht10 <- starwars$height[1:10]
+ht10
+```
+
+The values of `height` (and `ht10`) are expressed in centimeters, but what if we wanted to obtain values in inches? The conversion formula is 1 cm = 0.3937 in.
+
+```{r}
+# height in inches
+ht10 * 0.3937
+```
+
+This works. But what if you had more data sets, all of them containing `height` values in cms, and you needed to convert those cms into inches? Wouldn't be nice to have a dedicated function `cm2in()`?
+
+```r
+cm2in(ht10)
+```
+
+R does not have a built-in function `cm2in()` but we can create one. Let's see how to do it "logically" step by step:
+
+```{r results='hide'}
+# 1) concrete example
+ht10 * 0.3937
+
+# 2) make it more general
+x <- ht10
+y <- x * 0.3937
+
+# 3) encapsulate code with an R expression
+{
+  y <- x * 0.3937
+}
+
+# 4) create function
+cm2in <- function(x) {
+  y <- x * 0.3937
+  return(y)
+}
+
+# 5) test it
+cm2in(ht10)
+
+# 6) keep testing
+cm2in(starwars$height)
+```
+
+- To define a new function in R you use the function `function()`.
+- You need to specify a name for the function, and then assign `function()`
+to the chosen name. 
+- You also need to define optional arguments (i.e. inputs). 
+- And of course, you must write the code (i.e. the body) so the function does 
+something when you use it:
+
+
+-----
+
+## Anatomy of a function
+
+```{r}
+# anatomy of a function
+some_name <- function(arguments) {
+  # body of the function
+}
+```
+
+- Generally, you give a name to a function.
+- A function takes one or more inputs (or none), known as _arguments_.
+- The expressions forming the operations comprise the __body__ of the function.
+- Usually, you wrap the body of the functions with curly braces.
+- A function returns a single value.
+
+A less abstract function could have the following structure:
+
+```r
+some_name <- function(arg1, arg2, etc) 
+{
+  expression_1
+  expression_2
+  ...
+  expression_n
+}
+```
+
+-----
+
+### Scale Transformations
+
+Let's see another example. Often, we need to transform the scale of one or more variables. Perhaps the most common type of transformation is when we _standardize_ a variable, that is: mean-center and divide by its standard deviation:
+
+![standard score](https://wikimedia.org/api/rest_v1/media/math/render/svg/5ceed701c4042bb34618535c9a902ca1a937a351)
+
+R has the function `scale()` that can be used to perform this operation, but let's pretend for a minute that there's no function in R to calculate standard scores.
+
+- compute the mean
+- compute the standard deviation
+- calculate deviations from mean
+- divide by standard deviation
+
+```{r}
+x <- ht10
+x_mean <- mean(x)
+x_sd <- sd(x)
+x_centered <- x - x_mean
+z <- x_centered / x_sd
+z
+```
+
+Having the code of the body, we can encapsulate it with a function:
+
+```{r}
+# first round
+standardize <- function(x) {
+  x_mean <- mean(x)
+  x_sd <- sd(x)
+  x_centered <- x - x_mean
+  z <- x_centered / x_sd
+  return(z)
+}
+```
+
+And now we can test it:
+
+```{r}
+standardize(ht10)
+```
+
+What about applying `standardize()` on the entire column `height`:
+
+```{r}
+standardize(starwars$height)
+```
+
+Ooops! Because `starwars$height` contains missing values, our `standardize()` function does not know how to deal with them.
+
+
+### Dealing with missing values
+
+How to deal with `NA`'s? Many functions in R like `sum()`, `mean()`, and `median()` have the so-called `na.rm` argument to specify if missing values should be removed before any computation this feature. We can take advantage of `na.rm = TRUE`:
+
+```{r}
+# second round
+standardize <- function(x) {
+  x_mean <- mean(x, na.rm = TRUE)
+  x_sd <- sd(x, na.rm = TRUE)
+  x_centered <- x - x_mean
+  z <- x_centered / x_sd
+  return(z)
+}
+
+standardize(ht10)
+
+standardize(starwars$height)
+```
+
+Now `standardize()` is able to return a more useful output by removing missing values. However, we should let the user decide is `NA`s must be removed. We can include an argument in `standardize()` to indicate if missing values are to be removed:
+
+```{r}
+# third round
+standardize <- function(x, na_rm = FALSE) {
+  x_mean <- mean(x, na.rm = na_rm)
+  x_sd <- sd(x, na.rm = na_rm)
+  x_centered <- x - x_mean
+  z <- x_centered / x_sd
+  return(z)
+}
+
+# default call
+standardize(starwars$height)
+
+# removing NAs
+standardize(starwars$height, na_rm = TRUE)
+```
+
+
+### Simplifying the body
+
+So far we have a working function `standardize()` that does the job and takes care of potential missing values. We can take a further step and review the code of the body. Let's go back to the initial code:
+
+```{r}
+x <- ht10
+x_mean <- mean(x)
+x_sd <- sd(x)
+x_centered <- x - x_mean
+z <- x_centered / x_sd
+```
+
+The code above works, but it is very "verbose". We can take advantage of R's functional behavior to shorten the computation of the standard scores in one line:
+
+```{r}
+x <- ht10
+z <- (x - mean(x)) / sd(x)
+```
+
+Having simplified the code, we can now modify our function:
+
+```{r}
+# fifth round
+standardize <- function(x, na_rm = FALSE) {
+  z <- (x - mean(x, na.rm = na_rm)) / sd(x, na.rm = na_rm)
+  return(z)
+}
+
+standardize(tail(starwars$height, n = 10), na_rm = TRUE)
+```
+
+-----
+
+# Documenting Functions
+
+The examples of functions in this tutorial are simple, and fairly understandble (I hope so). However, you should strive to always include _documentation_ for your functions. What does this mean? Documenting a function involves adding descriptions for the purpose of the function, the inputs it accepts, and the output it produces. 
+
+- Description: what the function does
+- Input(s): what are the inputs or arguments
+- Output: what is the output (returned value)
+
+You can find some inspiration in the `help()` documentation when your search 
+for a given function's description.
+
+There are several approaches for writing documentation of a function. I will show you how to use what are called __roxygen comments__ to achieve this task. While not used by most useRs, they are great when you want to take your code and make a package out of it. 
+
+Here's an example of documentation for `standardize()`
+
+```{r}
+#' @title Standardize
+#' @description Transforms values in standard units (i.e. standard scores)
+#' @param x numeric vector
+#' @param na_rm whether to remove missing values
+#' @return standardized values
+#' @examples
+#'   standardize(rnorm(10))
+standardize <- function(x, na_rm = FALSE) {
+  z <- (x - mean(x, na.rm = na_rm)) / sd(x, na.rm = na_rm)
+  return(z)
+}
+```
+
+- Roxygen comments are R comments formed by the hash immediately followed by an apostrophe: `#'`
+
+- You specify a field with `@` and a keyword: e.g. `@title`
+
+- Typical roxygen fields:
+
+| label          | meaning     | description                |
+|----------------|-------------|----------------------------|
+| `@title`       | title       | name of your function      |          
+| `@description` | description | what the function does     |
+| `@param input` | parameter   | describe `input` parameter |
+| `@return`      | output      | what is the returned value | 
+
+-----
+
+### General Strategy for Writing Functions
+
+- Always start simple with test toy-values.
+- Get what will be the body of the function working first.
+- Check out each step of the way.
+- Don't try and do too much at once.
+- Create (encapsulate body) the function once everything works.
+- Optional: after you have a function that works, you may worry about "elegance", "efficiency", "cleveness", etc
+- Include documentation; we suggest using Roxygen comments.

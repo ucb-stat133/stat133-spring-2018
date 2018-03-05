@@ -183,8 +183,9 @@
 - :card_index: __Dates__: Mar 05-09
 - :paperclip: __Topics__: You don’t need to be an expert programmer to be a data scientist, but learning more about programming allows you to automate common tasks, and solve new problems with greater ease. We'll discuss how to write basic functions, the notion of R expressions, and an introduction to conditionals. 
 - :file_folder: __Notes__:
-    + [Introduction to functions](../tutorials/06-intro-to-functions.md) (tutorial)
-    + [Introduction to R expressions and conditionals](../tutorials/07-intro-to-expressions-conditionals.md) (tutorial)
+    + [Creating functions](../tutorials/09-creating-functions.md) (tutorial)
+    + [Introduction to functions](../tutorials/10-intro-to-functions.md) (tutorial)
+    + [Introduction to R expressions and conditionals](../tutorials/11-intro-to-expressions-conditionals.md) (tutorial)
 - :microscope: __Lab__:
     + [Getting started with functions and conditionals](../labs/lab07-simple-functions.md)
 - :newspaper: __Misc__: 
