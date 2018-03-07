@@ -323,7 +323,7 @@ So, following good language-agnostic coding practices, we also recommend that yo
 The sample variance is given by the following formula:
 
 $$
-var(x) = \\frac{1}{n-1} \\sum\_{i = 1}^{n} (x\_i - \\bar{x})
+var(x) = \\frac{1}{n-1} \\sum\_{i = 1}^{n} (x\_i - \\bar{x})^2
 $$
 
 ![sample variance](../images/sample-variance.png)
@@ -368,7 +368,7 @@ Before doing any further changes to `variance()`, you should test it with a hand
 variance(runif(10))
 ```
 
-    ## [1] 0.08883997
+    ## [1] 0.05002401
 
 ``` r
 # what about atypical cases?

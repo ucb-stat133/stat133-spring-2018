@@ -337,7 +337,7 @@ statement is being made.
 The sample variance is given by the following formula: 
 
 $$
-var(x) = \frac{1}{n-1} \sum_{i = 1}^{n} (x_i - \bar{x})
+var(x) = \frac{1}{n-1} \sum_{i = 1}^{n} (x_i - \bar{x})^2
 $$
 
 ![sample variance](../images/sample-variance.png)
