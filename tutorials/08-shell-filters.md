@@ -412,16 +412,16 @@ Sorting lines with `sort`
 
 The output stream produced by many commands, as well as the lines of a file or of a series of files, can be sorted into alphabetical order with the `sort` command. In other words, `sort` reads information and sorts it alphabetically. You can customize the behavior of `sort` to ignore the case of words, and to reverse the order of a sort. This command also enables you to sort lists of numbers. The table below shows some of the common options for the `sort` command:
 
-| Option     | Description                                            |
-|------------|--------------------------------------------------------|
-| `-n`       | sort in numerical order rather than alphabetically.    |
-| `-r`       | sort in reverse order, z to a or decreasing numbers.   |
-| `-f`       | fold uppercase into lowercase (i.e. ignore case).      |
-| `-u`       | return a unique representative of repeated items.      |
-| `-k 3`     | sort lines based on column 4 (tab or space delimiters) |
-| `-t "3","` | use commas for delimiters.                             |
-| `-b`       | ignore leading blanks.                                 |
-| `-d`       | sort in dictionary order.                              |
+| Option   | Description                                            |
+|----------|--------------------------------------------------------|
+| `-n`     | sort in numerical order rather than alphabetically.    |
+| `-r`     | sort in reverse order, z to a or decreasing numbers.   |
+| `-f`     | fold uppercase into lowercase (i.e. ignore case).      |
+| `-u`     | return a unique representative of repeated items.      |
+| `-k 3`   | sort lines based on column 3 (tab or space delimiters) |
+| `-t ","` | use commas for delimiters.                             |
+| `-b`     | ignore leading blanks.                                 |
+| `-d`     | sort in dictionary order.                              |
 
 ------------------------------------------------------------------------
 

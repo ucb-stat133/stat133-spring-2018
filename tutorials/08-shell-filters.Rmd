@@ -262,8 +262,8 @@ The output stream produced by many commands, as well as the lines of a file or o
 |  `-r`  | sort in reverse order, z to a or decreasing numbers. |
 |  `-f`  | fold uppercase into lowercase (i.e. ignore case).    |
 |  `-u`  | return a unique representative of repeated items.    |
-|  `-k 3`| sort lines based on column 4 (tab or space delimiters) |
-|  `-t "3","` | use commas for delimiters.                      |
+|  `-k 3`| sort lines based on column 3 (tab or space delimiters) |
+|  `-t ","` | use commas for delimiters.                      |
 |  `-b`  | ignore leading blanks.                               |
 |  `-d`  | sort in dictionary order.                            |
 
