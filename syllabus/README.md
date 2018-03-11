@@ -190,6 +190,7 @@
     + [Getting started with functions and conditionals](../labs/lab07-simple-functions.md)
 - :newspaper: __Misc__: 
     + [chapter 19: Functions](http://r4ds.had.co.nz/functions.html) (_R for Data Science_ by Grolemund and Wickham)
+- :mortar_board: __MIDTERM 1__: Friday Mar-09
 
 
 -----
@@ -206,7 +207,8 @@
     + [Getting started with loops](../labs/lab08-simple-loops.md)
 - :newspaper: __Misc__:
     + [chapter 21: Iteration](http://r4ds.had.co.nz/iteration.html) (_R for Data Science_ by Grolemund and Wickham)
-- :mortar_board: __MIDTERM 1__: Friday Mar-09
+- :dart: __HW 3__: due Mar-23
+    + [Pipelines and Programming Basics](../hws/hw03-programming-basics.pdf)
 
 
 -----
@@ -226,8 +228,6 @@
     + [Getting started with strings](../labs/lab09-strings-basics.md)
 - :newspaper: __Misc__:
     + [chapter 14: Strings](http://r4ds.had.co.nz/strings.html) (_R for Data Science_ by Grolemund and Wickham)
-- :dart: __HW 3__: due Mar-23
-    + TBA
 
 
 -----
