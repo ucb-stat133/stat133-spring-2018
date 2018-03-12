@@ -201,8 +201,8 @@
 - :card_index: __Dates__: Mar 12-16
 - :paperclip: __Topics__: In addition to writing functions to reduce duplication in your code, you also need to learn about iteration, which helps you when you need to do the same operation several times. Namely, we review control flow structures such as `for` loops, `while` loops, `repeat` loops, and the `apply` family functions.
 - :file_folder: __Notes__:
-    + [Introduction to loops](../tutorials/08-intro-to-loops.md) (tutorial)
-    + [More about functions](../tutorials/09-more-functions.md) (tutorial)
+    + [Introduction to loops](../tutorials/12-intro-to-loops.md) (tutorial)
+    + [More about functions](../tutorials/13-more-functions.md) (tutorial)
 - :microscope: __Lab__: 
     + [Getting started with loops](../labs/lab08-simple-loops.md)
 - :newspaper: __Misc__:
