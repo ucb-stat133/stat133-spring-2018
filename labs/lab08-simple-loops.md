@@ -1,4 +1,4 @@
-Lab 7: Simple Loops
+Lab 8: Simple Loops
 ================
 Gaston Sanchez
 
@@ -141,10 +141,6 @@ $$
 
 Write a `for` loop to approximate *s**i**n*(*x*). Try different number of terms, *n* = 5, 10, 50, 100. Compare your loop with the `sin()` function.
 
-``` r
-# Your for loop
-```
-
 ------------------------------------------------------------------------
 
 For loop with a matrix
@@ -164,7 +160,7 @@ A
     ## [4,]    4    9   14   19
     ## [5,]    5   10   15   20
 
-Say we want to add 1 to all elements in row 1, add 2 to all elements in row 2, add 3 to all elements in row 3, and so on. To do this without using vectorized coe, you need to work with two `for()` loops. One loop will control how you traverse the matrix by rows, the other loop will control how you traverse the matrix by columns. Here's how:
+Say we want to add 1 to all elements in row 1, add 2 to all elements in row 2, add 3 to all elements in row 3, and so on. To do this without using vectorized coe, you need to work with two nested `for()` loops. One loop will control how you traverse the matrix by rows, the other loop will control how you traverse the matrix by columns. Here's how:
 
 ``` r
 # empty matrix B
@@ -204,10 +200,6 @@ X
     ## [4,]  0.07050839 -1.2650612  0.3598138
 
 Write code in R, using loops, to get a matrix `Y` such that the negative numbers in `A` are transformed into squared values, while the positive numbers in `A` are transformed into square root values
-
-``` r
-# for loops to get Y
-```
 
 ------------------------------------------------------------------------
 

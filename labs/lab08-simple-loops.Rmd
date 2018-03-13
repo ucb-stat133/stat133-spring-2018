@@ -1,5 +1,5 @@
 ---
-title: "Lab 7: Simple Loops"
+title: "Lab 8: Simple Loops"
 subtitle: "Stat 133, Spring 2018"
 author: "Gaston Sanchez"
 output: github_document
@@ -183,10 +183,6 @@ $$
 Write a `for` loop  to approximate $sin(x)$. Try different number of terms, 
 $n = 5, 10, 50, 100$. Compare your loop with the `sin()` function.
 
-```{r}
-# Your for loop
-
-```
 
 -----
 
@@ -201,9 +197,9 @@ A
 
 Say we want to add 1 to all elements in row 1, add 2 to all elements in 
 row 2, add 3 to all elements in row 3, and so on. To do this without using
-vectorized coe, you need to work with two `for()` loops. One loop will control
-how you traverse the matrix by rows, the other loop will control how you 
-traverse the matrix by columns. Here's how:
+vectorized coe, you need to work with two nested `for()` loops. One loop will 
+control how you traverse the matrix by rows, the other loop will control how 
+you traverse the matrix by columns. Here's how:
 
 ```{r}
 # empty matrix B
@@ -233,12 +229,6 @@ X
 Write code in R, using loops, to get a matrix `Y` such that the negative 
 numbers in `A` are transformed into squared values, while the positive 
 numbers in `A` are transformed into square root values
-
-```{r}
-# for loops to get Y
-
-```
-
 
 
 -----
