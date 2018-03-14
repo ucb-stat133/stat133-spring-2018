@@ -250,10 +250,15 @@ A
 ## Repeat Loop
 
 `repeat` executes the same code over and over until a stop condition is met:
+
 ```{r eval=FALSE}
 repeat { 
-  keep_doing_something
-  if (stop_condition) break
+  # keep
+  # doing
+  # something
+  if (stop_condition) {
+    break
+  }
 }
 ```
 
@@ -266,7 +271,9 @@ value <- 2
 repeat {
   value <- value * 2 
   print(value)
-  if (value >= 40) break
+  if (value >= 40) {
+    break
+  }
 }
 ```
 
@@ -296,7 +303,11 @@ A `while` loop provides this form of control flow.
 
 ```{r eval=FALSE}
 while (condition) { 
-  keep_doing_something
+  # keep
+  # doing
+  # something
+  # until
+  # condition is FALSE
 }
 ```
 
@@ -319,8 +330,76 @@ while (value < 40) {
 }
 ```
 
+-----
 
+## Loops: `for`, `while`, `repeat`
 
+Let's see one last example of a `for` loop, and how to achieve the same task
+with `while` and `repeat` loops.
+
+Say you have a vector `x <- c(2, 4, 6, 8, 10)`, and the goal is to obtain the 
+sum of the elements in `x`; in other words get `sum(x)` but using loops.
+
+```{r}
+# using a for loop
+x <- c(2, 4, 6, 8, 10)
+
+# initialize output
+sumx <- 0
+
+for (i in seq_along(x)) {
+  print(paste('iteration:'), i)
+  sumx <- sumx + x[i]
+  print(paste('sum =', sumx))
+}
+
+sumx
+```
+
+Now let's do it with a while loop
+
+```{r}
+# initialize output
+sumx <- 0
+
+# initialize counter
+i <- 1
+
+# while loop
+while (i <= length(x)) {
+  print(paste('iteration:', i))
+  sumx <- sumx + x[i]
+  print(paste('sum =', sumx))
+  i <- i + 1
+}
+
+sumx
+```
+
+And finally with a `repeat` loop:
+
+```{r}
+# initialize output
+sumx <- 0
+
+# initialize counter
+i <- 1
+
+# repeat loop (visualizing iterations)
+repeat {
+  print(paste('iteration:', i))
+  sumx <- sumx + x[i]
+  print(paste('sum =', sumx))
+  i <- i + 1
+  if (i > length(x)) {
+    break
+  }
+}
+
+sumx
+```
+
+-----
 
 ## Repeat, While, For
 
