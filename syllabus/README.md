@@ -203,6 +203,7 @@
 - :file_folder: __Notes__:
     + [Introduction to loops](../tutorials/12-intro-to-loops.md) (tutorial)
     + [More about functions](../tutorials/13-more-functions.md) (tutorial)
+    + [Functions](http://adv-r.had.co.nz/Functions.html) (_R Advanced R_ by H. Wickham)
 - :microscope: __Lab__: 
     + [Getting started with loops](../labs/lab08-simple-loops.md)
 - :newspaper: __Misc__:
