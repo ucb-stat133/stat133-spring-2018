@@ -203,7 +203,7 @@
 - :file_folder: __Notes__:
     + [Introduction to loops](../tutorials/12-intro-to-loops.md) (tutorial)
     + [More about functions](../tutorials/13-more-functions.md) (tutorial)
-    + [Functions](http://adv-r.had.co.nz/Functions.html) (_R Advanced R_ by H. Wickham)
+    + [Functions](http://adv-r.had.co.nz/Functions.html) (_Advanced R_ by H. Wickham)
 - :microscope: __Lab__: 
     + [Getting started with loops](../labs/lab08-simple-loops.md)
 - :newspaper: __Misc__:
@@ -220,11 +220,12 @@
 - :card_index: __Dates__: Mar 19-23
 - :paperclip: __Topics__: At its heart, computing involves working with numbers. However, a considerable amount of information and data is in the form of text. Therefore, you also need to learn about character strings, and how to perform basic manipulation of strings. In parallel, we'll keep working on writing funtions, especially focusing on testing functions.
 - :file_folder: __Notes__:
-    + [String Basics](../slides/17-strings-basics.pdf) (slides)
-    + [Intro to Strings](../tutorials/12-intro-to-strings.md) (tutorial)
-    + [Getting started with testing](../papers/testthat-wickham.pdf) (by Wickham)
+    + [Environments](http://adv-r.had.co.nz/Environments.html) (_Advanced R_ by H. Wickham)
+    + [Intro to testing functions](../tutorials/14-testing-functions.md) (tutorial)
+    + [Character strings in R](http://www.gastonsanchez.com/r4strings/chars.html) (_r4strings_ by Sanchez)
+    + [Basic string manipulations](http://www.gastonsanchez.com/r4strings/manip.html) (_r4strings_ by Sanchez)
 - :book: __Reading__:
-    + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
+    + [testthat: Get started with testing](../papers/testthat-wickham.pdf) (by Wickham)
 - :microscope: __Lab__: 
     + [Getting started with strings](../labs/lab09-strings-basics.md)
 - :newspaper: __Misc__:
