@@ -8,6 +8,8 @@ Gaston Sanchez
 > -   Write simple functions and their unit tests
 > -   Test your code
 
+------------------------------------------------------------------------
+
 R package `"testthat"`
 ----------------------
 
@@ -224,7 +226,7 @@ Function `test_that()`
 
 Now that you've seen how the expectation functions work, the next thing to talk about is the function `test_that()` which you'll use to group a set of expectations
 
-Looking at the previous test examples with the "normal" input vector, all the expectations can be wrapped inside a call to `test_that()` like this:
+Looking at the previous test examples with the "normal" input vector, all the expectations can be wrapped inside a call to `test_that()`. The first argument of `test_that()` is a string indicating what is being tested, followed by an R expression with the expectations.
 
 ``` r
 test_that("standardize works with normal input", {
@@ -237,7 +239,7 @@ test_that("standardize works with normal input", {
 })
 ```
 
-Likewise, all the expectations with the vector contaiing missing values can be wrapped inside another call to `test_that()` like this:
+Likewise, all the expectations with the vector containing missing values can be wrapped inside another call to `test_that()` like this:
 
 ``` r
 test_that("standardize works with missing values", {
