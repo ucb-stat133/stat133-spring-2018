@@ -1,15 +1,167 @@
-Lab 8: Basics of strings manipulations
+Lab 8: Testing functions, and string basics
 ================
 Gaston Sanchez
 
 > ### Learning Objectives
 >
+> -   Introduction to the R package "testthat"
+> -   Write simple functions and their unit tests
+> -   Test your code
 > -   String manipulation
 > -   Base R functions for strings
 
 ------------------------------------------------------------------------
 
-The purpose of this lab is to work with some functions to do basic manipulation of strings. You will be using the row names of the data frame `USArrests` (this data comes already in R):
+The purpose of this lab is two-fold: 1) getting started with writing tests for your functions, and 2) getting started with functions to do basic manipulation of strings.
+
+R package `"testthat"`
+----------------------
+
+`"testthat"` is one of the packages in R that helps you write tests for your functions. First, remember to install the package:
+
+``` r
+# do not include this code in your Rmd
+# execute this in your console
+install.packages("testthat")
+```
+
+-   `"testthat"` provides a testing framework for R that is easy to learn and use
+-   `"testthat"` has a hierarchical structure made up of:
+    -   expectations
+    -   tests
+    -   contexts
+-   A **context** involves **tests** formed by groups of **expectations**
+-   Each structure has associated functions:
+    -   `expect_that()` for expectations
+    -   `test_that()` for groups of tests
+    -   `context()` for contexts
+
+``` r
+# load testthat
+library(testthat)
+```
+
+### List of common expectation functions
+
+| Function                  | Description                                   |
+|---------------------------|-----------------------------------------------|
+| `expect_true(x)`          | expects that `x` is `TRUE`                    |
+| `expect_false(x)`         | expects that `x` is `FALSE`                   |
+| `expect_null(x)`          | expects that `x` is `NULL`                    |
+| `expect_type(x)`          | expects that `x` is of type `y`               |
+| `expect_is(x, y)`         | expects that `x` is of class `y`              |
+| `expect_length(x, y)`     | expects that `x` is of length `y`             |
+| `expect_equal(x, y)`      | expects that `x` is equal to `y`              |
+| `expect_equivalent(x, y)` | expects that `x` is equivalent to `y`         |
+| `expect_identical(x, y)`  | expects that `x` is identical to `y`          |
+| `expect_lt(x, y)`         | expects that `x` is less than `y`             |
+| `expect_gt(x, y)`         | expects that `x` is greater than `y`          |
+| `expect_lte(x, y)`        | expects that `x` is less than or equal to `y` |
+| `expect_gte(x, y)`        | expects that `x` is greater than or equal `y` |
+| `expect_named(x)`         | expects that `x` has names `y`                |
+| `expect_matches(x, y)`    | expects that `x` matches `y` (regex)          |
+| `expect_message(x, y)`    | expects that `x` gives message `y`            |
+| `expect_warning(x, y)`    | expects that `x` gives warning `y`            |
+| `expect_error(x, y)`      | expects that `x` throws error `y`             |
+
+------------------------------------------------------------------------
+
+### Practice writing simple tests
+
+-   To start the practice, create a new directory, e.g. `lab09`
+-   `cd` to `lab09`
+-   Create an `R` script to write and document your functions: e.g. `functions.R`
+-   Create a separate `R` script `tests.R` to write the tests of your functions.
+
+### Example with `stat_range()`
+
+Let's start with a basic function `stat_range()` to compute the overall range of a numeric vector. Create this function in the file `functions.R`.
+
+``` r
+stat_range <- function(x) {
+  max(x) - min(x)
+}
+```
+
+-   *description:* computes the range of a numeric vector (i.e. max - min)
+-   *input:* a numeric vector
+-   *output:* the range value (max - min)
+
+### Tests for `stat_range()`
+
+To write the unit tests in `tests.R`, we are going to consider the following testing vectors:
+
+-   `x <- c(1, 2, 3, 4, 5)`
+-   `y <- c(1, 2, 3, 4, NA)`
+-   `z <- c(TRUE, FALSE, TRUE)`
+-   `w <- letters[1:5]`
+
+The typical structure of the tests has the following form:
+
+``` r
+# load the source code of the functions to be tested
+source("functions.R")
+
+# context with one test that groups expectations
+context("Test for range value") 
+
+test_that("range works as expected", {
+  x <- c(1, 2, 3, 4, 5)
+  
+  expect_equal(stat_range(x), 4)
+  expect_length(stat_range(x), 1)
+  expect_type(stat_range(x), 'double')
+})
+```
+
+-   use `context()` to describe what the test are about
+-   use `test_that()` to group expectations:
+    -   output equal to 4
+    -   output of length one
+    -   output of type `double`
+-   to run the tests from the R console, use the function `test_file()` by passing the path of the file `tests.R`
+
+``` r
+# assuming that your working directory is "lab09/"
+library(testthat)
+test_file("tests.R")
+```
+
+You could actually include a code chunk in your Rmd with the code above.
+
+### Your Turn
+
+Write more groups of tests---`test_that()`---to test `stat_range()` with the rest of the testing vectors `y`, `z`, `w`:
+
+-   Using `y`, write expectations for:
+    -   output is of length one
+    -   output is equal to `NA_real_`
+-   Using `z`, write expectations for:
+    -   output is of length one
+    -   output is of type `integer`
+    -   output is equal to `1L`
+-   Using `w`, write expectations for:
+    -   throws an error
+
+Try writing the following functions and come up with unit tests:
+
+-   `stat_centers()`
+    -   *description:* computes measures of center such as Median and Mean
+    -   *input:* a numeric vector
+    -   *output:* a numeric vector with median and mean
+    -   use `mean()` and `median()` to write `stat_centers()`
+-   `stat_spreads()`
+    -   *description:* computes measures of spread such as Range, IQR, Standard Deviation
+    -   *input:* a numeric vector
+    -   *output:* a numeric vector with range, iqr, and stdev
+    -   use `stat_range()`, `IQR()`, and `sd()` to write `stat_spreads()`
+
+------------------------------------------------------------------------
+
+Basics of String Manipulation
+=============================
+
+In this second part of the lab, you will be using the row names of the data frame `USArrests` (this data comes already in R):
 
 ``` r
 head(USArrests)
