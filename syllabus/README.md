@@ -227,7 +227,7 @@
 - :book: __Reading__:
     + [testthat: Get started with testing](../papers/testthat-wickham.pdf) (by Wickham)
 - :microscope: __Lab__: 
-    + [Getting started with strings](../labs/lab09-strings-basics.md)
+    + [Getting started with strings](../labs/lab09-tests-strings-basics.md)
 - :newspaper: __Misc__:
     + [chapter 14: Strings](http://r4ds.had.co.nz/strings.html) (_R for Data Science_ by Grolemund and Wickham)
 
