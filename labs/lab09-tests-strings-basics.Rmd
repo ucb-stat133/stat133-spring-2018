@@ -1,5 +1,5 @@
 ---
-title: "Lab 8: Testing functions, and string basics"
+title: "Lab 9: Testing functions, and string basics"
 subtitle: "Stat 133, Spring 2018"
 author: "Gaston Sanchez"
 output: github_document
