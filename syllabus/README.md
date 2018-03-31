@@ -251,8 +251,8 @@
 - :card_index: __Dates__: Apr 02-06
 - :paperclip:  __Topics__: To unleash the power of strings manipulation, we need to take things to the next level and learn about Regular Expressions. Namely, Regular expressions are a tool that allows us to describe a certain amount of text called "patterns". We'll describe the basic concepts of regex and the common operations to match text patterns.
 - :file_folder: __Notes__:
-    + [Introduction to regular expressions](../tutorials/13-intro-to-regex.md)
     + [Regexpal](http://regexpal.com.s3-website-us-east-1.amazonaws.com/) tester tool.
+    + [Introduction to regular expressions](../tutorials/15-intro-to-regex.md)
 - :book: __Reading__:
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :microscope: __Lab__:
