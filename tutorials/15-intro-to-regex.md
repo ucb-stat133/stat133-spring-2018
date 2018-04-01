@@ -336,26 +336,27 @@ images_output
     ## [31] NA     ".ico" ".jpg" NA     ".gif" NA     NA     ".gif" NA     NA    
     ## [41] NA     ".jpg" NA     ".gif" ".jpg" ".jpg" NA     ".gif" ".gif" ".jpg"
 
-There’s some repetition with the dot character; we can place it at the
-beginning of the pattern:
+There’s some repetition with the dot character; we can modify our
+previous pattern by placing the dot `"\\."` at the beginning, and then
+grouping the four types of file extensions separated by `"|"`:
 
 ``` r
-images_output <- str_extract(sublogs, "\\.(jpg)|(png)|(gif)|(ico)")
+images_output <- str_extract(sublogs, "\\.(jpg|png|gif|ico)")
 images_output
 ```
 
-    ##  [1] ".jpg" ".jpg" NA     "gif"  NA     "gif"  NA     "gif"  NA     ".jpg"
-    ## [11] "gif"  "gif"  "gif"  "gif"  NA     NA     "gif"  "gif"  ".jpg" ".jpg"
-    ## [21] "gif"  "gif"  NA     NA     NA     "gif"  NA     "png"  NA     NA    
-    ## [31] NA     "ico"  ".jpg" NA     "gif"  NA     NA     "gif"  NA     NA    
-    ## [41] NA     ".jpg" NA     "gif"  ".jpg" ".jpg" NA     "gif"  "gif"  ".jpg"
+    ##  [1] ".jpg" ".jpg" NA     ".gif" NA     ".gif" NA     ".gif" NA     ".jpg"
+    ## [11] ".gif" ".gif" ".gif" ".gif" NA     NA     ".gif" ".gif" ".jpg" ".jpg"
+    ## [21] ".gif" ".gif" NA     NA     NA     ".gif" NA     ".png" NA     NA    
+    ## [31] NA     ".ico" ".jpg" NA     ".gif" NA     NA     ".gif" NA     NA    
+    ## [41] NA     ".jpg" NA     ".gif" ".jpg" ".jpg" NA     ".gif" ".gif" ".jpg"
 
-Let’s aply the search on the entire log file and count how many files of
-each type:
+Now let’s apply the pattern on the entire log file, to count the number
+of files of each type:
 
 ``` r
 # frequencies
-img_extensions <- str_extract(logs, "(\\.jpg)|(\\.png)|(\\.gif)|(\\.ico)")
+img_extensions <- str_extract(logs, "\\.(jpg|png|gif|ico)")
 table(img_extensions)
 ```
 

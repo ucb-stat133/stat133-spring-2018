@@ -230,6 +230,8 @@
     + [Getting started with strings](../labs/lab09-tests-strings-basics.md)
 - :newspaper: __Misc__:
     + [chapter 14: Strings](http://r4ds.had.co.nz/strings.html) (_R for Data Science_ by Grolemund and Wickham)
+- :bulb: __Cheat sheet__:
+    + [Stringr cheat sheet](../cheatsheets/stringr-cheatsheet.pdf)
 
 
 -----
@@ -239,8 +241,6 @@
 
 - :card_index: __Dates__: Mar 26-30
 - :battery: (Re)charge your batteries!
-- :dart: __HW 4__: due Apr-06
-    + TBA
 
 
 -----
@@ -256,11 +256,13 @@
 - :book: __Reading__:
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :microscope: __Lab__:
-    + TBA
+    + [Regular Expressions](../labs/lab10-regex-basics.md)
 - :newspaper: __Misc__:
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :bulb: __Cheat sheet__:
     + [Regular Expressions cheat sheet](../cheatsheets/regular-expressions-cheatsheet.pdf)
+- :dart: __HW 4__: due Apr-17
+    + [Pipelines and Programming Basics](../hws/hw03-programming-basics.pdf)
 
 
 -----
@@ -273,16 +275,18 @@
 
 In order to better visualize the results of some simulations, we will briefly discuss Shiny apps. This type of apps are a nice companion to R, making it quick and simple to deliver interactive analysis and graphics on any web browser. We'll review how to create simple shiny apps to display data summaries, queries, and interactive displays.
 - :file_folder: __Notes__:
+    + [Introduction to random numbers](../tutorials/16-intro-to-random-numbers)
+    + [More simulations](../tutorials/17-more-simulations)
     + [shiny tutorial](../slides/shiny-tutorial.pdf) (by Grolemund)
 - :book: __Reading__:
     + [Part 1 - How to build a Shiny app](https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=0m0s) (video)
 - :microscope: __Lab__:
-    + TBA
+    + [Random numbers and simulations](../labs/lab11-random-simulations.md)
 - :newspaper: __Misc__:
     + [Part 2 - How to customize reactions](https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=42m2s) (video)
     + [Part 3 - How to customize appearance](https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=1h32m41s) (video)
-- :dart: __HW 5__: due Apr-20
-    + TBA
+- :bulb: __Cheat sheet__:
+    + [shiny cheat sheet](../cheatsheets/shiny-cheatsheet.pdf)
 
 
 -----
@@ -299,6 +303,8 @@ In order to better visualize the results of some simulations, we will briefly di
     + See package components: [http://r-pkgs.had.co.nz/](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
     + TBA
+- :dart: __HW 5__: due Apr-27
+    + TBA
 
 
 -----
@@ -313,8 +319,6 @@ In order to better visualize the results of some simulations, we will briefly di
 - :book: __Reading__:
     + See package components: [http://r-pkgs.had.co.nz](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
-    + TBA
-- :dart: __HW 6__: due Apr-27
     + TBA
 
 
