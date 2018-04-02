@@ -257,12 +257,10 @@
     + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :microscope: __Lab__:
     + [Regular Expressions](../labs/lab10-regex-basics.md)
-- :newspaper: __Misc__:
-    + [Handling Strings in R](http://www.gastonsanchez.com/r4strings) (by Sanchez)
 - :bulb: __Cheat sheet__:
     + [Regular Expressions cheat sheet](../cheatsheets/regular-expressions-cheatsheet.pdf)
 - :dart: __HW 4__: due Apr-17
-    + [Pipelines and Programming Basics](../hws/hw03-programming-basics.pdf)
+    + [Strings and Regular Expressions](../hws/hw04-strings-regex.pdf)
 
 
 -----
