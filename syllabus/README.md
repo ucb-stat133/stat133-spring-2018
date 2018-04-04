@@ -273,7 +273,7 @@
 
 In order to better visualize the results of some simulations, we will briefly discuss Shiny apps. This type of apps are a nice companion to R, making it quick and simple to deliver interactive analysis and graphics on any web browser. We'll review how to create simple shiny apps to display data summaries, queries, and interactive displays.
 - :file_folder: __Notes__:
-    + [Introduction to random numbers](../tutorials/16-intro-to-random-numbers)
+    + [Introduction to random numbers](../tutorials/16-intro-to-random-numbers.md)
     + [Coin toss shiny app](../apps/coin-toss)
     + [shiny tutorial](../slides/shiny-tutorial.pdf) (by Grolemund)
 - :book: __Reading__:
