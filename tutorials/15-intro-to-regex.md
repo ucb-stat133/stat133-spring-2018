@@ -297,8 +297,8 @@ str_extract(sublogs, "[jpgi][pnic][gfo]")
     ## [45] "ing" "ing" NA    "ing" "gif" "ing"
 
 The previous pattern does not really work as expected: note that we are
-matching the pattern formed by `"ing"` which does not correspond to a
-file extension.
+matching the patterns formed by `"ing"` and `"inf"` which do not
+correspond to image file extensions.
 
 An alternative way to detect JPG and PNG is by grouping patterns inside
 parentheses, and separating them with the metacharacter `"|"` which
@@ -306,7 +306,7 @@ means *OR*:
 
 ``` r
 # detecting .jpg OR .png
-jpg_png <- str_detect(sublogs, "(\\.jpg)|(\\.png)")
+jpg_png <- str_detect(sublogs, "\\.jpg|\\.png")
 sum(jpg_png)
 ```
 
@@ -316,7 +316,7 @@ Here’s how to detect all the extension in one single pattern:
 
 ``` r
 # matching "jpg" or "png" or "gif" or "ico"
-image_lines <- str_detect(sublogs, "(\\.jpg)|(\\.png)|(\\.gif)|(\\.ico)")
+image_lines <- str_detect(sublogs, "\\.jpg|\\.png|\\.gif|\\.ico")
 sum(image_lines)
 ```
 
@@ -326,7 +326,7 @@ To make sure our regex operation is successful, let’s see the output of
 `str_extract()`:
 
 ``` r
-images_output <- str_extract(sublogs, "(\\.jpg)|(\\.png)|(\\.gif)|(\\.ico)")
+images_output <- str_extract(sublogs, "\\.jpg|\\.png|\\.gif|\\.ico")
 images_output
 ```
 
@@ -337,8 +337,22 @@ images_output
     ## [41] NA     ".jpg" NA     ".gif" ".jpg" ".jpg" NA     ".gif" ".gif" ".jpg"
 
 There’s some repetition with the dot character; we can modify our
-previous pattern by placing the dot `"\\."` at the beginning, and then
-grouping the four types of file extensions separated by `"|"`:
+previous pattern by placing the dot `"\\."` at the beginning:
+
+``` r
+images_output <- str_extract(sublogs, "\\.jpg|png|gif|ico")
+images_output
+```
+
+    ##  [1] ".jpg" ".jpg" NA     "gif"  NA     "gif"  NA     "gif"  NA     ".jpg"
+    ## [11] "gif"  "gif"  "gif"  "gif"  NA     NA     "gif"  "gif"  ".jpg" ".jpg"
+    ## [21] "gif"  "gif"  NA     NA     NA     "gif"  NA     "png"  NA     NA    
+    ## [31] NA     "ico"  ".jpg" NA     "gif"  NA     NA     "gif"  NA     NA    
+    ## [41] NA     ".jpg" NA     "gif"  ".jpg" ".jpg" NA     "gif"  "gif"  ".jpg"
+
+Notice that the dot only appears next to `".jpg"` but not with the other
+type of extensions. What we need to do is group the file extensions by
+surrounding them with parentheses:
 
 ``` r
 images_output <- str_extract(sublogs, "\\.(jpg|png|gif|ico)")
@@ -363,3 +377,19 @@ table(img_extensions)
     ## img_extensions
     ## .gif .ico .jpg .png 
     ## 8818  100 5509 1374
+
+### More Questions
+
+  - How to get the entire name of the image file (`image.ext`)?
+
+  - How to get just the name of the image file without, the extension
+    (`image`)?
+
+  - How to get the request type: e.g. `"GET`?
+
+  - How to get the status codes: e.g. `200`?
+
+  - How to get the size of the resource (number at the end): e.g.
+    `34301"`?
+
+  - How to get the IP address of the client?

@@ -232,14 +232,15 @@ str_extract(sublogs, "[jpgi][pnic][gfo]")
 ```
 
 The previous pattern does not really work as expected: note that we are matching 
-the pattern formed by `"ing"` which does not correspond to a file extension.
+the patterns formed by `"ing"` and `"inf"` which do not correspond to image file 
+extensions.
 
 An alternative way to detect JPG and PNG is by grouping patterns inside
 parentheses, and separating them with the metacharacter `"|"` which means _OR_:
 
 ```{r}
 # detecting .jpg OR .png
-jpg_png <- str_detect(sublogs, "(\\.jpg)|(\\.png)")
+jpg_png <- str_detect(sublogs, "\\.jpg|\\.png")
 sum(jpg_png)
 ```
 
@@ -247,7 +248,7 @@ Here's how to detect all the extension in one single pattern:
 
 ```{r}
 # matching "jpg" or "png" or "gif" or "ico"
-image_lines <- str_detect(sublogs, "(\\.jpg)|(\\.png)|(\\.gif)|(\\.ico)")
+image_lines <- str_detect(sublogs, "\\.jpg|\\.png|\\.gif|\\.ico")
 sum(image_lines)
 ```
 
@@ -255,19 +256,26 @@ To make sure our regex operation is successful, let's see the output of
 `str_extract()`:
 
 ```{r}
-images_output <- str_extract(sublogs, "(\\.jpg)|(\\.png)|(\\.gif)|(\\.ico)")
+images_output <- str_extract(sublogs, "\\.jpg|\\.png|\\.gif|\\.ico")
 images_output
 ```
 
 There's some repetition with the dot character; we can modify our previous 
-pattern by placing the dot `"\\."` at the beginning, and then grouping the four 
-types of file extensions separated by `"|"`:
+pattern by placing the dot `"\\."` at the beginning:
+
+```{r}
+images_output <- str_extract(sublogs, "\\.jpg|png|gif|ico")
+images_output
+```
+
+Notice that the dot only appears next to `".jpg"` but not with the other 
+type of extensions. What we need to do is group the file extensions by surrounding
+them with parentheses:
 
 ```{r}
 images_output <- str_extract(sublogs, "\\.(jpg|png|gif|ico)")
 images_output
 ```
-
 
 Now let's apply the pattern on the entire log file, to count the number of files 
 of each type:
@@ -278,3 +286,52 @@ img_extensions <- str_extract(logs, "\\.(jpg|png|gif|ico)")
 table(img_extensions)
 ```
 
+
+### More Questions
+
+- How to get the entire name of the image file (`image.ext`)?
+
+```{r echo = FALSE, results = 'hide'}
+str_extract(sublogs, "\\w+\\.(jpg|png|gif|ico)")
+```
+
+- How to get just the name of the image file without, the extension (`image`)?
+
+```{r echo = FALSE, results = 'hide'}
+str_sub(str_extract(sublogs, "\\w+\\.(jpg|png|gif|ico)"), end = -5)
+```
+
+- How to get the request type: e.g. `"GET`?
+
+```{r echo = FALSE, results = 'hide'}
+str_extract(sublogs, '\\"[A-Z]+')
+```
+
+- How to get the status codes: e.g. `200`?
+
+```{r echo = FALSE, results = 'hide'}
+str_extract(sublogs, '\\" [0-9][0-9][0-9]')
+str_extract(sublogs, ' [0-9][0-9][0-9]')
+```
+
+- How to get the size of the resource (number at the end): e.g. `34301"`?
+
+```{r echo = FALSE, results = 'hide'}
+str_extract(sublogs, ' [0-9]+$')
+str_extract(sublogs, '[0-9]+$')
+```
+
+- How to get the IP address of the client?
+
+```{r echo = FALSE, results = 'hide'}
+# fail
+str_extract(sublogs, "\\w+")
+str_extract(sublogs, "\\w+\\.+ ")
+str_extract(sublogs, "(\\w+\\.\\w+)+")
+
+# almost (fails at matching 'pd9049f35.dip.t-dialin.net')
+str_extract(sublogs, "(\\w+\\.)+\\w+")
+
+# okay
+str_extract(sublogs, "(\\w+\\.)+\\w+-*(\\w+\\.)+\\w+")
+```
