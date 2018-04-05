@@ -295,7 +295,7 @@ In order to better visualize the results of some simulations, we will briefly di
 - :card_index: __Dates__: Apr 16-20
 - :paperclip: __Topics__: Packages are the fundamental units of reproducible R code. They include reusable functions, the documentation that describes how to use them, and sample data. In this part we'll start describing how to turn your code into an R package.
 - :file_folder: __Notes__:
-    + TBA
+    + [Programming S3 Classes](../tutorials/17-programming-s3classes.pdf)
 - :book: __Reading__:
     + [Package Structure](http://r-pkgs.had.co.nz/package.html) (R packages by Wickham)
     + See package components: [http://r-pkgs.had.co.nz/](http://r-pkgs.had.co.nz/) (R packages by Wickham)

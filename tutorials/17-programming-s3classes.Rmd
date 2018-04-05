@@ -1,0 +1,1099 @@
+---
+title: "Object Oriented Programming"
+subtitle: "Stat 133, Spring 2018"
+author: "Gaston Sanchez"
+output: pdf_document
+fontsize: 12pt
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+> This tutorial is the first part for the material to create an R package.
+> In this document, we'll describe functions for tossing a coin. Specifically,
+> we will define an object of class `"coin"`, and a function `"toss()"` for
+> tossing a `"coin"`, and producing an object of class `"toss"`. We will also
+> discuss how to create common methods such as `print()`, `summary()`, `plot()`,
+> replacement, extraction, testing, and addition.
+
+
+## 1) Tossing a Coin
+
+To illustrate the concepts behind object-oriented programming in R, we are 
+going to implement code that simulates tossing a coin one or more times. 
+
+
+### 1.1) Coin object
+
+To toss a coin using R, we first need an object that plays the role of a coin.
+So let's start by creating a `coin` object using a character vector with two
+elements: `"heads"` and `"tails"`:
+
+```{r coin-vector}
+# coin object
+coin <- c("heads", "tails")
+coin
+```
+
+
+### 1.2) Tossing a coin with `sample()`
+
+Tossing a coin is a random experiment: you either get heads or tails. To get
+a random output in R we can use the function `sample()` which takes a random
+sample of a given vector. Here's how to simulate a coin toss using `sample()` 
+to take a random sample of size 1 from `coin`:
+
+```{r coin-sample}
+# one toss
+sample(coin, size = 1)
+```
+
+\bigskip
+
+We can also use `sample()` to take samples of sizes different than one, and 
+also to sample with replacement. To simulate multiple tosses, we can change the 
+value of the `size` argument, and set `replace = TRUE`:
+
+```{r three-tosses}
+# 3 tosses
+sample(coin, size = 3, replace = TRUE)
+```
+
+\bigskip
+
+```{r six-tosses}
+# 6 tosses
+sample(coin, size = 6, replace = TRUE)
+```
+
+
+### 1.3) Function `toss()`
+
+To make our code reusable, it's better to create a function that lets us 
+toss a coin multiple times; for instance, we can write the following `toss()` 
+function:
+
+```{r toss-function1}
+#' @title coin toss function 
+#' @description simulates tossing a coin a given number of times
+#' @param coin object (a vector)
+#' @param times number of tosses
+#' @return vector of tosses
+toss <- function(coin, times = 1) {
+  sample(coin, size = times, replace = TRUE)
+}
+
+# default call (1 toss)
+toss(coin)
+
+# 5 tosses
+toss(coin, times = 4)
+```
+
+\bigskip
+
+We can make the function more versatile by adding a `prob` argument that let us 
+specify different probabilities for _heads_ and _tails_
+
+```{r toss-function2}
+#' @title coin toss function 
+#' @description simulates tossing a coin a given number of times
+#' @param coin object (a vector)
+#' @param times number of tosses
+#' @param prob vector of proabilities for each side of the coin
+#' @return vector of tosses
+toss <- function(coin, times = 1, prob = NULL) {
+  sample(coin, size = times, replace = TRUE, prob = prob)
+}
+
+# toss a loaded coin 10 times
+toss(coin, times = 10, prob = c(0.8, 0.2))
+```
+
+
+### 1.4) Computing Frequencies
+
+Typical probability problems that have to do with coin tossing, require
+to compute the total proportion of `"heads"` and `"tails"`:
+
+```{r five-tosses}
+# five tosses
+five <- toss(coin, times = 5)
+
+# proportion of heads and tails
+sum(five == "heads") / 5
+sum(five == "tails") / 5
+```
+
+\bigskip
+
+It is also customary to compute the relative frequencies of `"heads"` and
+`"tails"` in a series of tosses:
+
+```{r relative-freqs}
+# relative frequencies of heads
+cumsum(five == "heads") / 1:length(five)
+
+# relative frequencies of tails
+cumsum(five == "tails") / 1:length(five)
+```
+
+
+## 1.5) Plotting relative frequencies
+
+Likewise, it is common to look at how the relative frequencies of heads or 
+tails change over a series of tosses:
+
+```{r plot-freqs}
+set.seed(5938)
+hundreds <- toss(coin, times = 500)
+head_freqs = cumsum(hundreds == "heads") / 1:500
+
+plot(1:500, head_freqs, type = "l", ylim = c(0, 1), las = 1,
+     col = "#3989f8", lwd = 2)
+```
+
+So far we have written code in R that simulates tossing a coin one or more
+times. We have included commands to compute proportion of heads and tails, 
+as well the relative frequencies of heads (or tails) in a series of tosses.
+In addition, we have produced a plot of the relative frequencies and see
+how, as the number of tosses increases, the frequency of heads (and tails) 
+approach 0.5.
+
+In the following sections, we are going to see how to implement various
+functions and methods in R to make our coin tossing code more reliable,
+more structured, and more useful.
+
+
+
+## 2) Object-Oriented Programming
+
+Popular languages that use OOP include C++, Java, and Python. Different 
+languages implement OOP in different ways. R also provides OOP capabilities, 
+but compared to other languages, R's OOP options are less formal.
+
+The idea of OOP is that all operations are built around objects, which have 
+a __class__, and __methods__ that operate on objects in the class. Classes are
+constructed to build on (inherit from) each other, so that one class may be 
+a specialized form of another class, extending the components and methods
+of the simpler class (e.g. `"lm"`, and `"glm"` objects).
+
+Often when you get to the point of developing OOP code in R, you're doing some
+serious programming, and you're going to be acting as a software engineer.
+It's a good idea to think carefully in advance about the design of the classes
+and methods.
+
+
+### 2.1) Programming without objects, classes, and methods
+
+If you have no previous experience with object-oriented programming, it can 
+be a bit challenging. You may be tempted to think that OOP does not provide
+any evident advantages: you need to think in advance before writing code, 
+brainstorm, choose the right objects, their types, what their relationships
+will be, ... "so many things to consider". 
+So why bother? Why care about objects?
+
+Let me show you a simple example of why OOP is not a bad idea. 
+Taking the code we've written for tossing a coin, we can generate two series 
+of tosses. The first experiment involves tossing a coin five times, and then 
+computing the proportion of heads:
+
+```{r}
+# random seed
+set.seed(534)
+
+# five tosses
+five <- toss(coin, times = 5)
+
+# prop of heads in five
+sum(five == "heads") / length(five)
+```
+
+\bigskip
+
+The second experiment involves tossing a coin six times and computing the 
+proportion of heads:
+
+```{r}
+# six tosses
+six <- toss(coin, times = 6)
+
+# prop of heads in six
+sum(six == "heads") / length(five)
+```
+
+\bigskip
+
+The above code works ... except that there is an error; the number of heads in
+`six` is being divided by 5 instead of 6. R hasn't detected this error: it
+doesn't know that the division has to be done using `length(six)`.
+
+Wouldn't it be prefarable to have some mechanism that prevented this type
+of errors from happening? Bugs will always be part of any programming 
+activity, but it is better to minimize certain types of errors like the one
+above.
+
+
+### 2.2) Object-Oriented Programming in R
+
+R has two (plus one) object oriented systems, so it can be a bit intimidating
+when you read and learn about them for the first time. 
+The goal of this tutorial is not to make you an expert in all R's OOP systems, 
+but to help you become familiar with the so-called _S3 class_.
+
+__S3__ implements a style of OO programming called generic-function OO. 
+S3 uses a special type of function called a _generic_ function that decides 
+which method to call, e.g., `table(iris$Species)`. Keep in mind that S3 is a 
+very casual system: it does not really have a formal definition of classes.
+
+S3 classes are widely-used, in particular for statistical models in the 
+`"stats"` package. S3 classes are very informal in that there is not a formal
+definition for an S3 class. Usually, S3 objects are built on top of lists, or 
+atomic vectors with attributes. But you can also turn functions into S3 objects.
+
+Note that in more formal OOP languages, all functions are associated with a 
+class, while in R, only some are.
+
+
+### 2.3) S3 Classes and Objects
+
+To make an object an instance of a class, you just take an existing base object 
+and set the `"class"` attribute. You can do that during creation of the object
+with `structure()`, or after the object has been createad with `class()`.
+
+```{r structure-class}
+# object coin via structure()
+coin1 <- structure(c("heads", "tails"), class = "coin") 
+
+# object coin via class()
+coin2 <- c("heads", "tails")
+class(coin2) <- "coin" 
+```
+
+You can inspect the class of any object using `class(x)`
+
+```{r class-example}
+class(coin1)
+```
+
+You can also determine if an object inherits from a specific class using
+`inherits()`
+
+```{r inherits-example}
+inherits(coin2, "coin")
+```
+
+
+### 2.4) Generic and Specific Methods
+
+Having a coin object, we can simulate flipping the coin with our previously 
+defined function `toss()`. A coin could have a function `flip()`:
+
+```{r}
+toss(coin1, times = 5)
+```
+
+The issue with the way `toss()` is defined, is that you can pass it any type
+of vector (not necessarily of class `"coin"`), and it will still work:
+
+```{r}
+toss(c('tic', 'tac', 'toe'))
+```
+
+\bigskip
+
+To create a function `toss()` that only works for objects of class `"coin"`, we
+could add a `stop()` condition that checks if the argument `coin` is of the
+right class:
+
+```{r}
+toss <- function(coin, times = 1, prob = NULL) {
+  if (class(coin) != "coin") {
+    stop("\nflip() requires an object 'coin'")
+  }
+  sample(coin, size = times, replace = TRUE, prob = prob)
+}
+
+# ok
+toss(coin1)
+
+# bad coin
+toss(c('tic', 'tac', 'toe'))
+```
+
+\bigskip
+
+A more formal strategy, and one that follows OOP principles, is to create a
+toss __method__. In R, many functions are actually methods: e.g. `print()`,
+`summary()`, `plot()`, `str()`, etc. 
+
+```{r print-method}
+# print method
+print
+```
+
+\bigskip
+
+```{r plot-method}
+# plot method
+plot
+```
+
+These types of functions are not really one unique function, they typically 
+comprise a collection or family of functions for printing objects, computing 
+summaries, plotting, etc. Depending on the class of the object, a generic 
+method will look for a specific function for that class:
+
+```{r matrix-methods}
+# methods for objects "matrix"
+methods(class = "matrix")
+```
+
+
+### 2.5) `toss` method
+
+When implementing new methods, you begin by creating a __generic__ method with 
+the function `UseMethod()`:
+
+```{r toss-method}
+toss <- function(x, ...) UseMethod("toss")
+```
+
+The function `UseMethod()` allows you to declare the name of a method. In this
+example we are telling R that the function `toss()` is now a generic `"toss"` 
+method. Note the use of `"..."` in the function definition, this will allow you 
+to include more arguments when you define specific methods based on `"toss"`. 
+
+A generic method alone is not very useful. You need to create specific
+cases for the generic. In our example, we only have one class `"coin"`,
+so that is the only class we will allow `toss` to be applied on. The way to
+do this is by defining `toss.coin()`:
+
+```{r toss-coin-specific}
+toss.coin <- function(coin, times = 1, prob = NULL) {
+  sample(coin, size = times, replace = TRUE, prob = prob)
+}
+```
+
+The name of the method, `"toss"`, comes first, followed by a dot `"."`, 
+followed by the name of the class, `"coin"`. Notice that the body of the 
+function `toss.coin()` does not include the `stop()` command anymore.
+
+To use the `toss()` method on a `"coin"` object, you don't really have to call 
+`toss.coin()`; calling `toss()` is enough:
+
+```{r}
+toss(coin1)
+```
+
+How does `toss()` work? Becasue `toss()` is now a generic method, everytime
+you use it, R will look at the class of the input, and see if there is an
+associated `"toss"` method. In the previous example, `coin1` is an object 
+of class `"coin"`, for which there is a specific `toss.coin()` method. 
+Thus using `toss()` on a `"coin"` object works fine. 
+
+Now let's try `toss()` on the character vector `c('tic', 'tac', 'toe')`:
+
+```{r}
+# no flip() method for regular vectors
+toss(c('tic', 'tac', 'toe'))
+```
+
+When you try to use `toss()` on an object that is not of class `"coin"`, 
+you get a nice error message.
+
+
+
+## 3) A more robust `"coin"` class
+
+Let's review our class `"coin"`. The way we defined a coin object was like this:
+
+```{r simple-coin}
+# object coin
+coin1 <- c("heads", "tails")
+class(coin1) <- "coin" 
+```
+
+While this definition is good to illustrate the concept of an object, its 
+class, and how to define generic methods, it is a very loose-defined class.
+One could create a `"coin"` out of `c('tic', 'tac', 'toe')`, and then use 
+`toss()` on it:
+
+```{r}
+ttt <- c('tic', 'tac', 'toe')
+class(ttt) <- "coin"
+
+toss(ttt)
+```
+
+We need a more formal definition of a coin. For instance, it
+makes more sense to require that a coin should only have two sides. In this way, 
+the vector `ttt` would not be a valid coin. 
+
+For convenience purposes, we can define a __class constructor__ function to
+initialize a `"coin"` object:
+
+```{r}
+coin <- function(object = c("heads", "tails")) {
+  class(object) <- "coin"
+  object
+}
+
+# default coin
+coin()
+
+# another coin
+coin(c("h", "t"))
+```
+
+
+### 3.1) Improving `"coin"` objects
+
+To implement the requirement that a coin must have two sides, we can check 
+for the length of the input vector:
+
+```{r}
+coin <- function(object = c("heads", "tails")) {
+  if (length(object) != 2) {
+    stop("\n'object' must be of length 2")
+  }
+  class(object) <- "coin"
+  object
+}
+
+# US penny
+penny <- coin(c("lincoln", "shield"))
+penny
+```
+
+\bigskip
+
+```{r invalid-coin}
+# invalid coin
+coin(ttt)
+```
+
+\bigskip
+
+Because the `toss()` function simulates flips using `sample()`, we can take 
+advantage of the argument `prob` to specify probabilities for each side of 
+the coin. In this way, we can create _loaded_ coins. 
+
+We can add a `prob` argument to the constructor function. This argument takes a 
+vector of probabilities for each element in `object`, and we pass this vector
+as an attribute of the coin object. Furthermore, we can set a default 
+`prob = c(0.5, 0.5)`, that is, a _fair_ coin by default:
+
+```{r}
+coin <- function(object = c("heads", "tails"), prob = c(0.5, 0.5)) {
+  if (length(object) != 2) {
+    stop("\n'object' must be of length 2")
+  }
+  attr(object, "prob") <- prob
+  class(object) <- "coin"
+  object
+}
+
+coin()
+```
+
+\bigskip
+
+Once again, we need to check for the validity of `prob`. Here is one possible
+function to check several aspects around `prob`: must be of numeric and of 
+length 2, probability values must be between 0 and 1, and the sum of these 
+values must add up to 1:
+
+```{r check-prob}
+check_prob <- function(prob) {
+  if (length(prob) != 2 | !is.numeric(prob)) {
+    stop("\n'prob' must be a numeric vector of length 2")
+  }
+  if (any(prob < 0) | any(prob > 1)) {
+    stop("\n'prob' values must be between 0 and 1")
+  }
+  if (sum(prob) != 1) {
+    stop("\nelements in 'prob' must add up to 1")
+  }
+  TRUE
+}
+```
+
+Note that I'm adding a `TRUE` statement at the end of the function. This is
+just an auxiliary value to know if the function returns a valid `prob`.
+Now let's test it:
+
+```{r check-good-probs, results='hide'}
+# good prob
+check_prob(c(0.5, 0.5))
+check_prob(c(0.1, 0.9))
+check_prob(c(1/3, 2/3))
+check_prob(c(1/3, 6/9))
+```
+
+```{r check-bad-probs}
+# bad length
+check_prob(1)
+# bad length
+check_prob(c(0.1, 0.2, 0.3))
+# negative probability
+check_prob(c(-0.2, 0.8))
+# what should we do in this case?
+check_prob(c(0.33, 0.66))     
+```
+
+\bigskip
+
+Here's the improved constructor function `coin()`:
+
+```{r}
+coin <- function(object = c("heads", "tails"), prob = c(0.5, 0.5)) {
+  if (length(object) != 2) {
+    stop("\n'object' must be of length 2")
+  }
+  check_prob(prob)
+  attr(object, "prob") <- prob
+  class(object) <- "coin"
+  object
+}
+
+coin1 <- coin()
+coin1
+```
+
+\bigskip
+
+And the new definition of `toss.coin()`:
+
+```{r new-toss}
+toss.coin <- function(coin, times = 1) {
+  sample(coin, size = times, replace = TRUE, prob = attr(coin, 'prob'))
+}
+```
+
+Let's toss a loaded coin:
+
+```{r}
+set.seed(2341)
+load_coin <- coin(c('HEADS', 'tails'), prob = c(0.75, 0.25))
+toss(load_coin, times = 6)
+```
+
+
+### 3.2) Extending classes
+
+We can extend the class `"coin"` and create a derived class for special types
+of coins. For instance, say we want to create a class `"quarter"`. One side
+of the coin refers to George Washington, while the other side refers to John
+Brown's Fort:
+
+https://en.wikipedia.org/wiki/Quarter_(United_States_coin)
+
+```{r quarter-coin}
+quarter1 <- coin(c("washington", "fort")) 
+class(quarter1) <- c("quarter", "coin")
+quarter1
+```
+
+Our coin `quarter1` inherits from `"coin"`:
+
+```{r}
+inherits(quarter1, "coin")
+```
+
+Likewise, we can create a class for a slightly unbalanced `"dime"`:
+
+```{r dime-coin}
+dime1 <- coin(c("roosevelt", "torch"), prob = c(0.48, 0.52))
+class(dime1) <- c("dime", "coin")
+dime1
+```
+
+
+
+## 4) Object `"toss"`
+
+Because we are not only interested in tossing a coin, but also in keeping track
+of such tosses, it would be good to have another object for this purpose.
+How do you know that you need this new object class? Well, this is precisely
+an example that illustrates the process of programming in general, and OOP in
+particular. This kind of decisions require some (or a lot of) thinking, 
+and brainstorming time. The more you understand a problem (i.e. phenomenon,
+process), the better you will be prepared to design what objects and methods
+you need to program.
+
+While I was writing this material, I decided that it would be convenient to
+have an object of class `"toss"` containing the following information:
+
+- all the outcomes from the series of tosses
+- the total number of tosses
+- the total number of heads
+- the total number of tails
+
+The most flexible type of data structure in R to store other data structures 
+is a `list`. Having a vector of tosses, we can use a list to keep all the
+desired information:
+
+```{r}
+flips <- toss(coin1, times = 6)
+
+a <- list(
+  tosses = flips, 
+  total = length(flips),
+  heads = sum(flips == "heads"),
+  tails = sum(flips == "tails")
+)
+
+a
+```
+
+For convenience purposes, we can write an __auxiliary constructor__ function, 
+which I will call `make_toss()`. This function takes an input vector (i.e. a
+character vector with `"heads"` and `"tails"` elements), and it returns an
+object of class `"toss"`:
+
+```{r}
+make_toss <- function(coin, flips) {
+  res <- list(
+    coin = coin,
+    tosses = flips,
+    total = length(flips),
+    heads = sum(flips == coin[1]),
+    tails = sum(flips == coin[2]))
+  class(res) <- "toss"
+  res
+}
+```
+
+
+### 4.1) Main Function `toss()`
+
+Now that we have the auxiliary function `make_toss()`, we can encapsulate it in 
+a _master_ function `toss.coin()`:
+
+```{r toss-ver1}
+toss.coin <- function(coin, times = 1) {
+  flips <- sample(coin, size = times, replace = TRUE, prob = attr(coin, 'prob'))
+  make_toss(coin, flips)
+}
+```
+
+```{r}
+set.seed(2233)
+fair <- coin()
+toss(fair, times = 5)
+```
+
+\bigskip
+
+You may ask why we need a function `make_toss()`, and another function `toss()`. 
+Can't we just write a single function `suppertoss()` that does everything at once?:
+
+```{r}
+supertoss <- function(coin, times = 1) {
+  flips <- flip(coin, times = times)
+  res <- list(
+    coin = coin,
+    tosses = flips,
+    total = length(flips),
+    heads = sum(flips == coin[1]),
+    tails = sum(flips == coin[2]))
+  class(res) <- "toss"
+  res
+}
+```
+
+The short answer is: yes, you can. And probably this is what most beginners
+tend to do. The reason why I decided to break things down into simpler and
+smaller functions is because I went already through a couple of implementations,
+and realized that it was better to have the auxiliary function `make_toss()`. 
+Also, it is good practice to write short functions that preferably do 
+one thing. 
+
+Here's a brief recap of the main functions we have so far:
+
+- `coin()` is a constructor function to create objects of class `"coin"`.
+- `toss()` is a generic `"toss"` method.
+- `make_toss()` is an auxiliary function that takes a `"coin"` and a vector of 
+flips, and which produces an object `"toss"`.
+- `toss.coin()` is the specific `"toss"` method to be used on `"coin"` objects.
+
+
+## 5) Upgrading `toss()`
+
+Let's consider our `quarter` coin, and apply `toss()` on it:
+
+```{r quarter}
+quarter1 <- coin(c("washington", "fort")) 
+class(quarter1) <- c("quarter", "coin")
+quarter1
+
+toss(quarter1, times = 4)
+```
+
+\bigskip
+
+`toss()` is working as expected, and you can try it with different values for 
+`times`. The only issue is that a distracted user could pass an unexpected value 
+for the argument `times`:
+
+```{r}
+toss(quarter1, times = -4)
+```
+
+R produces an error when `times = -4`, but it's an error that may not be very
+helpful for the user. The error message clearly says that `'size'` is an 
+invalid argument, but `toss()` just has one argument: `times`.
+
+To be more user friendly, among other reasons, it would be better to check 
+whether `times` has a valid value. One way to do that is to include a 
+conditional statement:
+
+```{r toss-ver2}
+toss.coin <- function(coin, times = 1) {
+  if (times <= 0) {
+    stop("\nargument 'times' must be a positive integer")
+  }
+  flips <- sample(coin, size = times, replace = TRUE, prob = attr(coin, 'prob'))
+  make_toss(coin, flips)
+}
+
+# this works ok
+toss(quarter1, 5)
+
+# this doesn't work, but the error message is clear
+toss(quarter1, -4)
+```
+
+Once again, it is good practice to write short functions that preferably do 
+one thing. In this case, we could define a checking function for `times`:
+
+```{r}
+# auxiliary function to check 'times' input
+check_times <- function(times) {
+  if (times <= 0 | !is.numeric(times)) {
+    stop("\nargument 'times' must be a positive integer")
+  } else {
+    TRUE
+  }
+}
+```
+
+and then include `check_times()` inside `toss()`:
+
+```{r toss-ver3}
+toss.coin <- function(coin, times = 1) {
+  if (times <= 0) {
+    stop("\nargument 'times' must be a positive integer")
+  }
+  flips <- sample(coin, size = times, replace = TRUE, prob = attr(coin, 'prob'))
+  make_toss(coin, flips)
+}
+
+toss(quarter1, 5)
+```
+
+
+
+## 6) More Methods
+
+Let's see how to create common R methods for a `"toss"` object such as
+`print()`, `'summary()`, and `plot()`.
+
+
+### 6.1) Print Method
+
+Typically, most classes in R have a dedicated printing method. To create such
+a method we use the generic function `print()` like so:
+
+```{r print-toss}
+# print method for object of class "toss"
+print.toss <- function(x, ...) {
+  cat('object "toss"\n')
+  cat(sprintf('coin: "%s", "%s"', x$coin[1], x$coin[2]), "\n")
+  cat("total tosses:", x$total, "\n")
+  cat(sprintf("num of %s:", x$coin[1]), x$heads, "\n")
+  cat(sprintf("num of %s:", x$coin[2]), x$tails, "\n")
+  invisible(x)
+}
+```
+
+By convention, `print` methods return the value of their principal argument
+invisibly. The `invisible` function turns off automatic printing, thus 
+preventing an infinite recursion when printing is done implicitly at the 
+session level.
+
+After a `print` method has been defined for an object `"toss"`, everytime
+you type an object of such class, R will search for the corresponding method
+and display the output accordingly:
+
+```{r}
+# testing print method
+quarter_flips <- toss(quarter1, 50)
+quarter_flips
+```
+
+
+### 6.2) Summary Method
+
+For most purposes the standard `pint` method will be sufficient output, but
+some times a more extensive display is required. This can be done with a
+`summary`. To define this type of method we use the function `summary()`.
+
+```{r summary-toss}
+summary.toss <- function(object) {
+  structure(object, class = c("summary.toss", class(object)))
+}
+
+print.summary.toss <- function(x, ...) {
+  cat('summary "toss"\n\n')
+  cat(sprintf('coin: "%s", "%s"', x$coin[1], x$coin[2]), "\n")
+  cat("total tosses:", x$total, "\n\n")
+  cat(sprintf("num of %s:", x$coin[1]), x$heads, "\n")
+  cat(sprintf("prop of %s:", x$coin[1]), x$heads/x$total, "\n\n")
+  cat(sprintf("num of %s:", x$coin[2]), x$tails, "\n")
+  cat(sprintf("prop of %s:", x$coin[2]), x$tails/x$total, "\n")
+  invisible(x)
+}
+```
+
+Let's test it:
+
+```{r}
+summary(quarter_flips)
+```
+
+
+### 6.3) Plot Method
+
+We can also define a `plot` method for objects of class `"toss"`:
+
+What we want to plot of an object `"toss"` is the series of realtive frequencies 
+(of either `"heads"` ot `"tails"`). This means we need to create a couple of
+auxiliary functions:
+
+```{r}
+head_freqs <- function(x) {
+  cumsum(x$tosses == x$coin[1]) / 1:x$total
+}
+
+
+tail_freqs <- function(x) {
+  cumsum(x$tosses == x$coin[2]) / 1:x$total
+}
+
+
+frequencies <- function(x, side = 1) {
+  if (side == 1) {
+    return(head_freqs(x))
+  } else {
+    return(tail_freqs(x))
+  }
+}
+```
+
+Here's one way to define a `plot()` method for `"toss"` objects:
+
+```{r plot-toss}
+plot.toss <- function(x, side = 1, ...) {
+  freqs <- frequencies(x, side = side)
+  plot(1:x$total, freqs, type = "n", ylim = c(0, 1), las = 1,
+       xlab = "number of tosses", bty = "n",
+       ylab = sprintf("relative frequency of %s", x$coin[side]))
+  abline(h = 0.5, col = "gray70", lwd = 1.5)
+  lines(1:x$total, freqs, col = "tomato", lwd = 2)
+  title(sprintf("Relative Frequencies in a series of %s coin tosses", x$total))
+}
+```
+
+Let's test our `plot` method:
+
+```{r}
+plot(quarter_flips)
+```
+
+
+
+## 7) Additional Methods
+
+Until now we have standard methods like `print()`, `summary()`, and `plot()`.
+However, we can add more common (and not so common) methods such as:
+
+- replacement: `"[<-.toss"`
+- extraction: `"[.toss"`
+- testing: `is.toss()`
+- addition: `"+.toss"`
+
+
+### 7.1) Replacement Method
+
+Replacement functions are those calls like `x[1] <- 3`. The function behind 
+this expression is the replacement `"[<-"()` function.
+We can also create a replacement function for a given class using the notation
+`"[<-.class"`, where `class` is the name of the class:
+
+```{r replacement-toss}
+"[<-.toss" <- function(x, i, value) {
+  if (value != x$coin[1] & value != x$coin[2]) {
+    stop(sprintf('\nreplacing value must be %s or %s', x$coin[1], x$coin[2]))
+  }
+  x$tosses[i] <- value
+  make_toss(x$coin, x$tosses)
+}
+```
+
+Test it:
+
+```{r test-replacement}
+set.seed(3752)
+b <- toss(dime1, times = 5)
+b$tosses
+
+# replacement
+b[1] <- "torch"
+b$tosses
+```
+
+What about replacing out of the original range?
+
+```{r weird-test-replacement}
+# replacement in sixth position (weird!)
+b[6] <- "torch"
+b
+```
+
+Or something like this?
+
+```{r fail-test-replacement}
+# replacement
+b[10] <- "torch"
+b
+```
+
+\bigskip
+
+Because it does not make sense to replace if index is out of the original length,
+we can add a `stop()` condition:
+
+```{r better-replacement-toss}
+"[<-.toss" <- function(x, i, value) {
+  if (value != x$coin[1] & value != x$coin[2]) {
+    stop(sprintf('\nreplacing value must be %s or %s', x$coin[1], x$coin[2]))
+  }
+  if (i > x$total) {
+    stop("\nindex out of bounds")
+  }
+  x$tosses[i] <- value
+  make_toss(x$coin, x$tosses)
+}
+```
+
+Now we cannot replace if index is out of the original length:
+
+```{r error-replacement}
+set.seed(3752)
+b <- toss(dime1, times = 5)
+b$tosses
+
+# replacement
+b[10] <- "torch"
+```
+
+
+### 7.2) Extraction Method
+
+What if you want to know what is the value of toss in position 3? You could
+type something like this:
+
+```{r}
+b$tosses[3]
+```
+
+Or you could create an extraction method that allows you to type `x[3]`. 
+The function behind this expression is the extraction `"["()` function.
+We can also create a extraction function for a given class.
+
+```{r extract-toss}
+"[.toss" <- function(x, i) {
+  x$tosses[i]
+}
+```
+
+Test it:
+
+```{r test-extract}
+set.seed(3752)
+b <- toss(dime1, times = 5)
+b$tosses
+b[1]
+```
+
+
+### 7.3) Is `"toss"`
+
+Another common type of function for an object of a given class is 
+`is.class()`-like functions: e.g. `is.list()`, `is.numeric()`, `is.matrix()`.
+
+```{r}
+is.toss <- function(x) {
+  inherits(x, "toss")
+}
+
+is.toss(b)
+is.toss(c("heads", "tails"))
+```
+
+
+
+### 7.4) Addition Method
+
+R comes with generic Math methods (see `?Math`). Among these generic methods 
+we can find the `"+"` operator. This means that we can define our own _plus_
+method for objects of class `"toss"`. The idea is to be able to call a command
+like this:
+
+```{r eval = FALSE}
+# toss object
+b <- toss(dime1, times = 5)
+
+# add 5 more flips
+b + 5
+```
+
+Here's one implementation of `"+.toss()"` in which the first argument is an 
+object of class `"toss"`, and the second argument is a single positive number
+that will play the role of additional tosses:
+
+```{r}
+"+.toss" <- function(obj, incr) {
+  if (length(incr) != 1 | incr <= 0) {
+    stop("\ninvalid increament (must be positive)")
+  }
+  more_flips <- toss(obj$coin, times = incr)
+  make_toss(obj$coin, c(obj$tosses, more_flips$tosses))
+}
+```
+
+Remember that `"+"` is a binary operator, which means that writing a `"+"` 
+method requires a function with two arguments. Let's try it:
+
+```{r}
+# add four more tosses
+mycoin <- coin()
+seven <- toss(mycoin, times = 7)
+seven
+```
+
+\bigskip
+
+Let's add a couple of more tosses to `seven`:
+
+```{r}
+# two more flips
+seven + 2
+
+# three more flips
+seven + 3
+```
