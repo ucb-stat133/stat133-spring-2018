@@ -259,7 +259,7 @@
     + [Regular Expressions](../labs/lab10-regex-basics.md)
 - :bulb: __Cheat sheet__:
     + [Regular Expressions cheat sheet](../cheatsheets/regular-expressions-cheatsheet.pdf)
-- :dart: __HW 4__: due Apr-17
+- :dart: __HW 4__: due Apr-13
     + [Strings and Regular Expressions](../hws/hw04-strings-regex.pdf)
 
 
