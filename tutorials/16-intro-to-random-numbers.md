@@ -75,14 +75,6 @@ To toss the coin use `sample()` like this:
 coin <- c('heads', 'tails')
 
 # toss the coin
-sample(coin)
-```
-
-    ## [1] "tails" "heads"
-
-The call to `sample()` is equivalent to:
-
-``` r
 sample(coin, size = 1)
 ```
 
@@ -101,7 +93,7 @@ maximum integer to sample from: `1, 2, 3, ..., n`
 sample.int(10)
 ```
 
-    ##  [1]  7 10  5  2  4  1  3  9  6  8
+    ##  [1]  3 10  2  4  9  8  7  1  5  6
 
 ### Random Samples
 
@@ -142,7 +134,7 @@ which is done by specifying the argument `replace = TRUE`, like this:
 sample(coin, size = 4, replace = TRUE)
 ```
 
-    ## [1] "tails" "heads" "heads" "heads"
+    ## [1] "heads" "heads" "tails" "tails"
 
 ## The Random Seed
 
@@ -309,7 +301,7 @@ let us specify different probabilities for `heads` and `tails`
 #' @description simulates tossing a coin a given number of times
 #' @param x coin object (a vector)
 #' @param times number of tosses
-#' @param prob vector of proabilities for each side of the coin
+#' @param prob vector of probabilities for each side of the coin
 #' @return vector of tosses
 toss <- function(x, times = 1, prob = NULL) {
   sample(x, size = times, replace = TRUE, prob = prob)

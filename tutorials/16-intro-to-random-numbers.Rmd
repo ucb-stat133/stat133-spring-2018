@@ -85,12 +85,6 @@ To toss the coin use `sample()` like this:
 coin <- c('heads', 'tails')
 
 # toss the coin
-sample(coin)
-```
-
-The call to `sample()` is equivalent to:
-
-```{r}
 sample(coin, size = 1)
 ```
 
@@ -289,7 +283,7 @@ us specify different probabilities for `heads` and `tails`
 #' @description simulates tossing a coin a given number of times
 #' @param x coin object (a vector)
 #' @param times number of tosses
-#' @param prob vector of proabilities for each side of the coin
+#' @param prob vector of probabilities for each side of the coin
 #' @return vector of tosses
 toss <- function(x, times = 1, prob = NULL) {
   sample(x, size = times, replace = TRUE, prob = prob)
