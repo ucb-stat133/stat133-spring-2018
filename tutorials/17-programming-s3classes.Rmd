@@ -1,5 +1,5 @@
 ---
-title: "Object Oriented Programming"
+title: "Programming Classes and Methods"
 subtitle: "Stat 133, Spring 2018"
 author: "Gaston Sanchez"
 output: pdf_document
@@ -289,7 +289,7 @@ inherits(coin2, "coin")
 ### 2.4) Generic and Specific Methods
 
 Having a coin object, we can simulate flipping the coin with our previously 
-defined function `toss()`. A coin could have a function `flip()`:
+defined function `toss()`.
 
 ```{r}
 toss(coin1, times = 5)
@@ -397,7 +397,7 @@ Thus using `toss()` on a `"coin"` object works fine.
 Now let's try `toss()` on the character vector `c('tic', 'tac', 'toe')`:
 
 ```{r}
-# no flip() method for regular vectors
+# no toss() method for regular vectors
 toss(c('tic', 'tac', 'toe'))
 ```
 
