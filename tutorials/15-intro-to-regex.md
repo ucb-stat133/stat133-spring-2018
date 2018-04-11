@@ -20,9 +20,9 @@ In this tutorial we’ll be mainly using functions from the R package
 library(stringr)
 ```
 
-Although R has built-in functios to perform regex operations, I’ve found
-that functions from `"stringr"` are more user friendly (i.e. they have a
-more consistent naming style).
+Although R has built-in functions to perform regex operations, I’ve
+found that functions from `"stringr"` are more user friendly (i.e. they
+have a more consistent naming style).
 
 ## Data Log File
 
