@@ -296,13 +296,16 @@ In order to better visualize the results of some simulations, we will briefly di
 - :paperclip: __Topics__: Packages are the fundamental units of reproducible R code. They include reusable functions, the documentation that describes how to use them, and sample data. In this part we'll start describing how to turn your code into an R package.
 - :file_folder: __Notes__:
     + [Programming S3 Classes](../tutorials/17-programming-s3classes.pdf)
+    + [Pack YouR Code](http://www.gastonsanchez.com/packyourcode) (by Sanchez)
 - :book: __Reading__:
     + [Package Structure](http://r-pkgs.had.co.nz/package.html) (R packages by Wickham)
     + See package components: [http://r-pkgs.had.co.nz/](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
     + TBA
+- :bulb: __Cheat sheet__:
+    + [Package Development cheat sheet](../cheatsheets/packages-cheatsheet.pdf)
 - :dart: __HW 5__: due Apr-27
-    + TBA
+    + [R Package `"dieroller"`](../hws/hw05-package-dieroller.pdf)
 
 
 -----
@@ -313,11 +316,13 @@ In order to better visualize the results of some simulations, we will briefly di
 - :card_index: __Dates__: Apr 23-27
 - :paperclip: __Topics__: Creating an R package can seem overwhelming at first. So we'll keep working on the creation of a relatively basic package. This will give you the opportunity to apply most of the concepts seen in the course.
 - :file_folder: __Notes__:
-    + TBA
+    + [Pack YouR Code](http://www.gastonsanchez.com/packyourcode) (by Sanchez)
 - :book: __Reading__:
     + See package components: [http://r-pkgs.had.co.nz](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
     + TBA
+- :bulb: __Cheat sheet__:
+    + [Package Development cheat sheet](../cheatsheets/packages-cheatsheet.pdf)
 
 
 -----
