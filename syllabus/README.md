@@ -301,7 +301,7 @@ In order to better visualize the results of some simulations, we will briefly di
     + [Package Structure](http://r-pkgs.had.co.nz/package.html) (R packages by Wickham)
     + See package components: [http://r-pkgs.had.co.nz/](http://r-pkgs.had.co.nz/) (R packages by Wickham)
 - :microscope: __Lab__:
-    + TBA
+    + [HTML and Web scraping](../labs/lab12-web-scraping.md)
 - :bulb: __Cheat sheet__:
     + [Package Development cheat sheet](../cheatsheets/packages-cheatsheet.pdf)
 - :dart: __HW 5__: due Apr-27
