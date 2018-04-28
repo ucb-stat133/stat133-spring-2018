@@ -785,9 +785,7 @@ and then include `check_times()` inside `toss()`:
 
 ```{r toss-ver3}
 toss.coin <- function(coin, times = 1) {
-  if (times <= 0) {
-    stop("\nargument 'times' must be a positive integer")
-  }
+  check_times(times)
   flips <- sample(coin, size = times, replace = TRUE, prob = attr(coin, 'prob'))
   make_toss(coin, flips)
 }
@@ -838,8 +836,8 @@ quarter_flips
 
 ### 6.2) Summary Method
 
-For most purposes the standard `pint` method will be sufficient output, but
-some times a more extensive display is required. This can be done with a
+For most purposes the standard `print` method will be sufficient output, but
+sometimes a more extensive display is required. This can be done with a
 `summary`. To define this type of method we use the function `summary()`.
 
 ```{r summary-toss}
