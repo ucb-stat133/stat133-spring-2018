@@ -10,7 +10,7 @@ __Statistics 133: Concepts in Computing with Data__ at UC Berkeley.
 - __Code #:__ 30844
 - __Units:__ 3 (more info [here](http://classes.berkeley.edu/content/2018-spring-stat-133-001-lec-001))
 - __Office Hours:__ W 1-2pm 309 Evans, Fr 2-3pm 344 Evans, 3-4pm 340 Evans
-- __Final:__ Mon May 7, 8-11am (room TBD)
+- __Final:__ Mon May 7, 8-11am (Dwinelle 145 and 155)
 - __Piazza:__ [piazza.com/berkeley/spring2018/stat133](https://piazza.com/berkeley/spring2018/stat133)
 - __GSIs:__ Office hours of the GSIs displayed below.
 You can go to the office hours of __any__ GSI, not just your own.
