@@ -334,7 +334,8 @@ In order to better visualize the results of some simulations, we will briefly di
 - :paperclip: __Topics__: Prepare for final examination
 - :file_folder: __Notes__:
     + No lecture. Instructor will hold OH (in 309 Evans)
-- :mortar_board: __FINAL__: Mon May 7, 8-11am (room TBA)
+- :mortar_board: __FINAL__: Mon May 7, 8-11am, Dwinelle 145 and 155
+    + See announcement about the final test on bCourses
 
 
 -----
